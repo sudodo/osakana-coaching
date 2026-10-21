@@ -1,0 +1,1080 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ご紹介制のプライベートページ：検索エンジンに載せない -->
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>初回無料相談のお申し込み｜おさかなコーチング</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* ===== 共通スタイル（参考デザインのトーン：白地・紺・水色の円・紺のピル型ボタン・手書き見出し） ===== */
+:root{
+  color-scheme: light;
+  --navy:#1F4E89;
+  --navy-deep:#16395F;
+  --ink:#24324A;
+  --ink-soft:#5A6980;
+  --sky:#E8F2FC;
+  --sky-2:#D3E6F8;
+  --line:#E0E8F1;
+  --paper:#FFFFFF;
+  --mist:#F5F8FB;
+  --wood:#D9B48C;
+  --wood-dark:#C59A6C;
+  --focus:#F2B705;
+  --hand:"Klee One","Zen Kaku Gothic New",cursive;
+  --sans:"Zen Kaku Gothic New","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:60px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.9;letter-spacing:.02em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+@media (min-width:768px){body{font-size:16.5px}}
+img,svg{display:block;max-width:100%}
+figure{margin:0}
+[hidden]{display:none!important}
+p{margin:0 0 1em}
+p:last-child{margin-bottom:0}
+a{color:var(--navy)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:8px}
+.wrap{width:100%;max-width:1120px;margin-inline:auto;padding-inline:16px}
+@media (min-width:768px){.wrap{padding-inline:32px}}
+.nw{display:inline-block}
+.hand{font-family:var(--hand);font-weight:600}
+
+/* 原稿の改行は文字の改行で持つ（編集・書き出しで崩れないように） */
+[data-edit]{white-space:pre-line}
+.sec-title,.hero h1,.pain h3,.support h3,.flow h3,.philo-key{text-wrap:balance;word-break:auto-phrase}
+
+/* ヘッダー */
+.site-header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.95);backdrop-filter:saturate(1.2) blur(8px);-webkit-backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;gap:16px;min-height:34px;padding-block:3px}
+@media (min-width:600px){.site-header .wrap{min-height:44px;padding-block:4px}}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--navy-deep);min-width:0}
+.brand svg{width:30px;height:18px;flex:none}
+.brand-name{display:block;font-weight:700;font-size:1rem;letter-spacing:.05em;line-height:1.25}
+.brand-tag{display:block;font-size:.62rem;color:var(--ink-soft);line-height:1.3;letter-spacing:.03em}
+@media (max-width:599px){.brand-tag{display:none}}
+.gnav{margin-left:auto;display:none;gap:26px;font-size:.88rem}
+.gnav a{text-decoration:none;color:var(--ink);font-weight:500}
+.gnav a:hover{color:var(--navy)}
+.site-header .btn{margin-left:auto;flex:none}
+@media (min-width:1024px){.gnav{display:flex}.site-header .btn{margin-left:8px}}
+@media (max-width:599px){.site-header .btn{display:none}}
+
+/* ボタン */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.7em;background:var(--navy);color:#fff;text-decoration:none;font:inherit;font-weight:700;letter-spacing:.06em;border-radius:999px;padding:1.05em 2.1em;line-height:1.3;box-shadow:0 8px 18px rgba(31,78,137,.24);transition:background-color .15s ease,transform .15s ease;border:0;cursor:pointer}
+.btn::after{content:"→";font-weight:500}
+.btn:hover{background:var(--navy-deep)}
+.btn:active{transform:translateY(1px)}
+.btn--sm{padding:.42em 1.1em;font-size:.8rem;box-shadow:none}
+.btn--lg{font-size:1.08rem;padding:1.15em 2.6em}
+@media (max-width:479px){.btn--lg{width:100%;font-size:1rem;padding:1.05em 1.2em}}
+.cta-note{font-size:.86rem;color:var(--ink-soft)}
+/* 紹介制の明記：申し込みボタンの札と、メインコピー上の札 */
+.btn-chip{display:inline-block;flex:none;background:#FFF0C7;color:#6E4600;font-size:.74em;font-weight:700;letter-spacing:.04em;line-height:1.5;border-radius:999px;padding:.12em .75em}
+.referral-badge{display:inline-flex;align-items:center;gap:.4em .7em;margin:0 0 20px;padding:.35em 1em .35em .35em;background:#FFF8E6;border:1.5px solid #E7B54D;border-radius:18px;font-size:.85rem;font-weight:700;line-height:1.5;color:#6E4600}
+.referral-badge span{min-width:0;word-break:auto-phrase}
+.referral-badge b{flex:none;background:var(--navy);color:#fff;border-radius:999px;padding:.15em .85em;letter-spacing:.06em}
+
+/* セクション共通 */
+.sec{position:relative;padding-block:96px}
+@media (max-width:767px){.sec{padding-block:68px}}
+.sec>.wrap{position:relative;z-index:1}
+.bg-mist{background:var(--mist)}
+.sec-title{font-weight:700;color:var(--navy-deep);font-size:clamp(1.42rem,1.05rem + 1.5vw,2.05rem);line-height:1.6;letter-spacing:.05em;text-align:center;margin:0 0 .7em}
+.sec-lead{max-width:38em;margin:0 auto 52px;text-align:center;color:var(--ink-soft)}
+@media (max-width:599px){.sec-lead{text-align:left}}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 2px 14px rgba(31,78,137,.06)}
+.halo{background:var(--sky);border-radius:50%;aspect-ratio:1/1;display:grid;place-items:center;overflow:hidden}
+
+/* 画像の差し替え枠：data-img のファイルが読めたら、SVGの代わりに画像を出す */
+.slot{position:relative}
+.slot.has-img>svg{display:none}
+.slot-img{display:block;width:100%;height:100%;object-fit:cover}
+
+/* 線画イラスト（紺の線） */
+.ink-line{stroke:var(--navy);stroke-linejoin:round;stroke-linecap:round}
+.ink-person{--skin:#FFFFFF;--hair:#2A5689;--shirt:#BFD8F1;--laptop:#FFFFFF;--book:#8DB7E2;--accent:#BFD8F1;--face:#1F4E89;--collar:#1F4E89}
+
+/* ファーストビュー：左に文字、右に大きな絵（左端は白に溶かす） */
+.hero{position:relative;overflow:hidden;background:#fff}
+.hero-grid{display:grid;padding-block:40px 32px}
+.hero-text{position:relative;z-index:2}
+.hero h1{font-family:var(--hand);font-weight:600;color:var(--navy-deep);font-size:clamp(2.05rem,1.2rem + 3.6vw,2.9rem);line-height:1.38;letter-spacing:.03em;margin:0}
+.hero .catch-2{font-family:var(--hand);font-weight:600;color:var(--navy);font-size:clamp(1.15rem,.8rem + 1.8vw,2rem);line-height:1.5;letter-spacing:.06em;margin:.35em 0 1em}
+.hero .lead{max-width:27em}
+.hero .lead p{margin-bottom:.7em}
+.hero .who{margin-top:1.1em;font-size:.86rem;color:var(--ink-soft);padding-left:12px;border-left:3px solid var(--sky-2);max-width:30em}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:28px}
+.hero-art{position:relative;aspect-ratio:720/600;width:100%}
+.hero-art>svg,.hero-art>.slot-img{position:absolute;inset:0;width:100%;height:100%}
+@media (min-width:960px){
+  .hero-grid{grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);min-height:620px;align-items:center;padding-block:56px 72px}
+  .hero-art{position:absolute;top:0;right:0;bottom:0;width:57%;aspect-ratio:auto;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 24%);mask-image:linear-gradient(90deg,transparent 0,#000 24%)}
+}
+
+/* 悩み（3つの円） */
+.pains{display:grid;gap:44px 32px;list-style:none;margin:0;padding:0}
+@media (min-width:768px){.pains{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pain{text-align:center}
+.pain .halo{width:min(200px,62vw);margin:0 auto 20px}
+.pain h3{font-size:1.08rem;line-height:1.65;color:var(--navy-deep);margin:0 0 .6em;font-weight:700}
+.pain p{font-size:.93rem;color:var(--ink-soft);text-align:left;max-width:22em;margin-inline:auto}
+.pains-close{text-align:center;margin:56px auto 0;max-width:34em;font-weight:500;color:var(--navy-deep)}
+@media (max-width:599px){.pains-close{text-align:left}}
+
+/* 三つの支援 */
+.supports{display:grid;gap:24px;list-style:none;margin:0;padding:0}
+@media (min-width:900px){.supports{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.support{padding:30px 26px 28px;display:flex;flex-direction:column}
+.support .halo-wrap{position:relative;width:148px;margin:0 auto 18px}
+.support .halo{width:100%}
+.step-num,.loop-num{position:absolute;top:-2px;left:-6px;z-index:1;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;font-size:.95rem;line-height:1;box-shadow:0 0 0 4px #fff}
+.support h3{font-size:1.12rem;line-height:1.6;color:var(--navy-deep);margin:0;text-align:center;font-weight:700}
+.support .kind{display:block;text-align:center;font-size:.8rem;font-weight:700;color:var(--navy);margin:.5em 0 1.1em}
+.support p{font-size:.93rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:auto 0 0;padding:14px 0 0;border-top:1px dashed var(--line)}
+.chips-label{width:100%;font-size:.76rem;color:var(--ink-soft)}
+.chips li:not(.chips-label){font-size:.8rem;background:var(--sky);color:var(--navy-deep);border-radius:999px;padding:.25em .9em;line-height:1.6}
+.supports-note{text-align:center;font-size:.9rem;color:var(--ink-soft);margin-top:28px}
+
+/* 3つの支援を、ひとつのサイクルとして見せる図 */
+.loop-wrap{display:grid;gap:28px;align-items:center;margin:0 0 60px}
+@media (min-width:900px){.loop-wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:52px}}
+.loop{position:relative;width:min(100%,520px);aspect-ratio:1/1;margin:0 auto;--loop-bg:#F2F8FD}
+.loop-ring{position:absolute;inset:0;width:100%;height:100%}
+.loop-node,.loop-label,.loop-center{position:absolute;left:var(--x);top:var(--y);transform:translate(-50%,-50%)}
+.loop-node{display:flex;flex-direction:column;align-items:center;gap:2px;width:36%;text-align:center}
+.loop-halo{position:relative;display:block;width:clamp(54px,15vw,78px);margin-bottom:4px}
+.loop-halo .halo{width:100%;background:#fff;border:2px solid var(--sky-2)}
+.loop-halo .halo svg{width:64%;height:64%}
+.loop-num{width:26px;height:26px;font-size:.8rem;top:-4px;left:-8px;box-shadow:0 0 0 3px var(--loop-bg)}
+.loop-node strong{font-size:clamp(.82rem,.68rem + .55vw,1.02rem);line-height:1.5;color:var(--navy-deep);background:var(--loop-bg);padding:0 .4em;border-radius:6px}
+.loop-kind{font-size:clamp(.64rem,.58rem + .28vw,.76rem);line-height:1.5;font-weight:700;color:var(--navy);background:var(--loop-bg);padding:0 .4em;border-radius:6px}
+.loop-label{width:max-content;max-width:38%;text-align:center;font-size:clamp(.64rem,.56rem + .35vw,.8rem);font-weight:700;line-height:1.5;color:var(--navy);background:#fff;border:1px solid var(--sky-2);border-radius:12px;padding:.2em .8em}
+.loop-center{width:42%;text-align:center}
+.loop-center svg{width:80%;margin:0 auto 6px}
+.loop-center p{margin:0;font-family:var(--hand);font-weight:600;color:var(--navy-deep);font-size:clamp(.9rem,.72rem + .8vw,1.3rem);line-height:1.5}
+.loop-text h3{margin:0 0 .6em;font-size:clamp(1.15rem,1rem + .5vw,1.35rem);line-height:1.6;color:var(--navy-deep)}
+.loop-text p{font-size:.95rem}
+.loop-growth-note{font-weight:700;color:var(--navy-deep);background:#fff;border-left:4px solid var(--navy);border-radius:0 12px 12px 0;padding:.8em 1.1em}
+.supports-intro{text-align:center;font-weight:700;color:var(--navy-deep);margin:0 0 20px;font-size:1.05rem}
+
+/* 問いの立て方（対話） */
+.dialog-wrap{display:grid;gap:40px;align-items:start}
+@media (min-width:900px){.dialog-wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px}}
+.dialog{padding:26px 22px 22px}
+@media (min-width:600px){.dialog{padding:30px 30px 26px}}
+.dialog-note{font-size:.78rem;color:var(--ink-soft);margin:0 0 18px;padding-bottom:12px;border-bottom:1px dashed var(--line)}
+.turn{display:flex;gap:12px;align-items:flex-start;margin-bottom:16px}
+.turn:last-child{margin-bottom:0}
+.turn .avatar{flex:none;width:48px;height:48px}
+.turn .avatar svg{width:100%;height:100%}
+.turn .bubble{position:relative;background:var(--sky);border-radius:4px 16px 16px 16px;padding:.7em 1em;font-size:.95rem;line-height:1.75;margin:0}
+.turn .who-label{display:block;font-size:.72rem;font-weight:700;color:var(--navy);margin-bottom:.15em}
+.turn--me{flex-direction:row-reverse}
+.turn--me .bubble{background:var(--navy);color:#fff;border-radius:16px 4px 16px 16px}
+.turn--me .who-label{color:#CFE1F5;text-align:right}
+.method{list-style:none;padding:0;margin:22px 0 0;display:flex;flex-wrap:wrap;gap:8px 6px;align-items:center}
+.method li{background:#fff;border:1.5px solid var(--sky-2);color:var(--navy-deep);border-radius:999px;padding:.3em 1em;font-size:.88rem;font-weight:700}
+.method .arr{border:0;background:none;padding:0;color:var(--navy);font-weight:500}
+
+/* クライアントの声 */
+.voices-note{max-width:max-content;margin:-.6em auto 36px;font-size:.8rem;font-weight:700;color:#6E4600;background:#FFF0C7;border-radius:14px;padding:.3em 1em;text-align:center;line-height:1.6}
+.voices{list-style:none;margin:0;padding:0;display:grid;gap:22px}
+@media (min-width:900px){.voices{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.voice{position:relative;padding:26px 24px 24px}
+.voice::before{content:"\201C";position:absolute;top:6px;right:18px;font:700 4rem/1 Georgia,serif;color:var(--sky-2)}
+.voice-head{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.voice-avatar{flex:none;width:58px}
+.voice-avatar svg{width:78%;height:auto}
+.voice-who b{display:block;font-size:1rem;color:var(--navy-deep);line-height:1.5}
+.voice-who span{display:block;font-size:.78rem;color:var(--ink-soft);line-height:1.5;word-break:auto-phrase}
+.voice-quote{font-weight:700;color:var(--navy-deep);font-size:1.05rem;line-height:1.6;margin-bottom:.6em;text-wrap:balance;word-break:auto-phrase}
+.voice-body{font-size:.92rem}
+
+/* 物語 */
+.story-grid{display:grid;gap:36px;align-items:start}
+@media (min-width:900px){.story-grid{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:64px}.story-art{position:sticky;top:110px}}
+.story-art{aspect-ratio:360/300;border-radius:28px;overflow:hidden}
+.story-art>svg,.story-art>.slot-img{width:100%;height:100%}
+.story-text .sec-title{text-align:left}
+.story-text p{max-width:34em}
+.profile{display:flex;gap:18px;align-items:center;padding:20px 22px;margin-top:28px}
+.profile .halo{width:76px;flex:none}
+.profile-photo{width:92px!important;border:3px solid #fff;box-shadow:0 0 0 2px var(--sky-2)}
+.profile-photo img{width:100%;height:100%;object-fit:cover}
+@media (max-width:479px){.profile{gap:14px;padding:18px 16px}.profile-photo{width:72px!important}}
+.profile dl{margin:0}
+.profile dt{font-weight:700;color:var(--navy-deep);font-size:1.02rem;word-break:auto-phrase}
+.profile dd{margin:0;font-size:.86rem;color:var(--ink-soft);line-height:1.7;word-break:auto-phrase}
+
+/* おすすめします（推薦） */
+#recommend .sec-lead{margin-bottom:14px}
+#recommend .voices-note{margin-top:0}
+.recommends{list-style:none;margin:0;padding:0;display:grid;gap:22px}
+@media (min-width:900px){.recommends{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.recommend{display:flex;flex-direction:column;padding:26px 24px 22px;border-top:4px solid var(--navy)}
+.recommend-quote{font-family:var(--hand);font-weight:600;color:var(--navy-deep);font-size:1.12rem;line-height:1.6;margin-bottom:.6em;text-wrap:balance;word-break:auto-phrase}
+.recommend-body{font-size:.92rem}
+.recommend-by{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:16px;border-top:1px dashed var(--line)}
+.recommend-avatar{flex:none;width:52px;background:#fff;border:2px solid var(--sky-2)}
+.recommend-avatar svg{width:100%;height:100%}
+.recommend-avatar .ink-person{--skin:#FFFFFF;--hair:#2A5689;--shirt:#BFD8F1;--face:#1F4E89;--collar:#1F4E89}
+.recommend-who b{display:block;font-size:.98rem;color:var(--navy-deep);line-height:1.5}
+.recommend-who span{display:block;font-size:.78rem;color:var(--ink-soft);line-height:1.5;word-break:auto-phrase}
+
+/* 理念と循環 */
+.philo-body{max-width:38em;margin:0 auto}
+.philo-body p{margin-bottom:1.1em}
+.philo-key{font-family:var(--hand);font-weight:600;color:var(--navy-deep);font-size:clamp(1.15rem,.95rem + .9vw,1.5rem);line-height:1.7;text-align:center;margin:1.6em auto;max-width:24em}
+.cycle{display:grid;gap:36px;align-items:center;margin-top:52px}
+@media (min-width:900px){.cycle{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px}}
+.cycle-art{color:var(--navy);width:100%;max-width:480px;margin-inline:auto}
+.cycle-art svg{width:100%;height:auto}
+.stages{list-style:none;margin:0;padding:0;counter-reset:st;display:grid;gap:22px}
+.stages li{counter-increment:st;display:grid;grid-template-columns:38px minmax(0,1fr);column-gap:14px;align-items:start}
+.stages li::before{content:counter(st);grid-row:1 / span 2;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font-weight:700}
+.stages strong{color:var(--navy-deep);font-size:1.04rem;line-height:1.6}
+.stages span{font-size:.9rem;color:var(--ink-soft);line-height:1.75}
+.philo-pride{max-width:36em;margin:52px auto 0;text-align:center;color:var(--navy-deep);font-weight:500}
+@media (max-width:599px){.philo-pride{text-align:left}}
+.free-note{margin:24px auto 0;max-width:40em;background:#fff;border:1.5px dashed #A9CBEA;border-radius:16px;padding:20px 24px;font-size:.94rem}
+.free-note strong{color:var(--navy-deep)}
+
+/* 相談の内容と流れ */
+.offer{display:grid;gap:22px}
+@media (min-width:860px){.offer{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.offer-card{padding:28px 26px}
+.offer-card h3{margin:0 0 4px;font-size:1.15rem;color:var(--navy-deep)}
+.offer-card .tag{display:inline-block;font-size:.78rem;font-weight:700;color:#fff;background:var(--navy);border-radius:999px;padding:.15em .9em;margin-bottom:12px}
+.offer-card dl{margin:14px 0 0;display:grid;grid-template-columns:auto 1fr;gap:10px 16px;font-size:.93rem}
+.offer-card dt{font-weight:700;color:var(--navy);white-space:nowrap}
+.offer-card dd{margin:0}
+@media (max-width:599px){.offer-card .dl-stack{grid-template-columns:1fr;gap:2px 0}.offer-card .dl-stack dd{margin-bottom:10px}}
+.offer-out{margin:22px auto 0;text-align:center;font-size:.9rem;color:var(--ink-soft)}
+.flow{list-style:none;margin:56px 0 0;padding:0;display:grid;gap:18px;counter-reset:step}
+@media (min-width:860px){.flow{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}}
+.flow li{position:relative;counter-increment:step;padding:20px 18px 18px;background:#fff;border:1px solid var(--line);border-radius:14px}
+.flow li::before{content:counter(step);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;font-size:.95rem;margin-bottom:10px}
+.flow h3{margin:0 0 .3em;font-size:1rem;color:var(--navy-deep)}
+.flow p{font-size:.86rem;color:var(--ink-soft)}
+
+/* 料金：木の台座に乗ったお魚 */
+.price-why{max-width:40em;margin:0 auto}
+.price-pledge{margin:28px auto 0;max-width:max-content;text-align:center;font-weight:700;color:var(--navy-deep);background:var(--sky);border-radius:12px;padding:.8em 1.4em;line-height:1.7}
+.tiers-caption{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px 12px;margin:56px 0 14px}
+.tiers-caption h3{margin:0;font-size:1.12rem;color:var(--navy-deep)}
+.tiers-caption span{font-size:.84rem;color:var(--ink-soft)}
+.shelf{position:relative;border-radius:24px;padding:26px 10px 22px;overflow:hidden;isolation:isolate}
+@media (min-width:768px){.shelf{padding:30px 22px 26px}}
+.shelf-deco{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+.tiers{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));row-gap:22px}
+@media (min-width:700px){.tiers{grid-template-columns:repeat(4,minmax(0,1fr))}.tier--shachi{grid-column:2}.tier--kujira{grid-column:3}}
+@media (min-width:1040px){.tiers{grid-template-columns:repeat(7,minmax(0,1fr))}.tier{grid-row:2}.tier--shachi,.tier--kujira{grid-column:auto}}
+/* 区分の見出し：小さい画面では該当する段の上に1行で、PC幅では棚の1段目に並べる */
+.tier-label{grid-column:1 / -1;justify-self:center;align-self:end;text-align:center;font-size:.88rem;font-weight:700;line-height:1.5;color:var(--navy-deep);background:#fff;border-radius:999px;padding:3px 16px;margin:8px 8px -8px}
+.tier-label--culture{display:none}
+.tier-label--biz{color:#fff;background:var(--navy)}
+@media (min-width:1040px){
+  .tier-label{grid-row:1;justify-self:stretch;font-size:.8rem;color:var(--navy-deep);background:none;border-radius:0;border-bottom:2px solid rgba(31,78,137,.3);padding:0 0 4px;margin:0 8px -14px}
+  .tier-label--culture{display:block;grid-column:1 / 2}
+  .tier-label--personal{grid-column:2 / 6}
+  .tier-label--biz{grid-column:6 / 8}
+}
+/* 文化枠の台座：小さい画面では1段まるごと使って目立たせる */
+.tier--culture .plate{box-shadow:inset 0 0 0 2px #E7B54D}
+.tier--culture .plate .name{font-size:.82rem;white-space:nowrap}
+@media (max-width:1039px){.tier--culture{grid-column:1 / -1}.tier--culture .pedestal{width:min(46%,220px)}}
+.tier{display:flex;flex-direction:column;align-items:center;text-align:center}
+.tier::after{content:"";align-self:stretch;height:14px;background:linear-gradient(180deg,var(--wood) 0,var(--wood-dark) 100%);box-shadow:0 6px 10px rgba(90,60,30,.12)}
+.fig{position:relative;width:100%;height:122px;display:flex;align-items:flex-end;justify-content:center;padding:0 8px 16px}
+.fig::before{content:"";position:absolute;left:50%;bottom:0;width:4px;height:17px;margin-left:-2px;background:#7C6450;border-radius:2px}
+.fig>svg{width:var(--fw,100px);height:auto;max-width:100%;filter:drop-shadow(0 6px 5px rgba(31,78,137,.14))}
+.fig.has-img{padding-bottom:0}
+.fig.has-img::before{display:none}
+.fig .slot-img{width:calc(var(--fw,100px) * 1.15);height:auto;max-width:100%;max-height:122px;object-fit:contain}
+.pedestal{flex:1 0 auto;width:86%;background:linear-gradient(180deg,#E7C9A5 0%,#D3AA80 100%);border-radius:8px 8px 2px 2px;padding:9px 7px 18px;box-shadow:inset 0 -6px 0 rgba(120,80,40,.13)}
+.plate{display:block;background:#fff;border-radius:6px;padding:6px 4px 7px}
+.plate .name{display:block;font-weight:700;color:var(--navy-deep);font-size:.93rem;line-height:1.4}
+.plate .price{display:block;font-weight:700;color:var(--navy);font-size:1.22rem;line-height:1.35;letter-spacing:.02em}
+.plate .price small{font-size:.7rem;font-weight:500;color:var(--ink-soft);margin-left:2px}
+.plate .who{display:block;font-size:.7rem;color:var(--ink-soft);line-height:1.5;margin-top:2px;word-break:auto-phrase;text-wrap:balance}
+.plate .who--ticket{color:#835400;font-weight:700}
+.price-notes{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:8px;font-size:.88rem;color:var(--ink-soft)}
+.price-notes li{padding-left:1.2em;position:relative}
+.price-notes strong{color:var(--ink);font-weight:700}
+.price-notes .note-line{display:block}
+.price-notes li::before{content:"";position:absolute;left:.2em;top:.8em;width:6px;height:6px;border-radius:50%;background:#A9CBEA}
+.extra{display:grid;gap:22px;margin-top:44px}
+.extra-card{padding:28px 26px}
+.extra-card h3{margin:0 0 .2em;font-size:1.15rem;color:var(--navy-deep);display:flex;align-items:center;gap:12px}
+.extra-card h3 svg{width:54px;height:auto;flex:none}
+.extra-card .price-inline{font-weight:700;color:var(--navy);font-size:1.05rem;margin:.3em 0 .8em}
+.extra-card p{font-size:.92rem}
+/* 文化枠のカード */
+.culture-card{display:grid;gap:8px 32px;align-items:center}
+@media (min-width:760px){.culture-card{grid-template-columns:minmax(0,1fr) 230px}}
+.culture-text p{max-width:42em}
+.culture-art svg{width:100%;max-width:230px;height:auto;margin:0 auto}
+@media (max-width:759px){.culture-art{order:-1}.culture-art svg{max-width:180px}}
+.ticket-note{margin:-.2em 0 1em}
+.ticket-note a{display:inline-flex;align-items:center;gap:.5em;background:#FFF6DB;border:1.5px solid #E7B54D;color:#6E4600;font-weight:700;font-size:.88rem;line-height:1.5;border-radius:999px;padding:.3em 1em;text-decoration:none}
+.ticket-note a::after{content:"↓";font-weight:500}
+.ticket-note a:hover{background:#FFEDB8}
+
+/* ペイフォワード・チケット */
+.payforward{display:grid;gap:26px;padding:30px 24px}
+@media (min-width:600px){.payforward{padding:34px 32px}}
+@media (min-width:900px){.payforward{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px;align-items:start}}
+.pf-tag{display:inline-block;font-size:.78rem;font-weight:700;color:#6E4600;background:#FFF0C7;border-radius:999px;padding:.2em .9em;margin-bottom:10px}
+.pf-main h3{margin:0 0 .6em;font-size:clamp(1.15rem,1rem + .55vw,1.4rem);line-height:1.6;color:var(--navy-deep);text-wrap:balance;word-break:auto-phrase}
+.pf-main>p{font-size:.94rem}
+.pf-flow{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:14px;counter-reset:pf}
+.pf-flow li{position:relative;display:grid;grid-template-columns:64px minmax(0,1fr);gap:12px;align-items:center;font-size:.92rem;font-weight:700;color:var(--navy-deep);line-height:1.6}
+.pf-flow li+li::before{content:"";position:absolute;left:31px;top:-13px;height:12px;border-left:2px dotted #A9CBEA}
+.pf-icon{display:grid;place-items:center;width:64px;height:48px;background:var(--sky);border-radius:12px}
+.pf-icon svg{width:50px;height:auto;max-height:40px}
+.pf-story{margin-top:18px;font-size:.88rem;color:var(--ink-soft)}
+.pf-board{background:var(--sky);border-radius:18px;padding:20px 18px 18px}
+.pf-count{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 14px;font-weight:700;color:var(--navy-deep)}
+.pf-num{font-size:.95rem;color:var(--navy)}
+.pf-num b{font-size:2.4rem;line-height:1;margin-right:.1em;letter-spacing:0}
+.tickets{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(128px,1fr));gap:10px}
+.ticket{position:relative;display:flex;min-height:68px;background:#FFF6DB;border:1.5px solid #E7B54D;border-radius:10px;color:var(--navy-deep);
+  -webkit-mask:radial-gradient(circle at 46px 0,transparent 7px,#000 7.5px),radial-gradient(circle at 46px 100%,transparent 7px,#000 7.5px);
+  -webkit-mask-composite:source-in;mask:radial-gradient(circle at 46px 0,transparent 7px,#000 7.5px),radial-gradient(circle at 46px 100%,transparent 7px,#000 7.5px);mask-composite:intersect}
+.ticket-stub{flex:none;width:46px;display:grid;place-items:center;border-right:1.5px dashed #E7B54D}
+.ticket-stub svg{width:34px;height:auto}
+.ticket-body{display:flex;flex-direction:column;justify-content:center;padding:6px 10px 6px 12px;line-height:1.4}
+@media (max-width:479px){.ticket-body{padding-inline:8px}.ticket-body span{font-size:.7rem}}
+.ticket-body b{font-size:.84rem;line-height:1.35}
+.ticket-body span{font-size:.76rem;font-weight:700;color:#6E4600;white-space:nowrap}
+.ticket-body small{white-space:nowrap}
+.ticket-body small{font-size:.66rem;color:var(--ink-soft)}
+.pf-empty{margin:0;padding:14px;background:#fff;border-radius:12px;font-size:.9rem;color:var(--ink-soft);text-align:center}
+.pf-note{margin:10px 0 0;font-size:.78rem;color:var(--ink-soft)}
+.pf-actions{margin-top:14px;padding-top:12px;border-top:1px dashed #BCD5EE;display:grid;gap:6px;font-size:.88rem}
+.pf-actions p{margin:0}
+.ticket-input{max-width:8em}
+
+.sustain{max-width:40em;margin:36px auto 0;text-align:center;font-size:.92rem;color:var(--ink-soft)}
+@media (max-width:599px){.sustain{text-align:left}}
+
+/* FAQ */
+.faq{max-width:820px;margin:0 auto;display:grid;gap:12px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:14px}
+.faq summary{list-style:none;cursor:pointer;display:flex;gap:14px;align-items:center;padding:18px 20px;font-weight:700;color:var(--navy-deep);line-height:1.6}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q";flex:none;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;font-size:.9rem}
+.faq summary::after{content:"";flex:none;margin-left:auto;width:10px;height:10px;border-right:2px solid var(--navy);border-bottom:2px solid var(--navy);transform:rotate(45deg) translateY(-3px);transition:transform .2s ease}
+.faq details[open] summary::after{transform:rotate(-135deg) translateY(-2px)}
+.faq .a{padding:0 20px 20px 66px;font-size:.94rem}
+@media (max-width:599px){.faq .a{padding-left:20px}}
+
+/* 最後の申し込み */
+.final{text-align:center}
+.final .body{max-width:30em;margin:0 auto 34px}
+@media (max-width:599px){.final .body{text-align:left}}
+.final .referral{margin:22px auto 0;font-size:.86rem;color:var(--ink-soft);max-width:32em}
+
+/* フッター */
+.site-footer{border-top:1px solid var(--line);padding-block:30px 96px;font-size:.8rem;color:var(--ink-soft);background:#fff}
+@media (min-width:768px){.site-footer{padding-bottom:30px}}
+.site-footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;align-items:center}
+
+/* スマホ下部の申し込みバー */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:45;padding:6px max(12px, env(safe-area-inset-right, 0px)) calc(6px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px));background:rgba(255,255,255,.96);border-top:1px solid var(--line);display:flex;justify-content:center;transform:translateY(110%);transition:transform .25s ease}
+/* 画面下部のバーは低く1行に：本文をなるべく隠さない */
+.sticky-cta .btn{width:100%;max-width:420px;min-height:44px;padding:.55em 1em;font-size:.9rem;letter-spacing:.03em;gap:.5em;white-space:nowrap;box-shadow:none}
+.sticky-cta .btn-chip{font-size:.72em;padding:.1em .6em}
+@media (max-width:359px){.sticky-cta .btn::after{display:none}}
+.sticky-cta.is-on{transform:none}
+@media (min-width:768px){.sticky-cta{display:none}}
+
+/* フォーム未接続の案内 */
+.toast{position:fixed;left:50%;bottom:88px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#102C4D;color:#fff;font-size:.88rem;padding:.8em 1.2em;border-radius:12px;box-shadow:0 10px 30px rgba(16,44,77,.3);transition:opacity .2s ease,transform .2s ease;z-index:60;max-width:calc(100% - 32px);text-align:center}
+.toast.is-on{opacity:1;transform:translate(-50%,0)}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+
+/* ===== 申し込みフォーム（LPの base.css に重ねる） ===== */
+body{background:var(--mist)}
+.site-header{top:0}
+
+/* 見出し：LPの海の帯と同じ淡い水色 */
+.apply-hero{position:relative;overflow:hidden;background:linear-gradient(180deg,#EFF7FD 0%,#E1F0FA 100%);padding:40px 0 34px;text-align:center}
+.apply-hero h1{font-family:var(--hand);font-weight:600;color:var(--navy-deep);font-size:clamp(1.6rem,1.2rem + 1.8vw,2.3rem);line-height:1.45;letter-spacing:.04em;margin:0 0 .4em}
+.apply-hero .referral-badge{margin-bottom:16px;text-align:left}
+.apply-lead{max-width:32em;margin:0 auto 22px;color:var(--ink-soft);font-size:.95rem;word-break:auto-phrase;text-wrap:balance}
+.apply-hero-fish{position:absolute;right:4%;top:22px;width:120px;opacity:.9;pointer-events:none}
+@media (max-width:767px){.apply-hero-fish{display:none}}
+
+/* 入力 → 確認 → 完了 */
+.apply-steps{list-style:none;margin:0 auto;padding:0;display:flex;justify-content:center;gap:6px;max-width:420px}
+.apply-steps li{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;font-size:.84rem;font-weight:700;color:var(--ink-soft);position:relative}
+.apply-steps li+li::before{content:"";position:absolute;left:-30%;width:44%;top:50%;border-top:2px dotted #A9CBEA}
+.apply-steps span{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#fff;border:2px solid var(--sky-2);color:var(--ink-soft);font-size:.8rem}
+.apply-steps .is-current{color:var(--navy-deep)}
+.apply-steps .is-current span,.apply-steps .is-done span{background:var(--navy);border-color:var(--navy);color:#fff}
+
+/* カード */
+.apply-wrap{max-width:780px;padding-block:28px 72px}
+.apply-card{padding:30px 22px 28px}
+@media (min-width:600px){.apply-card{padding:38px 40px 34px}}
+.apply-card-title{margin:0 0 .5em;font-size:1.25rem;color:var(--navy-deep);text-align:center}
+
+.apply-group{border:0;margin:0 0 34px;padding:0;min-width:0}
+.apply-group legend{display:flex;align-items:center;gap:8px;width:100%;padding:0 0 10px;margin-bottom:18px;border-bottom:2px solid var(--sky);font-size:1.08rem;font-weight:700;color:var(--navy-deep)}
+.group-note{font-size:.86rem;color:var(--ink-soft);margin:-4px 0 16px}
+
+/* 項目 */
+.field{margin-bottom:22px}
+.field-row{display:grid;gap:0 18px}
+@media (min-width:600px){.field-row{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.field-label{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-weight:700;font-size:.95rem;color:var(--navy-deep)}
+.tag-required,.tag-optional{flex:none;font-size:.7rem;font-weight:700;line-height:1.5;border-radius:999px;padding:.05em .7em;letter-spacing:.04em}
+.tag-required{background:var(--navy);color:#fff}
+.tag-optional{background:#EEF2F6;color:var(--ink-soft)}
+.input{display:block;width:100%;font:inherit;font-size:1rem;line-height:1.6;color:var(--ink);background:#fff;border:1.5px solid #C9DCEF;border-radius:12px;padding:.7em .9em;transition:border-color .15s ease,box-shadow .15s ease}
+.input::placeholder{color:#9AA8B8}
+.input:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 4px rgba(31,78,137,.12)}
+textarea.input{resize:vertical;min-height:6.5em}
+select.input{appearance:none;-webkit-appearance:none;padding-right:2.4em;background-image:linear-gradient(45deg,transparent 50%,var(--navy) 50%),linear-gradient(135deg,var(--navy) 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 14px) 50%;background-size:6px 6px;background-repeat:no-repeat}
+.field-hint{font-size:.8rem;color:var(--ink-soft);margin:6px 0 0}
+.field-error{font-size:.82rem;font-weight:700;color:#B3261E;margin:6px 0 0}
+.field-error:empty{display:none}
+.input[aria-invalid="true"]{border-color:#B3261E;background:#FFF8F7}
+
+/* 選択肢（ピル型） */
+.chips-input{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative;cursor:pointer}
+.chip input,.tier-option input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:inline-block;min-height:44px;line-height:1.5;padding:.6em 1.15em;border:1.5px solid var(--sky-2);border-radius:999px;background:#fff;color:var(--navy-deep);font-weight:700;font-size:.9rem;transition:background-color .15s ease,border-color .15s ease}
+.chip:hover span{border-color:#A9CBEA}
+.chip input:checked+span{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip input:focus-visible+span,.tier-option input:focus-visible+.tier-card{outline:3px solid var(--focus);outline-offset:2px}
+
+/* 料金区分：LPの台座の名札に寄せたカード */
+.tier-pick{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:600px){.tier-pick{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.tier-option{cursor:pointer;position:relative}
+.tier-option--undecided{grid-column:1 / -1}
+.tier-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;height:100%;min-height:118px;padding:12px 8px 10px;text-align:center;background:#fff;border:1.5px solid var(--sky-2);border-radius:14px;transition:border-color .15s ease,background-color .15s ease,box-shadow .15s ease}
+.tier-option--undecided .tier-card{min-height:0;flex-direction:row;gap:12px;padding:14px}
+.tier-card svg{width:auto;height:38px;max-width:86%;margin-bottom:6px}
+.tier-name{font-weight:700;color:var(--navy-deep);font-size:.92rem;line-height:1.4}
+.tier-price{font-weight:700;color:var(--navy);font-size:1rem;line-height:1.4}
+.tier-price small{display:block;font-size:.7rem;font-weight:500;color:var(--ink-soft)}
+.tier-option--undecided .tier-price{font-size:.82rem;font-weight:500;color:var(--ink-soft)}
+.tier-card--culture{box-shadow:inset 0 0 0 1px #E7B54D}
+.tier-option:hover .tier-card{border-color:#A9CBEA}
+.tier-option input:checked+.tier-card{border-color:var(--navy);background:var(--sky);box-shadow:0 0 0 2px var(--navy)}
+.price-foot{font-size:.78rem;color:var(--ink-soft);margin:12px 0 0}
+.culture-reason{margin-top:20px;padding:18px 18px 4px;background:#FFF8E6;border:1.5px solid #E7B54D;border-radius:14px}
+
+/* 送信 */
+.hp-field{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.privacy-note{font-size:.82rem;color:var(--ink-soft);text-align:center;margin:0 0 16px}
+.apply-actions{display:flex;justify-content:center}
+.apply-actions .btn{min-width:min(100%,320px)}
+.apply-actions--split{flex-wrap:wrap-reverse;gap:12px;margin-top:26px}
+.btn-ghost{font:inherit;font-weight:700;letter-spacing:.06em;color:var(--navy);background:#fff;border:1.5px solid var(--sky-2);border-radius:999px;padding:1em 2em;cursor:pointer;min-height:48px}
+.btn-ghost:hover{background:var(--sky)}
+@media (max-width:479px){.apply-actions--split>*{width:100%}}
+
+/* 確認 */
+.send-error{margin:22px 0 0;padding:14px 16px;background:#FFF8F7;border:1.5px solid #B3261E;border-radius:12px;color:#7A1A14;font-size:.9rem;line-height:1.7}
+.send-error b{display:block;color:#B3261E;margin-bottom:2px}
+.confirm-list{margin:18px 0 0;display:grid;grid-template-columns:1fr;border-top:1px solid var(--line)}
+.confirm-list div{display:grid;gap:2px 18px;padding:12px 2px;border-bottom:1px solid var(--line)}
+@media (min-width:600px){.confirm-list div{grid-template-columns:11em minmax(0,1fr)}}
+.confirm-list dt{font-weight:700;font-size:.86rem;color:var(--navy)}
+.confirm-list dd{margin:0;white-space:pre-wrap;word-break:break-word}
+.confirm-list .empty{color:#9AA8B8}
+
+/* 完了 */
+.apply-done{text-align:center}
+.apply-done:focus{outline:none}
+.done-art{width:150px;margin:0 auto 10px}
+.apply-done .btn{margin-top:14px}
+
+</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+<defs>
+  <!-- しらす（右向き） -->
+  <symbol id="f-shirasu" viewBox="0 0 64 18">
+    <path d="M9 9L2 4.2L3.8 9L2 13.8Z" fill="#FCFEFE" stroke="#8FB3BE" stroke-width="1.1" stroke-linejoin="round"/>
+    <path d="M8 9C18 3.6 40 3.4 53 6.4C57.5 7.4 60.5 8.2 62 9C60.5 9.8 57.5 10.6 53 11.6C40 14.6 18 14.4 8 9Z" fill="#FCFEFE" stroke="#8FB3BE" stroke-width="1.1"/>
+    <path d="M16 9.3H46" stroke="#B9CFD6" stroke-width="1" stroke-dasharray="1.2 2.4" stroke-linecap="round"/>
+    <circle cx="53.2" cy="8.4" r="2.7" fill="#17212F"/>
+    <circle cx="54.1" cy="7.5" r=".85" fill="#fff" stroke="none"/>
+  </symbol>
+
+  <!-- やりいか（上向き） -->
+  <symbol id="f-yariika" viewBox="0 0 60 112">
+    <path d="M30 3L56 30L30 40L4 30Z" fill="#F5C9C1" stroke="#D88A80" stroke-width="1.4" stroke-linejoin="round"/>
+    <path d="M30 4C39 14 42 32 42 52L41 72C40.5 76 36 78 30 78C24 78 19.5 76 19 72L18 52C18 32 21 14 30 4Z" fill="#F8D9D2" stroke="#D88A80" stroke-width="1.4"/>
+    <g fill="#D2766C" opacity=".75"><circle cx="26" cy="30" r="1.4"/><circle cx="34" cy="38" r="1.2"/><circle cx="28" cy="48" r="1.5"/><circle cx="35" cy="56" r="1.2"/><circle cx="25" cy="62" r="1.2"/><circle cx="32" cy="22" r="1"/><circle cx="31" cy="68" r="1.3"/></g>
+    <g fill="none" stroke="#E7A79D" stroke-width="3" stroke-linecap="round">
+      <path d="M22 86C18 94 16 100 12 104"/>
+      <path d="M26 88C24 96 23 102 21 108"/>
+      <path d="M30 88V109"/>
+      <path d="M34 88C36 96 37 102 39 108"/>
+      <path d="M38 86C42 94 44 100 48 104"/>
+    </g>
+    <ellipse cx="30" cy="82" rx="12" ry="7.5" fill="#F8D9D2" stroke="#D88A80" stroke-width="1.4"/>
+    <circle cx="24.5" cy="81" r="3.6" fill="#17212F"/><circle cx="25.5" cy="80" r="1.1" fill="#fff"/>
+    <circle cx="35.5" cy="81" r="3.6" fill="#17212F"/><circle cx="36.5" cy="80" r="1.1" fill="#fff"/>
+  </symbol>
+
+  <!-- まだい（右向き） -->
+  <symbol id="f-madai" viewBox="0 0 100 64">
+    <path d="M13 32L1 18.5L5.5 32L1 45.5Z" fill="#E2546A" stroke="#E2546A" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M30 11L33 3.5L38 9L43 2.5L48 8L53 2.5L57 8.5L63 5.5L66 11Z" fill="#E2546A"/>
+    <path d="M9 32C19 15 40 6 62 7.5C77 8.5 89 18 95 29.5C96 31.5 96 33.5 94.5 35.5C89 45 77 53 61 55C39 57.5 19 49 9 32Z" fill="#F4707F"/>
+    <clipPath id="clip-madai"><path d="M9 32C19 15 40 6 62 7.5C77 8.5 89 18 95 29.5C96 31.5 96 33.5 94.5 35.5C89 45 77 53 61 55C39 57.5 19 49 9 32Z"/></clipPath>
+    <path clip-path="url(#clip-madai)" d="M8 37C26 48 50 52 70 50C80 49 88 45 95 38V64H8Z" fill="#FBC9CC" stroke="none"/>
+    <path d="M70 15C65 24 65 37 71.5 45" fill="none" stroke="#E2546A" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M58 37C52 39 49.5 45 53 48C57.5 46.5 60 42 58 37Z" fill="#E2546A"/>
+    <g fill="#7DD3F2" stroke="none"><circle cx="34" cy="20" r="1.5"/><circle cx="44" cy="16" r="1.4"/><circle cx="52" cy="22" r="1.5"/><circle cx="38" cy="29" r="1.3"/><circle cx="27" cy="26" r="1.3"/><circle cx="58" cy="14" r="1.2"/><circle cx="47" cy="30" r="1.2"/></g>
+    <circle cx="80.5" cy="25" r="5" fill="#fff"/><circle cx="81.6" cy="25.2" r="2.9" fill="#17212F"/><circle cx="82.6" cy="24.1" r=".9" fill="#fff"/>
+    <path d="M95 33.5L90.5 34.5" stroke="#B83A50" stroke-width="1.4" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- マグロ（右向き） -->
+  <symbol id="f-maguro" viewBox="0 0 150 60">
+    <path d="M24 30L5 6C11 15 13.5 22 13.5 30C13.5 38 11 45 5 54Z" fill="#203A73"/>
+    <path d="M70 14.5L80 2L89 14Z" fill="#203A73"/>
+    <path d="M74 45L82 55L86 45Z" fill="#9FB3C7"/>
+    <path d="M18 30C36 12 92 8 130 21C138 24 144 27.5 147 30C144 32.5 138 36 130 39C92 52 36 48 18 30Z" fill="#D5E0E9"/>
+    <path d="M18 30C36 12 92 8 130 21C138 24 144 27.5 147 30C128 29 108 28.5 88 30.5C62 33 38 33 18 30Z" fill="#203A73"/>
+    <path d="M40 31.5C70 33 100 30 132 30" fill="none" stroke="#7F9DBD" stroke-width="1" opacity=".6"/>
+    <g fill="#F2C230"><path d="M30 21.5l3-4l1.5 3.6z"/><path d="M37 18.5l3-4l1.5 3.6z"/><path d="M44 16.5l3-4l1.5 3.4z"/><path d="M30 38.5l3 4l1.5-3.6z"/><path d="M37 41.5l3 4l1.5-3.6z"/><path d="M44 43.5l3 4l1.5-3.4z"/></g>
+    <path d="M104 32C96 33.5 88 37 81 42C91 41 99 38 104 35Z" fill="#203A73"/>
+    <circle cx="128" cy="25.5" r="4.6" fill="#fff"/><circle cx="129" cy="25.7" r="2.7" fill="#17212F"/><circle cx="129.9" cy="24.7" r=".85" fill="#fff"/>
+    <path d="M146 31.5L141 32.5" stroke="#5B6F88" stroke-width="1.2" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- しゃち（右向き） -->
+  <symbol id="f-shachi" viewBox="0 0 170 86">
+    <path d="M20 52C13 44 7 40 0 39.5C3.5 46 8 50.5 13 53.5C8 57 4 61.5 1 67C8 66.5 14 62 20 56Z" fill="#1E2331"/>
+    <path d="M84 36C86.5 22 91 9 98.5 0C100 13 102 25 108.5 36Z" fill="#1E2331"/>
+    <path d="M15 53C30 39 70 31 120 34.5C143 36 160 44 165 52.5C165.5 58.5 157 64.5 141 66.5C111 70.5 61 70.5 35 65C25 63 19 58.5 15 53Z" fill="#1E2331"/>
+    <ellipse cx="103" cy="38.5" rx="14" ry="3.6" fill="#7A8295"/>
+    <clipPath id="clip-shachi"><path d="M15 53C30 39 70 31 120 34.5C143 36 160 44 165 52.5C165.5 58.5 157 64.5 141 66.5C111 70.5 61 70.5 35 65C25 63 19 58.5 15 53Z"/></clipPath>
+    <path clip-path="url(#clip-shachi)" d="M48 66C80 59.5 112 57.5 140 59.5C150 59 158 56.5 167 51V86H40Z" fill="#FFFFFF" stroke="none"/>
+    <ellipse cx="135" cy="44.5" rx="9.5" ry="3.8" transform="rotate(-10 135 44.5)" fill="#FFFFFF"/>
+    <path d="M120 62C115.5 70 113.5 77 117 81.5C123.5 79.5 125.5 71 125 62Z" fill="#1E2331"/>
+    <circle cx="147" cy="47.5" r="2.4" fill="#3A4254"/><circle cx="147" cy="47.5" r="1.5" fill="#0B0E15"/><circle cx="147.6" cy="46.9" r=".6" fill="#fff"/>
+    <path d="M164.5 54.5C159 55.8 153 55.8 149 55" fill="none" stroke="#5A6276" stroke-width="1.2" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- クジラ（右向き） -->
+  <symbol id="f-kujira" viewBox="0 0 220 110">
+    <path d="M36 62C27 51 15 40 2 37C7 45.5 13.5 52 22 57.5C12 59.5 5.5 64 1.5 70.5C14 71.5 26 68.5 36 64.5Z" fill="#3A73AE"/>
+    <path d="M30 60C36 30 90 16 150 22C186 26 210 42 212 62C214 80 196 94 160 96C120 98 80 94 56 84C42 78 34 70 30 60Z" fill="#4682BF"/>
+    <clipPath id="clip-kujira"><path d="M30 60C36 30 90 16 150 22C186 26 210 42 212 62C214 80 196 94 160 96C120 98 80 94 56 84C42 78 34 70 30 60Z"/></clipPath>
+    <g clip-path="url(#clip-kujira)" stroke="none">
+      <path d="M72 84C110 94 160 94 190 84C200 80 207 74 213 66V110H60Z" fill="#B5D3EE"/>
+      <g fill="none" stroke="#8DB7DD" stroke-width="1.4" stroke-linecap="round"><path d="M104 92C140 98 172 95 200 84"/><path d="M116 87.5C146 92 174 89 204 76"/></g>
+    </g>
+    <path d="M130 80C124 92 116 100 106 103C113 93 120 85 124 78Z" fill="#3A73AE"/>
+    <circle cx="176" cy="62" r="3.4" fill="#17212F"/><circle cx="177" cy="61" r="1.1" fill="#fff"/>
+    <path d="M207 71C198 75 188 75.5 180 73.5" fill="none" stroke="#2C5E93" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="186" cy="68" r="3.6" fill="#F6A8A0" opacity=".45" stroke="none"/>
+    <g fill="#8DB7DD" opacity=".7" stroke="none"><circle cx="120" cy="36" r="2"/><circle cx="104" cy="44" r="1.6"/><circle cx="140" cy="32" r="1.4"/></g>
+  </symbol>
+
+  <!-- 小魚（群れの一匹。右向き） -->
+  <symbol id="f-iwashi" viewBox="0 0 40 14">
+    <path d="M6 7L1 3L2.5 7L1 11Z" fill="#5C86B5"/>
+    <path d="M5 7C11 2.8 26 2.4 34 5C36.5 5.8 38.5 6.5 39 7C38.5 7.5 36.5 8.3 34 9C26 11.6 11 11.2 5 7Z" fill="#E4EDF5"/>
+    <path d="M5 7C11 2.8 26 2.4 34 5C36.5 5.8 38.5 6.5 39 7C30 6.4 18 6.6 5 7Z" fill="#4E7BAE"/>
+    <g fill="#2E4A6B" stroke="none"><circle cx="14" cy="8" r=".7"/><circle cx="17.5" cy="8.1" r=".7"/><circle cx="21" cy="8.1" r=".7"/><circle cx="24.5" cy="8" r=".7"/></g>
+    <circle cx="33.6" cy="6.4" r="1.7" fill="#17212F"/><circle cx="34.1" cy="5.9" r=".5" fill="#fff" stroke="none"/>
+  </symbol>
+
+  <!-- 群れで泳ぐ小魚たち（文化枠） -->
+  <symbol id="f-school" viewBox="0 0 120 72">
+    <use href="#f-iwashi" x="64" y="4" width="36" height="13"/>
+    <use href="#f-iwashi" x="34" y="13" width="34" height="12"/>
+    <use href="#f-iwashi" x="80" y="21" width="36" height="13"/>
+    <use href="#f-iwashi" x="48" y="29" width="34" height="12"/>
+    <use href="#f-iwashi" x="10" y="31" width="32" height="11"/>
+    <use href="#f-iwashi" x="70" y="41" width="36" height="13"/>
+    <use href="#f-iwashi" x="30" y="48" width="34" height="12"/>
+    <use href="#f-iwashi" x="56" y="58" width="32" height="11"/>
+  </symbol>
+
+  <!-- サンゴ（文化枠に添えるモチーフ） -->
+  <symbol id="f-coral" viewBox="0 0 64 64">
+    <g fill="none" stroke="#FF8B7E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M32 61V36C32 26 26 22 22 13"/>
+      <path d="M32 44C38 40 42 34 42 24C42 18 45 13 48 8"/>
+      <path d="M23 26C17 24 12 18 12 10"/>
+      <path d="M42 30C48 30 54 26 56 18"/>
+      <path d="M32 51C26 49 20 45 16 38"/>
+    </g>
+    <g fill="#FFC2B8"><circle cx="22" cy="12" r="3"/><circle cx="48" cy="8" r="3"/><circle cx="12" cy="9" r="3"/><circle cx="56" cy="17" r="3"/><circle cx="16" cy="37" r="3"/></g>
+  </symbol>
+
+  <!-- 人（座って正面を向く。--skin / --hair / --shirt で色を変える） -->
+  <symbol id="p-body" viewBox="0 0 160 160">
+    <path d="M36 160C36 120 54 101 80 101C106 101 124 120 124 160Z" fill="var(--shirt,#3E7CB1)"/>
+    <path d="M70 102L80 114L90 102" fill="none" stroke="var(--collar,rgba(255,255,255,.55))" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="71" y="80" width="18" height="24" rx="6" fill="var(--skin,#F2C7A2)"/>
+    <circle cx="54" cy="64" r="5.5" fill="var(--skin,#F2C7A2)"/>
+    <circle cx="106" cy="64" r="5.5" fill="var(--skin,#F2C7A2)"/>
+    <circle cx="80" cy="60" r="26" fill="var(--skin,#F2C7A2)"/>
+  </symbol>
+  <symbol id="face-joy" viewBox="0 0 160 160">
+    <g fill="none" stroke="var(--face,#2A2F3A)" stroke-width="2.4" stroke-linecap="round"><path d="M67 65q4.5-3.6 9 0"/><path d="M84 65q4.5-3.6 9 0"/><path d="M75 75q5 4 10 0"/></g>
+    <circle cx="65" cy="71" r="3.6" fill="#F59C93" opacity=".5" stroke="none"/><circle cx="95" cy="71" r="3.6" fill="#F59C93" opacity=".5" stroke="none"/>
+  </symbol>
+  <symbol id="face-calm" viewBox="0 0 160 160">
+    <g fill="var(--face,#2A2F3A)" stroke="none"><circle cx="71.5" cy="64" r="2.7"/><circle cx="88.5" cy="64" r="2.7"/></g>
+    <path d="M75.5 75q4.5 3 9 0" fill="none" stroke="var(--face,#2A2F3A)" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="65" cy="71" r="3.6" fill="#F59C93" opacity=".45" stroke="none"/><circle cx="95" cy="71" r="3.6" fill="#F59C93" opacity=".45" stroke="none"/>
+  </symbol>
+  <symbol id="face-worry" viewBox="0 0 160 160">
+    <g fill="var(--face,#2A2F3A)" stroke="none"><circle cx="71.5" cy="65" r="2.6"/><circle cx="88.5" cy="65" r="2.6"/></g>
+    <g fill="none" stroke="var(--face,#2A2F3A)" stroke-width="2.2" stroke-linecap="round"><path d="M65 57.5L75 55"/><path d="M85 55L95 57.5"/><path d="M74 77q3-2.4 6 0t6 0"/></g>
+  </symbol>
+  <symbol id="hair-short" viewBox="0 0 160 160">
+    <path d="M53 58C51 37 65 29 81 29C98 29 110 40 107 60C104 50 97 44 89 42C80 49 66 51 53 58Z" fill="var(--hair,#2B2E38)"/>
+  </symbol>
+  <symbol id="hair-bob" viewBox="0 0 160 160">
+    <path d="M51 76C44 46 60 31 80 31C101 31 116 46 109 76L103 77C104 61 99 50 91 45C82 51 68 53 58 55C56.5 61 57 68 57 77Z" fill="var(--hair,#2B2E38)"/>
+  </symbol>
+  <symbol id="hair-bun" viewBox="0 0 160 160">
+    <circle cx="80" cy="29" r="11" fill="var(--hair,#2B2E38)"/>
+    <path d="M53 60C52 40 64 33 80 33C96 33 108 40 107 60C101 48 92 43 80 43C68 43 59 48 53 60Z" fill="var(--hair,#2B2E38)"/>
+  </symbol>
+  <symbol id="hair-curly" viewBox="0 0 160 160">
+    <g fill="var(--hair,#2B2E38)"><circle cx="60" cy="47" r="11"/><circle cx="71" cy="37" r="12"/><circle cx="89" cy="37" r="12"/><circle cx="100" cy="47" r="11"/><circle cx="80" cy="34" r="10"/><circle cx="55" cy="58" r="6.5"/><circle cx="105" cy="58" r="6.5"/></g>
+  </symbol>
+  <symbol id="acc-headphones" viewBox="0 0 160 160">
+    <path d="M52 62C52 30 108 30 108 62" fill="none" stroke="#2F3542" stroke-width="5" stroke-linecap="round"/>
+    <rect x="45" y="55" width="12" height="18" rx="5" fill="var(--accent,#FFC83D)"/>
+    <rect x="103" y="55" width="12" height="18" rx="5" fill="var(--accent,#FFC83D)"/>
+  </symbol>
+  <symbol id="acc-glasses" viewBox="0 0 160 160">
+    <g fill="none" stroke="#2F3542" stroke-width="2"><circle cx="71.5" cy="65" r="7.5"/><circle cx="88.5" cy="65" r="7.5"/><path d="M79 65h2"/></g>
+  </symbol>
+  <symbol id="prop-laptop" viewBox="0 0 160 160">
+    <circle cx="36" cy="152" r="6.5" fill="var(--skin,#F2C7A2)"/>
+    <circle cx="124" cy="152" r="6.5" fill="var(--skin,#F2C7A2)"/>
+    <rect x="38" y="110" width="84" height="46" rx="5" fill="var(--laptop,#E4EAF0)" stroke="#B7C3CF" stroke-width="1.5"/>
+    <use href="#f-shirasu" x="66" y="128" width="28" height="8"/>
+    <rect x="26" y="154" width="108" height="6" rx="3" fill="#A9B6C4"/>
+  </symbol>
+  <symbol id="prop-book" viewBox="0 0 160 160">
+    <path d="M40 118L80 126L120 118V152L80 160L40 152Z" fill="var(--book,#E2445C)"/>
+    <path d="M43 117L80 124L117 117V148L80 156L43 148Z" fill="#FFFFFF" stroke="#C9D2DC" stroke-width="1.2"/>
+    <path d="M80 124V156" stroke="#C9D2DC" stroke-width="1.4"/>
+    <g stroke="#D5DCE4" stroke-width="1.6" stroke-linecap="round"><path d="M50 127L73 131"/><path d="M50 134L73 138"/><path d="M87 131L110 127"/><path d="M87 138L110 134"/></g>
+    <circle cx="42" cy="140" r="6" fill="var(--skin,#F2C7A2)"/><circle cx="118" cy="140" r="6" fill="var(--skin,#F2C7A2)"/>
+  </symbol>
+
+  <!-- 小道具 -->
+  <symbol id="prop-paper" viewBox="0 0 24 30">
+    <rect x="1" y="1" width="22" height="28" rx="2" fill="#FFFFFF" stroke="#C9D2DC" stroke-width="1.2"/>
+    <g stroke="#D5DCE4" stroke-width="1.6" stroke-linecap="round"><path d="M5 8H19"/><path d="M5 13H19"/><path d="M5 18H15"/></g>
+  </symbol>
+  <symbol id="prop-envelope" viewBox="0 0 30 20">
+    <rect x="1" y="1" width="28" height="18" rx="2" fill="#FFFFFF" stroke="#C9D2DC" stroke-width="1.2"/>
+    <path d="M2 2L15 11L28 2" fill="none" stroke="#C9D2DC" stroke-width="1.2"/>
+  </symbol>
+  <symbol id="prop-cup" viewBox="0 0 24 24">
+    <path d="M3 7H17V15C17 19 14 22 10 22C6 22 3 19 3 15Z" fill="#FFFFFF" stroke="#C9D2DC" stroke-width="1.2"/>
+    <path d="M17 9.5C21 9.5 21 15.5 17 15.5" fill="none" stroke="#C9D2DC" stroke-width="1.6"/>
+    <path d="M8 4C7 2.5 9 1.5 8 0M12 4C11 2.5 13 1.5 12 0" fill="none" stroke="#C9D2DC" stroke-width="1.2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="mini-laptop" viewBox="0 0 80 50">
+    <rect x="10" y="2" width="60" height="40" rx="4" fill="var(--laptop,#E4EAF0)" stroke="#B7C3CF" stroke-width="1.5"/>
+    <g stroke="#9FB3C7" stroke-width="2" stroke-linecap="round"><path d="M18 12H50"/><path d="M18 19H58"/><path d="M18 26H44"/></g>
+    <rect x="2" y="42" width="76" height="6" rx="3" fill="#A9B6C4"/>
+  </symbol>
+</defs>
+</svg>
+
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="おさかなコーチングのページへ戻る">
+      <svg viewBox="0 0 44 26" aria-hidden="true"><path d="M9 13L1 5.5L3.2 13L1 20.5Z" fill="#1F4E89"/><path d="M7 13C13 4 27 2 37 8C40 10 42 11.5 43 13C42 14.5 40 16 37 18C27 24 13 22 7 13Z" fill="#1F4E89"/><circle cx="35" cy="11.5" r="2.1" fill="#fff"/><path d="M17 9C20 11.7 20 14.3 17 17" stroke="#8DB7E2" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+      <span><span class="brand-name">おさかなコーチング</span><span class="brand-tag">対話・戦略・AIの個別相談（ご紹介制）</span></span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- 見出し -->
+  <section class="apply-hero">
+    <div class="wrap">
+      <p class="referral-badge"><b>ご紹介制</b><span>ご紹介を受けた方のみ、お申し込みいただけます</span></p>
+      <h1>初回無料相談のお申し込み</h1>
+      <p class="apply-lead">オンラインで1時間・無料です。<span class="nw">必須の項目は3つだけ。</span>ほかの項目は、分かる範囲で大丈夫です。</p>
+      <ol class="apply-steps" aria-label="お申し込みの流れ">
+        <li class="is-current" data-step="input"><span>1</span>入力</li>
+        <li data-step="confirm"><span>2</span>確認</li>
+        <li data-step="done"><span>3</span>完了</li>
+      </ol>
+    </div>
+    <svg class="apply-hero-fish" viewBox="0 0 220 110" aria-hidden="true"><use href="#f-kujira"/></svg>
+  </section>
+
+  <div class="wrap apply-wrap">
+    <!-- 入力 -->
+    <form id="apply-form" class="apply-card card" novalidate>
+      <fieldset class="apply-group">
+        <legend>あなたについて</legend>
+
+        <div class="field">
+          <span class="field-label" id="kind-label">お申し込みの区分<span class="tag-optional">任意</span></span>
+          <div class="chips-input" role="radiogroup" aria-labelledby="kind-label">
+            <label class="chip"><input type="radio" name="kind" value="個人" checked><span>個人の方</span></label>
+            <label class="chip"><input type="radio" name="kind" value="法人"><span>法人（企業の業務相談）</span></label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="f-name">お名前<span class="tag-required">必須</span></label>
+          <input class="input" id="f-name" name="name" type="text" autocomplete="name" required placeholder="例：海野 しらす" aria-describedby="f-name-error">
+          <p class="field-error" id="f-name-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="f-email">メールアドレス<span class="tag-required">必須</span></label>
+          <input class="input" id="f-email" name="email" type="email" inputmode="email" autocomplete="email" required placeholder="例：shirasu@example.com" aria-describedby="f-email-hint f-email-error">
+          <p class="field-hint" id="f-email-hint">日程のご連絡に使います。</p>
+          <p class="field-error" id="f-email-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="f-referrer">ご紹介者のお名前<span class="tag-required">必須</span></label>
+          <input class="input" id="f-referrer" name="referrer" type="text" required placeholder="例：回遊 まぐろ さん" aria-describedby="f-referrer-hint f-referrer-error">
+          <p class="field-hint" id="f-referrer-hint">このページを教えてくれた方のお名前です。</p>
+          <p class="field-error" id="f-referrer-error" role="alert"></p>
+        </div>
+
+        <div class="field" data-show="法人" hidden>
+          <label class="field-label" for="f-company">会社名<span class="tag-optional">任意</span></label>
+          <input class="input" id="f-company" name="company" type="text" autocomplete="organization" placeholder="例：株式会社おさかな">
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label class="field-label" for="f-age">年代<span class="tag-optional">任意</span></label>
+            <select class="input" id="f-age" name="age">
+              <option value="">選んでください</option>
+              <option>10代</option><option>20代</option><option>30代</option><option>40代</option><option>50代</option><option>60代</option><option>70代以上</option><option>答えない</option>
+            </select>
+          </div>
+          <div class="field" data-show="個人">
+            <label class="field-label" for="f-job">ご職業<span class="tag-optional">任意</span></label>
+            <select class="input" id="f-job" name="job">
+              <option value="">選んでください</option>
+              <option>学生</option><option>会社員</option><option>公務員</option><option>フリーランス・個人事業主</option><option>経営者</option><option>研究者・教員</option><option>文化・芸術の仕事</option><option>子育て中</option><option>その他</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="apply-group">
+        <legend>ご相談について</legend>
+
+        <div class="field">
+          <label class="field-label" for="f-topic">相談したいこと<span class="tag-optional">任意</span></label>
+          <textarea class="input" id="f-topic" name="topic" rows="5" placeholder="例：打ち込みたい活動があるのに、仕事で一日が終わってしまう。何から変えればよいか一緒に考えたい。" aria-describedby="f-topic-hint"></textarea>
+          <p class="field-hint" id="f-topic-hint">まとまっていなくても大丈夫です。当日、一緒に整理します。</p>
+        </div>
+
+        <div class="field">
+          <span class="field-label" id="ai-label">AI活用の提案の希望<span class="tag-optional">任意</span></span>
+          <div class="chips-input" role="radiogroup" aria-labelledby="ai-label">
+            <label class="chip"><input type="radio" name="ai" value="必要"><span>必要</span></label>
+            <label class="chip"><input type="radio" name="ai" value="どちらでも良い"><span>どちらでも良い</span></label>
+            <label class="chip"><input type="radio" name="ai" value="当日決めたい" checked><span>当日決めたい</span></label>
+            <label class="chip"><input type="radio" name="ai" value="不要"><span>不要</span></label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="apply-group">
+        <legend>2回目以降の料金区分<span class="tag-optional">任意</span></legend>
+        <p class="group-note">初回は無料です。続けるかどうかは相談のあとで決められるので、いまは「まだ決めていない」で大丈夫です。個人の方は、しらすさん〜マグロさんから自由にお選びください（自己申告です）。</p>
+        <div class="tier-pick" role="radiogroup" aria-label="2回目以降の料金区分">
+          <label class="tier-option tier-option--undecided"><input type="radio" name="tier" value="まだ決めていない" checked><span class="tier-card"><span class="tier-name">まだ決めていない</span><span class="tier-price">相談のあとで</span></span></label>
+          <label class="tier-option" data-show="個人"><input type="radio" name="tier" value="文化・子育て枠"><span class="tier-card tier-card--culture"><svg viewBox="0 0 120 72" aria-hidden="true"><use href="#f-school"/></svg><span class="tier-name">文化・子育て枠</span><span class="tier-price">1,000円</span></span></label>
+          <label class="tier-option" data-show="個人"><input type="radio" name="tier" value="しらすさん"><span class="tier-card"><svg viewBox="0 0 64 18" aria-hidden="true"><use href="#f-shirasu"/></svg><span class="tier-name">しらすさん</span><span class="tier-price">2,000円</span></span></label>
+          <label class="tier-option" data-show="個人"><input type="radio" name="tier" value="やりいかさん"><span class="tier-card"><svg viewBox="0 0 60 112" aria-hidden="true"><use href="#f-yariika"/></svg><span class="tier-name">やりいかさん</span><span class="tier-price">5,000円</span></span></label>
+          <label class="tier-option" data-show="個人"><input type="radio" name="tier" value="まだいさん"><span class="tier-card"><svg viewBox="0 0 100 64" aria-hidden="true"><use href="#f-madai"/></svg><span class="tier-name">まだいさん</span><span class="tier-price">8,000円</span></span></label>
+          <label class="tier-option" data-show="個人"><input type="radio" name="tier" value="マグロさん"><span class="tier-card"><svg viewBox="0 0 150 60" aria-hidden="true"><use href="#f-maguro"/></svg><span class="tier-name">マグロさん</span><span class="tier-price">10,000円</span></span></label>
+          <label class="tier-option" data-show="法人" hidden><input type="radio" name="tier" value="しゃちさん"><span class="tier-card"><svg viewBox="0 0 170 86" aria-hidden="true"><use href="#f-shachi"/></svg><span class="tier-name">しゃちさん</span><span class="tier-price">30,000円<small>従業員5〜49名</small></span></span></label>
+          <label class="tier-option" data-show="法人" hidden><input type="radio" name="tier" value="クジラさん"><span class="tier-card"><svg viewBox="0 0 220 110" aria-hidden="true"><use href="#f-kujira"/></svg><span class="tier-name">クジラさん</span><span class="tier-price">50,000円<small>従業員50名以上</small></span></span></label>
+        </div>
+        <p class="group-note" data-show="法人" hidden>従業員4名以下の事業者の方の業務相談は、「個人の方」を選び、しらすさん〜マグロさんからお選びいただけます。</p>
+        <p class="price-foot">1時間・税込。対面の場合は移動時間も面談時間として計算し、交通費を別途いただきます。</p>
+
+        <div class="field culture-reason" id="culture-reason" hidden>
+          <label class="field-label" for="f-culture">文化・子育て枠を希望する理由<span class="tag-required">必須</span></label>
+          <textarea class="input" id="f-culture" name="cultureReason" rows="3" placeholder="例：大学院で研究をしているため／子育て中のため／演劇の活動をしているため" aria-describedby="f-culture-hint f-culture-error"></textarea>
+          <p class="field-hint" id="f-culture-hint">短くて大丈夫です。理由を拝見して運営が判断するため、ご希望に添えない場合もあります。</p>
+          <p class="field-error" id="f-culture-error" role="alert"></p>
+        </div>
+      </fieldset>
+
+      <fieldset class="apply-group">
+        <legend>そのほか</legend>
+        <div class="field">
+          <label class="field-label" for="f-note">伝えておきたいこと<span class="tag-optional">任意</span></label>
+          <textarea class="input" id="f-note" name="note" rows="3" placeholder="例：平日の夜だと参加しやすいです。"></textarea>
+        </div>
+      </fieldset>
+
+      <!-- 自動投稿よけ：人には見えない欄。ここに入力があれば受け口で捨てる -->
+      <div class="hp-field" aria-hidden="true">
+        <label for="f-website">ウェブサイト（入力しないでください）</label>
+        <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+      </div>
+
+      <p class="privacy-note">いただいた情報は、ご相談の準備とご連絡のためだけに使います。</p>
+      <div class="apply-actions">
+        <button class="btn btn--lg" type="submit">入力内容を確認する</button>
+      </div>
+    </form>
+
+    <!-- 確認 -->
+    <section id="apply-confirm" class="apply-card card" aria-labelledby="confirm-title" hidden>
+      <h2 id="confirm-title" class="apply-card-title">入力内容の確認</h2>
+      <p class="group-note">この内容でよければ「この内容で申し込む」を押してください。</p>
+      <dl class="confirm-list" id="confirm-list"></dl>
+      <div class="send-error" id="send-error" role="alert" hidden></div>
+      <div class="apply-actions apply-actions--split">
+        <button class="btn-ghost" type="button" id="back-to-input">修正する</button>
+        <button class="btn btn--lg" type="button" id="send">この内容で申し込む</button>
+      </div>
+    </section>
+
+    <!-- 完了 -->
+    <section id="apply-done" class="apply-card card apply-done" aria-labelledby="done-title" hidden tabindex="-1">
+      <svg class="done-art" viewBox="0 0 220 110" aria-hidden="true"><use href="#f-kujira"/></svg>
+      <h2 id="done-title" class="apply-card-title">お申し込みを受け付けました</h2>
+      <p>ありがとうございます。日程を調整して、<span class="nw">メールでご連絡します。</span></p>
+      <a class="btn" href="./">おさかなコーチングのページへ戻る</a>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© おさかなコーチング</span>
+    <span>このページは、ご紹介を受けた方にお届けしている限定ページです。</span>
+  </div>
+</footer>
+
+<script type="application/json" id="form-config">{"submitUrl": "https://script.google.com/macros/s/AKfycbzFTKWr4mYSKr0pq1mfNP2qXZMrbS33I-Fbx_EdLSYDEuzMIg3MyyOgD5ybgMjyhkBE/exec"}</script>
+<script>
+(() => {
+  "use strict";
+  const $ = (id) => document.getElementById(id);
+  const form = $("apply-form");
+  const confirmView = $("apply-confirm");
+  const doneView = $("apply-done");
+  const cultureBox = $("culture-reason");
+  const cultureInput = $("f-culture");
+
+  // 確認画面に並べる項目（name属性 → 表示名）。この順で送る内容も組み立てる。
+  const FIELDS = [
+    ["kind", "お申し込みの区分"],
+    ["name", "お名前"],
+    ["email", "メールアドレス"],
+    ["referrer", "ご紹介者のお名前"],
+    ["company", "会社名"],
+    ["age", "年代"],
+    ["job", "ご職業"],
+    ["topic", "相談したいこと"],
+    ["ai", "AI活用の提案の希望"],
+    ["tier", "2回目以降の料金区分"],
+    ["cultureReason", "文化・子育て枠を希望する理由"],
+    ["note", "伝えておきたいこと"],
+  ];
+
+  // 個人・法人で、出す項目と選べる料金区分を切り替える
+  function kind() {
+    return form.elements.kind.value || "個人";
+  }
+  function updateKind() {
+    const k = kind();
+    form.querySelectorAll("[data-show]").forEach((el) => {
+      const on = el.dataset.show === k;
+      el.hidden = !on;
+      el.querySelectorAll("input,select,textarea").forEach((input) => { input.disabled = !on; });
+    });
+    const tier = form.querySelector('input[name="tier"]:checked');
+    if (!tier || tier.disabled) form.querySelector('input[name="tier"][value="まだ決めていない"]').checked = true;
+    updateCulture();
+  }
+  // 文化・子育て枠を選んだときだけ、理由を必須にする
+  function updateCulture() {
+    const on = form.elements.tier.value === "文化・子育て枠";
+    cultureBox.hidden = !on;
+    cultureInput.required = on;
+    cultureInput.disabled = !on;
+    if (!on) setError(cultureInput, "");
+  }
+  form.addEventListener("change", (event) => {
+    if (event.target.name === "kind") updateKind();
+    if (event.target.name === "tier") updateCulture();
+  });
+
+  // 入力チェック：未入力と、メールアドレスの形だけを見る
+  function setError(input, message) {
+    const box = $(input.id + "-error");
+    if (box) box.textContent = message;
+    if (message) input.setAttribute("aria-invalid", "true");
+    else input.removeAttribute("aria-invalid");
+  }
+  function check(input) {
+    const value = input.value.trim();
+    if (input.required && !value) {
+      setError(input, input.id === "f-culture" ? "希望する理由を、短くてよいのでお書きください。" : "入力してください。");
+      return false;
+    }
+    if (input.type === "email" && value && !input.checkValidity()) {
+      setError(input, "メールアドレスの形を確かめてください（例：shirasu@example.com）。");
+      return false;
+    }
+    setError(input, "");
+    return true;
+  }
+  form.querySelectorAll("input[required],textarea[required],#f-culture").forEach((input) => {
+    input.addEventListener("blur", () => { if (input.getAttribute("aria-invalid") || input.value) check(input); });
+    input.addEventListener("input", () => { if (input.getAttribute("aria-invalid")) check(input); });
+  });
+
+  function collect() {
+    const data = {};
+    FIELDS.forEach(([key]) => {
+      const el = form.elements[key];
+      if (!el) return;
+      const first = el instanceof RadioNodeList ? el[0] : el;
+      if (first.disabled) return;
+      data[key] = String(el.value || "").trim();
+    });
+    return data;
+  }
+
+  function showStep(step) {
+    form.hidden = step !== "input";
+    confirmView.hidden = step !== "confirm";
+    doneView.hidden = step !== "done";
+    const order = ["input", "confirm", "done"];
+    document.querySelectorAll(".apply-steps li").forEach((li) => {
+      const i = order.indexOf(li.dataset.step);
+      li.classList.toggle("is-current", li.dataset.step === step);
+      li.classList.toggle("is-done", i < order.indexOf(step));
+      if (li.dataset.step === step) li.setAttribute("aria-current", "step");
+      else li.removeAttribute("aria-current");
+    });
+    document.querySelector(".apply-hero").scrollIntoView({ block: "start" });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const inputs = [...form.querySelectorAll("input[required],textarea[required]")].filter((el) => !el.disabled);
+    const bad = inputs.filter((el) => !check(el));
+    if (bad.length) {
+      bad[0].focus();
+      return;
+    }
+    const data = collect();
+    const list = $("confirm-list");
+    list.textContent = "";
+    FIELDS.forEach(([key, label]) => {
+      if (!(key in data)) return;
+      const row = document.createElement("div");
+      const dt = document.createElement("dt");
+      const dd = document.createElement("dd");
+      dt.textContent = label;
+      dd.textContent = data[key] || "（未入力）";
+      if (!data[key]) dd.className = "empty";
+      row.append(dt, dd);
+      list.append(row);
+    });
+    showStep("confirm");
+    $("confirm-title").focus({ preventScroll: true });
+  });
+  $("confirm-title").tabIndex = -1;
+  $("back-to-input").addEventListener("click", () => {
+    $("send-error").hidden = true;
+    showStep("input");
+  });
+
+  // 送信：受け口（Googleスプレッドシートにつないだ Apps Script。LP/gas/Code.gs）へ送る。
+  // 送り先のURLは LP/src/form-settings.json の submitUrl を、書き出しのときに埋め込む。
+  // text/plain で送るのは、ブラウザの事前確認（CORS preflight）を起こさないため。
+  const config = JSON.parse($("form-config").textContent || "{}");
+  const errorBox = $("send-error");
+  class SendError extends Error {}
+
+  async function submitApplication(data) {
+    if (!config.submitUrl) throw new SendError("送り先が設定されていません");
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 20000);
+    try {
+      const response = await fetch(config.submitUrl, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ ...data, website: form.elements.website.value }),
+        signal: controller.signal,
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || !result.ok) throw new SendError(result.error || `HTTP ${response.status}`);
+    } finally {
+      clearTimeout(timer);
+    }
+  }
+  function showSendError() {
+    errorBox.textContent = "";
+    const title = document.createElement("b");
+    title.textContent = "送信できませんでした。";
+    errorBox.append(title, "入力した内容は消えていません。通信の状態を確かめてから、もう一度「この内容で申し込む」を押してください。何度やってもうまくいかないときは、お手数ですが、ご紹介者を通してお知らせください。");
+    errorBox.hidden = false;
+    errorBox.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  }
+  $("send").addEventListener("click", async () => {
+    const button = $("send");
+    const label = button.textContent;
+    button.disabled = true;
+    button.textContent = "送信しています…";
+    errorBox.hidden = true;
+    try {
+      await submitApplication(collect());
+      showStep("done");
+      doneView.focus({ preventScroll: true });
+    } catch (error) {
+      console.error("申し込みの送信に失敗しました:", error);
+      showSendError();
+    } finally {
+      button.disabled = false;
+      button.textContent = label;
+    }
+  });
+
+  updateKind();
+})();
+
+</script>
+</body>
+</html>

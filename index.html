@@ -1,0 +1,1842 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ご紹介制のプライベートページ：検索エンジンに載せない -->
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>おさかなコーチング 個別相談｜好きなことに没頭したい。</title>
+<meta name="description" content="対話で思いを整理し、中長期の戦略と、AIを活かした実行方法を一緒に考える個別相談。初回無料・オンライン1時間。ご紹介を受けた方のみ受け付けています。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* ===== 共通スタイル（参考デザインのトーン：白地・紺・水色の円・紺のピル型ボタン・手書き見出し） ===== */
+:root{
+  color-scheme: light;
+  --navy:#1F4E89;
+  --navy-deep:#16395F;
+  --ink:#24324A;
+  --ink-soft:#5A6980;
+  --sky:#E8F2FC;
+  --sky-2:#D3E6F8;
+  --line:#E0E8F1;
+  --paper:#FFFFFF;
+  --mist:#F5F8FB;
+  --wood:#D9B48C;
+  --wood-dark:#C59A6C;
+  --focus:#F2B705;
+  --hand:"Klee One","Zen Kaku Gothic New",cursive;
+  --sans:"Zen Kaku Gothic New","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:60px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.9;letter-spacing:.02em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+@media (min-width:768px){body{font-size:16.5px}}
+img,svg{display:block;max-width:100%}
+figure{margin:0}
+[hidden]{display:none!important}
+p{margin:0 0 1em}
+p:last-child{margin-bottom:0}
+a{color:var(--navy)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:8px}
+.wrap{width:100%;max-width:1120px;margin-inline:auto;padding-inline:16px}
+@media (min-width:768px){.wrap{padding-inline:32px}}
+.nw{display:inline-block}
+.hand{font-family:var(--hand);font-weight:600}
+
+/* 原稿の改行は文字の改行で持つ（編集・書き出しで崩れないように） */
+[data-edit]{white-space:pre-line}
+.sec-title,.hero h1,.pain h3,.support h3,.flow h3,.philo-key{text-wrap:balance;word-break:auto-phrase}
+
+/* ヘッダー */
+.site-header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.95);backdrop-filter:saturate(1.2) blur(8px);-webkit-backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;gap:16px;min-height:34px;padding-block:3px}
+@media (min-width:600px){.site-header .wrap{min-height:44px;padding-block:4px}}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--navy-deep);min-width:0}
+.brand svg{width:30px;height:18px;flex:none}
+.brand-name{display:block;font-weight:700;font-size:1rem;letter-spacing:.05em;line-height:1.25}
+.brand-tag{display:block;font-size:.62rem;color:var(--ink-soft);line-height:1.3;letter-spacing:.03em}
+@media (max-width:599px){.brand-tag{display:none}}
+.gnav{margin-left:auto;display:none;gap:26px;font-size:.88rem}
+.gnav a{text-decoration:none;color:var(--ink);font-weight:500}
+.gnav a:hover{color:var(--navy)}
+.site-header .btn{margin-left:auto;flex:none}
+@media (min-width:1024px){.gnav{display:flex}.site-header .btn{margin-left:8px}}
+@media (max-width:599px){.site-header .btn{display:none}}
+
+/* ボタン */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.7em;background:var(--navy);color:#fff;text-decoration:none;font:inherit;font-weight:700;letter-spacing:.06em;border-radius:999px;padding:1.05em 2.1em;line-height:1.3;box-shadow:0 8px 18px rgba(31,78,137,.24);transition:background-color .15s ease,transform .15s ease;border:0;cursor:pointer}
+.btn::after{content:"→";font-weight:500}
+.btn:hover{background:var(--navy-deep)}
+.btn:active{transform:translateY(1px)}
+.btn--sm{padding:.42em 1.1em;font-size:.8rem;box-shadow:none}
+.btn--lg{font-size:1.08rem;padding:1.15em 2.6em}
+@media (max-width:479px){.btn--lg{width:100%;font-size:1rem;padding:1.05em 1.2em}}
+.cta-note{font-size:.86rem;color:var(--ink-soft)}
+/* 紹介制の明記：申し込みボタンの札と、メインコピー上の札 */
+.btn-chip{display:inline-block;flex:none;background:#FFF0C7;color:#6E4600;font-size:.74em;font-weight:700;letter-spacing:.04em;line-height:1.5;border-radius:999px;padding:.12em .75em}
+.referral-badge{display:inline-flex;align-items:center;gap:.4em .7em;margin:0 0 20px;padding:.35em 1em .35em .35em;background:#FFF8E6;border:1.5px solid #E7B54D;border-radius:18px;font-size:.85rem;font-weight:700;line-height:1.5;color:#6E4600}
+.referral-badge span{min-width:0;word-break:auto-phrase}
+.referral-badge b{flex:none;background:var(--navy);color:#fff;border-radius:999px;padding:.15em .85em;letter-spacing:.06em}
+
+/* セクション共通 */
+.sec{position:relative;padding-block:96px}
+@media (max-width:767px){.sec{padding-block:68px}}
+.sec>.wrap{position:relative;z-index:1}
+.bg-mist{background:var(--mist)}
+.sec-title{font-weight:700;color:var(--navy-deep);font-size:clamp(1.42rem,1.05rem + 1.5vw,2.05rem);line-height:1.6;letter-spacing:.05em;text-align:center;margin:0 0 .7em}
+.sec-lead{max-width:38em;margin:0 auto 52px;text-align:center;color:var(--ink-soft)}
+@media (max-width:599px){.sec-lead{text-align:left}}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 2px 14px rgba(31,78,137,.06)}
+.halo{background:var(--sky);border-radius:50%;aspect-ratio:1/1;display:grid;place-items:center;overflow:hidden}
+
+/* 画像の差し替え枠：data-img のファイルが読めたら、SVGの代わりに画像を出す */
+.slot{position:relative}
+.slot.has-img>svg{display:none}
+.slot-img{display:block;width:100%;height:100%;object-fit:cover}
+
+/* 線画イラスト（紺の線） */
+.ink-line{stroke:var(--navy);stroke-linejoin:round;stroke-linecap:round}
+.ink-person{--skin:#FFFFFF;--hair:#2A5689;--shirt:#BFD8F1;--laptop:#FFFFFF;--book:#8DB7E2;--accent:#BFD8F1;--face:#1F4E89;--collar:#1F4E89}
+
+/* ファーストビュー：左に文字、右に大きな絵（左端は白に溶かす） */
+.hero{position:relative;overflow:hidden;background:#fff}
+.hero-grid{display:grid;padding-block:40px 32px}
+.hero-text{position:relative;z-index:2}
+.hero h1{font-family:var(--hand);font-weight:600;color:var(--navy-deep);font-size:clamp(2.05rem,1.2rem + 3.6vw,2.9rem);line-height:1.38;letter-spacing:.03em;margin:0}
+.hero .catch-2{font-family:var(--hand);font-weight:600;color:var(--navy);font-size:clamp(1.15rem,.8rem + 1.8vw,2rem);line-height:1.5;letter-spacing:.06em;margin:.35em 0 1em}
+.hero .lead{max-width:27em}
+.hero .lead p{margin-bottom:.7em}
+.hero .who{margin-top:1.1em;font-size:.86rem;color:var(--ink-soft);padding-left:12px;border-left:3px solid var(--sky-2);max-width:30em}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:28px}
+.hero-art{position:relative;aspect-ratio:720/600;width:100%}
+.hero-art>svg,.hero-art>.slot-img{position:absolute;inset:0;width:100%;height:100%}
+@media (min-width:960px){
+  .hero-grid{grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);min-height:620px;align-items:center;padding-block:56px 72px}
+  .hero-art{position:absolute;top:0;right:0;bottom:0;width:57%;aspect-ratio:auto;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 24%);mask-image:linear-gradient(90deg,transparent 0,#000 24%)}
+}
+
+/* 悩み（3つの円） */
+.pains{display:grid;gap:44px 32px;list-style:none;margin:0;padding:0}
+@media (min-width:768px){.pains{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pain{text-align:center}
+.pain .halo{width:min(200px,62vw);margin:0 auto 20px}
+.pain h3{font-size:1.08rem;line-height:1.65;color:var(--navy-deep);margin:0 0 .6em;font-weight:700}
+.pain p{font-size:.93rem;color:var(--ink-soft);text-align:left;max-width:22em;margin-inline:auto}
+.pains-close{text-align:center;margin:56px auto 0;max-width:34em;font-weight:500;color:var(--navy-deep)}
+@media (max-width:599px){.pains-close{text-align:left}}
+
+/* 三つの支援 */
+.supports{display:grid;gap:24px;list-style:none;margin:0;padding:0}
+@media (min-width:900px){.supports{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.support{padding:30px 26px 28px;display:flex;flex-direction:column}
+.support .halo-wrap{position:relative;width:148px;margin:0 auto 18px}
+.support .halo{width:100%}
+.step-num,.loop-num{position:absolute;top:-2px;left:-6px;z-index:1;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;font-size:.95rem;line-height:1;box-shadow:0 0 0 4px #fff}
+.support h3{font-size:1.12rem;line-height:1.6;color:var(--navy-deep);margin:0;text-align:center;font-weight:700}
+.support .kind{display:block;text-align:center;font-size:.8rem;font-weight:700;color:var(--navy);margin:.5em 0 1.1em}
+.support p{font-size:.93rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:auto 0 0;padding:14px 0 0;border-top:1px dashed var(--line)}
+.chips-label{width:100%;font-size:.76rem;color:var(--ink-soft)}
+.chips li:not(.chips-label){font-size:.8rem;background:var(--sky);color:var(--navy-deep);border-radius:999px;padding:.25em .9em;line-height:1.6}
+.supports-note{text-align:center;font-size:.9rem;color:var(--ink-soft);margin-top:28px}
+
+/* 3つの支援を、ひとつのサイクルとして見せる図 */
+.loop-wrap{display:grid;gap:28px;align-items:center;margin:0 0 60px}
+@media (min-width:900px){.loop-wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:52px}}
+.loop{position:relative;width:min(100%,520px);aspect-ratio:1/1;margin:0 auto;--loop-bg:#F2F8FD}
+.loop-ring{position:absolute;inset:0;width:100%;height:100%}
+.loop-node,.loop-label,.loop-center{position:absolute;left:var(--x);top:var(--y);transform:translate(-50%,-50%)}
+.loop-node{display:flex;flex-direction:column;align-items:center;gap:2px;width:36%;text-align:center}
+.loop-halo{position:relative;display:block;width:clamp(54px,15vw,78px);margin-bottom:4px}
+.loop-halo .halo{width:100%;background:#fff;border:2px solid var(--sky-2)}
+.loop-halo .halo svg{width:64%;height:64%}
+.loop-num{width:26px;height:26px;font-size:.8rem;top:-4px;left:-8px;box-shadow:0 0 0 3px var(--loop-bg)}
+.loop-node strong{font-size:clamp(.82rem,.68rem + .55vw,1.02rem);line-height:1.5;color:var(--navy-deep);background:var(--loop-bg);padding:0 .4em;border-radius:6px}
+.loop-kind{font-size:clamp(.64rem,.58rem + .28vw,.76rem);line-height:1.5;font-weight:700;color:var(--navy);background:var(--loop-bg);padding:0 .4em;border-radius:6px}
+.loop-label{width:max-content;max-width:38%;text-align:center;font-size:clamp(.64rem,.56rem + .35vw,.8rem);font-weight:700;line-height:1.5;color:var(--navy);background:#fff;border:1px solid var(--sky-2);border-radius:12px;padding:.2em .8em}
+.loop-center{width:42%;text-align:center}
+.loop-center svg{width:80%;margin:0 auto 6px}
+.loop-center p{margin:0;font-family:var(--hand);font-weight:600;color:var(--navy-deep);font-size:clamp(.9rem,.72rem + .8vw,1.3rem);line-height:1.5}
+.loop-text h3{margin:0 0 .6em;font-size:clamp(1.15rem,1rem + .5vw,1.35rem);line-height:1.6;color:var(--navy-deep)}
+.loop-text p{font-size:.95rem}
+.loop-growth-note{font-weight:700;color:var(--navy-deep);background:#fff;border-left:4px solid var(--navy);border-radius:0 12px 12px 0;padding:.8em 1.1em}
+.supports-intro{text-align:center;font-weight:700;color:var(--navy-deep);margin:0 0 20px;font-size:1.05rem}
+
+/* 問いの立て方（対話） */
+.dialog-wrap{display:grid;gap:40px;align-items:start}
+@media (min-width:900px){.dialog-wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px}}
+.dialog{padding:26px 22px 22px}
+@media (min-width:600px){.dialog{padding:30px 30px 26px}}
+.dialog-note{font-size:.78rem;color:var(--ink-soft);margin:0 0 18px;padding-bottom:12px;border-bottom:1px dashed var(--line)}
+.turn{display:flex;gap:12px;align-items:flex-start;margin-bottom:16px}
+.turn:last-child{margin-bottom:0}
+.turn .avatar{flex:none;width:48px;height:48px}
+.turn .avatar svg{width:100%;height:100%}
+.turn .bubble{position:relative;background:var(--sky);border-radius:4px 16px 16px 16px;padding:.7em 1em;font-size:.95rem;line-height:1.75;margin:0}
+.turn .who-label{display:block;font-size:.72rem;font-weight:700;color:var(--navy);margin-bottom:.15em}
+.turn--me{flex-direction:row-reverse}
+.turn--me .bubble{background:var(--navy);color:#fff;border-radius:16px 4px 16px 16px}
+.turn--me .who-label{color:#CFE1F5;text-align:right}
+.method{list-style:none;padding:0;margin:22px 0 0;display:flex;flex-wrap:wrap;gap:8px 6px;align-items:center}
+.method li{background:#fff;border:1.5px solid var(--sky-2);color:var(--navy-deep);border-radius:999px;padding:.3em 1em;font-size:.88rem;font-weight:700}
+.method .arr{border:0;background:none;padding:0;color:var(--navy);font-weight:500}
+
+/* クライアントの声 */
+.voices-note{max-width:max-content;margin:-.6em auto 36px;font-size:.8rem;font-weight:700;color:#6E4600;background:#FFF0C7;border-radius:14px;padding:.3em 1em;text-align:center;line-height:1.6}
+.voices{list-style:none;margin:0;padding:0;display:grid;gap:22px}
+@media (min-width:900px){.voices{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.voice{position:relative;padding:26px 24px 24px}
+.voice::before{content:"\201C";position:absolute;top:6px;right:18px;font:700 4rem/1 Georgia,serif;color:var(--sky-2)}
+.voice-head{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.voice-avatar{flex:none;width:58px}
+.voice-avatar svg{width:78%;height:auto}
+.voice-who b{display:block;font-size:1rem;color:var(--navy-deep);line-height:1.5}
+.voice-who span{display:block;font-size:.78rem;color:var(--ink-soft);line-height:1.5;word-break:auto-phrase}
+.voice-quote{font-weight:700;color:var(--navy-deep);font-size:1.05rem;line-height:1.6;margin-bottom:.6em;text-wrap:balance;word-break:auto-phrase}
+.voice-body{font-size:.92rem}
+
+/* 物語 */
+.story-grid{display:grid;gap:36px;align-items:start}
+@media (min-width:900px){.story-grid{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:64px}.story-art{position:sticky;top:110px}}
+.story-art{aspect-ratio:360/300;border-radius:28px;overflow:hidden}
+.story-art>svg,.story-art>.slot-img{width:100%;height:100%}
+.story-text .sec-title{text-align:left}
+.story-text p{max-width:34em}
+.profile{display:flex;gap:18px;align-items:center;padding:20px 22px;margin-top:28px}
+.profile .halo{width:76px;flex:none}
+.profile-photo{width:92px!important;border:3px solid #fff;box-shadow:0 0 0 2px var(--sky-2)}
+.profile-photo img{width:100%;height:100%;object-fit:cover}
+@media (max-width:479px){.profile{gap:14px;padding:18px 16px}.profile-photo{width:72px!important}}
+.profile dl{margin:0}
+.profile dt{font-weight:700;color:var(--navy-deep);font-size:1.02rem;word-break:auto-phrase}
+.profile dd{margin:0;font-size:.86rem;color:var(--ink-soft);line-height:1.7;word-break:auto-phrase}
+
+/* おすすめします（推薦） */
+#recommend .sec-lead{margin-bottom:14px}
+#recommend .voices-note{margin-top:0}
+.recommends{list-style:none;margin:0;padding:0;display:grid;gap:22px}
+@media (min-width:900px){.recommends{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.recommend{display:flex;flex-direction:column;padding:26px 24px 22px;border-top:4px solid var(--navy)}
+.recommend-quote{font-family:var(--hand);font-weight:600;color:var(--navy-deep);font-size:1.12rem;line-height:1.6;margin-bottom:.6em;text-wrap:balance;word-break:auto-phrase}
+.recommend-body{font-size:.92rem}
+.recommend-by{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:16px;border-top:1px dashed var(--line)}
+.recommend-avatar{flex:none;width:52px;background:#fff;border:2px solid var(--sky-2)}
+.recommend-avatar svg{width:100%;height:100%}
+.recommend-avatar .ink-person{--skin:#FFFFFF;--hair:#2A5689;--shirt:#BFD8F1;--face:#1F4E89;--collar:#1F4E89}
+.recommend-who b{display:block;font-size:.98rem;color:var(--navy-deep);line-height:1.5}
+.recommend-who span{display:block;font-size:.78rem;color:var(--ink-soft);line-height:1.5;word-break:auto-phrase}
+
+/* 理念と循環 */
+.philo-body{max-width:38em;margin:0 auto}
+.philo-body p{margin-bottom:1.1em}
+.philo-key{font-family:var(--hand);font-weight:600;color:var(--navy-deep);font-size:clamp(1.15rem,.95rem + .9vw,1.5rem);line-height:1.7;text-align:center;margin:1.6em auto;max-width:24em}
+.cycle{display:grid;gap:36px;align-items:center;margin-top:52px}
+@media (min-width:900px){.cycle{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px}}
+.cycle-art{color:var(--navy);width:100%;max-width:480px;margin-inline:auto}
+.cycle-art svg{width:100%;height:auto}
+.stages{list-style:none;margin:0;padding:0;counter-reset:st;display:grid;gap:22px}
+.stages li{counter-increment:st;display:grid;grid-template-columns:38px minmax(0,1fr);column-gap:14px;align-items:start}
+.stages li::before{content:counter(st);grid-row:1 / span 2;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font-weight:700}
+.stages strong{color:var(--navy-deep);font-size:1.04rem;line-height:1.6}
+.stages span{font-size:.9rem;color:var(--ink-soft);line-height:1.75}
+.philo-pride{max-width:36em;margin:52px auto 0;text-align:center;color:var(--navy-deep);font-weight:500}
+@media (max-width:599px){.philo-pride{text-align:left}}
+.free-note{margin:24px auto 0;max-width:40em;background:#fff;border:1.5px dashed #A9CBEA;border-radius:16px;padding:20px 24px;font-size:.94rem}
+.free-note strong{color:var(--navy-deep)}
+
+/* 相談の内容と流れ */
+.offer{display:grid;gap:22px}
+@media (min-width:860px){.offer{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.offer-card{padding:28px 26px}
+.offer-card h3{margin:0 0 4px;font-size:1.15rem;color:var(--navy-deep)}
+.offer-card .tag{display:inline-block;font-size:.78rem;font-weight:700;color:#fff;background:var(--navy);border-radius:999px;padding:.15em .9em;margin-bottom:12px}
+.offer-card dl{margin:14px 0 0;display:grid;grid-template-columns:auto 1fr;gap:10px 16px;font-size:.93rem}
+.offer-card dt{font-weight:700;color:var(--navy);white-space:nowrap}
+.offer-card dd{margin:0}
+@media (max-width:599px){.offer-card .dl-stack{grid-template-columns:1fr;gap:2px 0}.offer-card .dl-stack dd{margin-bottom:10px}}
+.offer-out{margin:22px auto 0;text-align:center;font-size:.9rem;color:var(--ink-soft)}
+.flow{list-style:none;margin:56px 0 0;padding:0;display:grid;gap:18px;counter-reset:step}
+@media (min-width:860px){.flow{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}}
+.flow li{position:relative;counter-increment:step;padding:20px 18px 18px;background:#fff;border:1px solid var(--line);border-radius:14px}
+.flow li::before{content:counter(step);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;font-size:.95rem;margin-bottom:10px}
+.flow h3{margin:0 0 .3em;font-size:1rem;color:var(--navy-deep)}
+.flow p{font-size:.86rem;color:var(--ink-soft)}
+
+/* 料金：木の台座に乗ったお魚 */
+.price-why{max-width:40em;margin:0 auto}
+.price-pledge{margin:28px auto 0;max-width:max-content;text-align:center;font-weight:700;color:var(--navy-deep);background:var(--sky);border-radius:12px;padding:.8em 1.4em;line-height:1.7}
+.tiers-caption{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px 12px;margin:56px 0 14px}
+.tiers-caption h3{margin:0;font-size:1.12rem;color:var(--navy-deep)}
+.tiers-caption span{font-size:.84rem;color:var(--ink-soft)}
+.shelf{position:relative;border-radius:24px;padding:26px 10px 22px;overflow:hidden;isolation:isolate}
+@media (min-width:768px){.shelf{padding:30px 22px 26px}}
+.shelf-deco{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+.tiers{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));row-gap:22px}
+@media (min-width:700px){.tiers{grid-template-columns:repeat(4,minmax(0,1fr))}.tier--shachi{grid-column:2}.tier--kujira{grid-column:3}}
+@media (min-width:1040px){.tiers{grid-template-columns:repeat(7,minmax(0,1fr))}.tier{grid-row:2}.tier--shachi,.tier--kujira{grid-column:auto}}
+/* 区分の見出し：小さい画面では該当する段の上に1行で、PC幅では棚の1段目に並べる */
+.tier-label{grid-column:1 / -1;justify-self:center;align-self:end;text-align:center;font-size:.88rem;font-weight:700;line-height:1.5;color:var(--navy-deep);background:#fff;border-radius:999px;padding:3px 16px;margin:8px 8px -8px}
+.tier-label--culture{display:none}
+.tier-label--biz{color:#fff;background:var(--navy)}
+@media (min-width:1040px){
+  .tier-label{grid-row:1;justify-self:stretch;font-size:.8rem;color:var(--navy-deep);background:none;border-radius:0;border-bottom:2px solid rgba(31,78,137,.3);padding:0 0 4px;margin:0 8px -14px}
+  .tier-label--culture{display:block;grid-column:1 / 2}
+  .tier-label--personal{grid-column:2 / 6}
+  .tier-label--biz{grid-column:6 / 8}
+}
+/* 文化枠の台座：小さい画面では1段まるごと使って目立たせる */
+.tier--culture .plate{box-shadow:inset 0 0 0 2px #E7B54D}
+.tier--culture .plate .name{font-size:.82rem;white-space:nowrap}
+@media (max-width:1039px){.tier--culture{grid-column:1 / -1}.tier--culture .pedestal{width:min(46%,220px)}}
+.tier{display:flex;flex-direction:column;align-items:center;text-align:center}
+.tier::after{content:"";align-self:stretch;height:14px;background:linear-gradient(180deg,var(--wood) 0,var(--wood-dark) 100%);box-shadow:0 6px 10px rgba(90,60,30,.12)}
+.fig{position:relative;width:100%;height:122px;display:flex;align-items:flex-end;justify-content:center;padding:0 8px 16px}
+.fig::before{content:"";position:absolute;left:50%;bottom:0;width:4px;height:17px;margin-left:-2px;background:#7C6450;border-radius:2px}
+.fig>svg{width:var(--fw,100px);height:auto;max-width:100%;filter:drop-shadow(0 6px 5px rgba(31,78,137,.14))}
+.fig.has-img{padding-bottom:0}
+.fig.has-img::before{display:none}
+.fig .slot-img{width:calc(var(--fw,100px) * 1.15);height:auto;max-width:100%;max-height:122px;object-fit:contain}
+.pedestal{flex:1 0 auto;width:86%;background:linear-gradient(180deg,#E7C9A5 0%,#D3AA80 100%);border-radius:8px 8px 2px 2px;padding:9px 7px 18px;box-shadow:inset 0 -6px 0 rgba(120,80,40,.13)}
+.plate{display:block;background:#fff;border-radius:6px;padding:6px 4px 7px}
+.plate .name{display:block;font-weight:700;color:var(--navy-deep);font-size:.93rem;line-height:1.4}
+.plate .price{display:block;font-weight:700;color:var(--navy);font-size:1.22rem;line-height:1.35;letter-spacing:.02em}
+.plate .price small{font-size:.7rem;font-weight:500;color:var(--ink-soft);margin-left:2px}
+.plate .who{display:block;font-size:.7rem;color:var(--ink-soft);line-height:1.5;margin-top:2px;word-break:auto-phrase;text-wrap:balance}
+.plate .who--ticket{color:#835400;font-weight:700}
+.price-notes{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:8px;font-size:.88rem;color:var(--ink-soft)}
+.price-notes li{padding-left:1.2em;position:relative}
+.price-notes strong{color:var(--ink);font-weight:700}
+.price-notes .note-line{display:block}
+.price-notes li::before{content:"";position:absolute;left:.2em;top:.8em;width:6px;height:6px;border-radius:50%;background:#A9CBEA}
+.extra{display:grid;gap:22px;margin-top:44px}
+.extra-card{padding:28px 26px}
+.extra-card h3{margin:0 0 .2em;font-size:1.15rem;color:var(--navy-deep);display:flex;align-items:center;gap:12px}
+.extra-card h3 svg{width:54px;height:auto;flex:none}
+.extra-card .price-inline{font-weight:700;color:var(--navy);font-size:1.05rem;margin:.3em 0 .8em}
+.extra-card p{font-size:.92rem}
+/* 文化枠のカード */
+.culture-card{display:grid;gap:8px 32px;align-items:center}
+@media (min-width:760px){.culture-card{grid-template-columns:minmax(0,1fr) 230px}}
+.culture-text p{max-width:42em}
+.culture-art svg{width:100%;max-width:230px;height:auto;margin:0 auto}
+@media (max-width:759px){.culture-art{order:-1}.culture-art svg{max-width:180px}}
+.ticket-note{margin:-.2em 0 1em}
+.ticket-note a{display:inline-flex;align-items:center;gap:.5em;background:#FFF6DB;border:1.5px solid #E7B54D;color:#6E4600;font-weight:700;font-size:.88rem;line-height:1.5;border-radius:999px;padding:.3em 1em;text-decoration:none}
+.ticket-note a::after{content:"↓";font-weight:500}
+.ticket-note a:hover{background:#FFEDB8}
+
+/* ペイフォワード・チケット */
+.payforward{display:grid;gap:26px;padding:30px 24px}
+@media (min-width:600px){.payforward{padding:34px 32px}}
+@media (min-width:900px){.payforward{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px;align-items:start}}
+.pf-tag{display:inline-block;font-size:.78rem;font-weight:700;color:#6E4600;background:#FFF0C7;border-radius:999px;padding:.2em .9em;margin-bottom:10px}
+.pf-main h3{margin:0 0 .6em;font-size:clamp(1.15rem,1rem + .55vw,1.4rem);line-height:1.6;color:var(--navy-deep);text-wrap:balance;word-break:auto-phrase}
+.pf-main>p{font-size:.94rem}
+.pf-flow{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:14px;counter-reset:pf}
+.pf-flow li{position:relative;display:grid;grid-template-columns:64px minmax(0,1fr);gap:12px;align-items:center;font-size:.92rem;font-weight:700;color:var(--navy-deep);line-height:1.6}
+.pf-flow li+li::before{content:"";position:absolute;left:31px;top:-13px;height:12px;border-left:2px dotted #A9CBEA}
+.pf-icon{display:grid;place-items:center;width:64px;height:48px;background:var(--sky);border-radius:12px}
+.pf-icon svg{width:50px;height:auto;max-height:40px}
+.pf-story{margin-top:18px;font-size:.88rem;color:var(--ink-soft)}
+.pf-board{background:var(--sky);border-radius:18px;padding:20px 18px 18px}
+.pf-count{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 14px;font-weight:700;color:var(--navy-deep)}
+.pf-num{font-size:.95rem;color:var(--navy)}
+.pf-num b{font-size:2.4rem;line-height:1;margin-right:.1em;letter-spacing:0}
+.tickets{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(128px,1fr));gap:10px}
+.ticket{position:relative;display:flex;min-height:68px;background:#FFF6DB;border:1.5px solid #E7B54D;border-radius:10px;color:var(--navy-deep);
+  -webkit-mask:radial-gradient(circle at 46px 0,transparent 7px,#000 7.5px),radial-gradient(circle at 46px 100%,transparent 7px,#000 7.5px);
+  -webkit-mask-composite:source-in;mask:radial-gradient(circle at 46px 0,transparent 7px,#000 7.5px),radial-gradient(circle at 46px 100%,transparent 7px,#000 7.5px);mask-composite:intersect}
+.ticket-stub{flex:none;width:46px;display:grid;place-items:center;border-right:1.5px dashed #E7B54D}
+.ticket-stub svg{width:34px;height:auto}
+.ticket-body{display:flex;flex-direction:column;justify-content:center;padding:6px 10px 6px 12px;line-height:1.4}
+@media (max-width:479px){.ticket-body{padding-inline:8px}.ticket-body span{font-size:.7rem}}
+.ticket-body b{font-size:.84rem;line-height:1.35}
+.ticket-body span{font-size:.76rem;font-weight:700;color:#6E4600;white-space:nowrap}
+.ticket-body small{white-space:nowrap}
+.ticket-body small{font-size:.66rem;color:var(--ink-soft)}
+.pf-empty{margin:0;padding:14px;background:#fff;border-radius:12px;font-size:.9rem;color:var(--ink-soft);text-align:center}
+.pf-note{margin:10px 0 0;font-size:.78rem;color:var(--ink-soft)}
+.pf-actions{margin-top:14px;padding-top:12px;border-top:1px dashed #BCD5EE;display:grid;gap:6px;font-size:.88rem}
+.pf-actions p{margin:0}
+.ticket-input{max-width:8em}
+
+.sustain{max-width:40em;margin:36px auto 0;text-align:center;font-size:.92rem;color:var(--ink-soft)}
+@media (max-width:599px){.sustain{text-align:left}}
+
+/* FAQ */
+.faq{max-width:820px;margin:0 auto;display:grid;gap:12px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:14px}
+.faq summary{list-style:none;cursor:pointer;display:flex;gap:14px;align-items:center;padding:18px 20px;font-weight:700;color:var(--navy-deep);line-height:1.6}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q";flex:none;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;font-size:.9rem}
+.faq summary::after{content:"";flex:none;margin-left:auto;width:10px;height:10px;border-right:2px solid var(--navy);border-bottom:2px solid var(--navy);transform:rotate(45deg) translateY(-3px);transition:transform .2s ease}
+.faq details[open] summary::after{transform:rotate(-135deg) translateY(-2px)}
+.faq .a{padding:0 20px 20px 66px;font-size:.94rem}
+@media (max-width:599px){.faq .a{padding-left:20px}}
+
+/* 最後の申し込み */
+.final{text-align:center}
+.final .body{max-width:30em;margin:0 auto 34px}
+@media (max-width:599px){.final .body{text-align:left}}
+.final .referral{margin:22px auto 0;font-size:.86rem;color:var(--ink-soft);max-width:32em}
+
+/* フッター */
+.site-footer{border-top:1px solid var(--line);padding-block:30px 96px;font-size:.8rem;color:var(--ink-soft);background:#fff}
+@media (min-width:768px){.site-footer{padding-bottom:30px}}
+.site-footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;align-items:center}
+
+/* スマホ下部の申し込みバー */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:45;padding:6px max(12px, env(safe-area-inset-right, 0px)) calc(6px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px));background:rgba(255,255,255,.96);border-top:1px solid var(--line);display:flex;justify-content:center;transform:translateY(110%);transition:transform .25s ease}
+/* 画面下部のバーは低く1行に：本文をなるべく隠さない */
+.sticky-cta .btn{width:100%;max-width:420px;min-height:44px;padding:.55em 1em;font-size:.9rem;letter-spacing:.03em;gap:.5em;white-space:nowrap;box-shadow:none}
+.sticky-cta .btn-chip{font-size:.72em;padding:.1em .6em}
+@media (max-width:359px){.sticky-cta .btn::after{display:none}}
+.sticky-cta.is-on{transform:none}
+@media (min-width:768px){.sticky-cta{display:none}}
+
+/* フォーム未接続の案内 */
+.toast{position:fixed;left:50%;bottom:88px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#102C4D;color:#fff;font-size:.88rem;padding:.8em 1.2em;border-radius:12px;box-shadow:0 10px 30px rgba(16,44,77,.3);transition:opacity .2s ease,transform .2s ease;z-index:60;max-width:calc(100% - 32px);text-align:center}
+.toast.is-on{opacity:1;transform:translate(-50%,0)}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+
+
+/* ===== A案「回遊」：白基調に、海の気配（波の線・泡・小さなお魚）を足す ===== */
+.bg-sea{background:#F2F8FD}
+.waveline{position:absolute;left:0;top:-11px;width:100%;height:22px;z-index:2;pointer-events:none}
+.deco{position:absolute;top:30px;right:4%;pointer-events:none;z-index:0}
+@media (max-width:899px){.deco{display:none}}
+.hero .school{animation:school 7s ease-in-out infinite}
+.hero .bubbles circle{animation:rise 6s ease-in infinite}
+.hero .bubbles circle:nth-child(2n){animation-duration:8s;animation-delay:-2s}
+.hero .bubbles circle:nth-child(3n){animation-duration:7s;animation-delay:-4s}
+@keyframes school{0%,100%{transform:translate(0,0)}50%{transform:translate(12px,-5px)}}
+@keyframes rise{0%{transform:translateY(0);opacity:0}15%{opacity:1}100%{transform:translateY(-90px);opacity:0}}
+.philo{background:linear-gradient(180deg,#EFF7FD 0%,#E1F0FA 100%)}
+.philo .bubbles-bg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.shelf{background:linear-gradient(180deg,#E9F5FC 0%,#D5EBF7 100%)}
+.final{background:linear-gradient(180deg,#FFFFFF 0%,#EEF7FD 45%,#DCEFF9 100%)}
+.final-art{max-width:540px;margin:0 auto 4px}
+.final-art svg{width:100%;height:auto}
+.final .spout path{animation:spout 3.2s ease-in-out infinite;transform-origin:300px 84px}
+@keyframes spout{0%,100%{transform:scaleY(.92)}50%{transform:scaleY(1.06)}}
+
+/* ===== 文章検討用の編集バーと赤入れメモ（公開するページの一部ではない） ===== */
+.skip-link{position:fixed;top:-100px;left:12px;z-index:200;background:var(--navy);color:#fff;padding:10px 15px;border-radius:8px}
+.skip-link:focus{top:10px}
+.editor-bar{position:sticky;top:0;z-index:50;background:rgba(232,242,252,.97);border-bottom:1px solid #C9DCEF;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.editor-inner{width:100%;max-width:1120px;margin:auto;padding:6px 16px;min-height:46px;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;justify-content:space-between}
+@media (min-width:768px){.editor-inner{padding-inline:32px}}
+.draft-label{font-size:12px;line-height:1.5;color:var(--navy-deep)}
+.draft-label b{font-weight:700;letter-spacing:.04em}
+.draft-label span{margin-left:10px;color:var(--ink-soft)}
+.editor-actions{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.tool{font:inherit;font-size:12px;line-height:1.5;min-height:32px;padding:5px 12px;border-radius:999px;border:1px solid #B9D0E8;background:#fff;color:var(--navy-deep);cursor:pointer;white-space:nowrap}
+.tool:hover{background:#F3F8FD}
+.tool.strong{background:var(--navy);border-color:var(--navy);color:#fff}
+.tool.strong:hover{background:var(--navy-deep)}
+.tool[aria-pressed="true"]{background:#FFF4D6;border-color:#E3A72F}
+.save-state{font-size:11px;color:var(--ink-soft);min-width:8em}
+.draft-notice{width:100%;max-width:1120px;margin:auto;padding:2px 16px 8px;display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:12px;color:#6B4E12}
+@media (min-width:768px){.draft-notice{padding-inline:32px}}
+@media (max-width:599px){.editor-actions .tool{flex:1 1 auto;padding-inline:8px}.save-state{display:none}.draft-label span{display:block;margin-left:0}}
+.site-header{top:var(--edbar-h,0px)}
+html{scroll-padding-top:calc(60px + var(--edbar-h,0px))}
+
+/* 編集中：書き換えられる箇所に点線と赤入れ用のIDを出す */
+body.is-editing [data-edit]{outline:1.5px dashed #E3A72F;outline-offset:3px;position:relative;cursor:text;min-height:1em;min-width:12px;border-radius:2px}
+body.is-editing [data-edit]:focus{outline:2px solid #E3A72F;background:rgba(255,236,179,.35)}
+body.is-editing .turn--me [data-edit]:focus{background:rgba(255,236,179,.18)}
+body.is-editing [data-edit]::after{content:attr(data-edit);position:absolute;top:-14px;right:0;font:700 9px/13px var(--sans);color:#fff;background:var(--navy);padding:0 5px;border-radius:3px;letter-spacing:.04em;pointer-events:none;white-space:nowrap}
+
+/* 赤入れメモ・公開前の確認 */
+dialog{background:#fff;color:var(--ink);width:min(660px,calc(100% - 28px));max-height:86vh;padding:0;border:1px solid var(--line);border-radius:16px;box-shadow:0 25px 80px rgba(16,44,77,.25)}
+dialog::backdrop{background:rgba(16,44,77,.4);backdrop-filter:blur(3px)}
+.dialog-top{display:flex;gap:16px;align-items:center;justify-content:space-between;padding:16px 22px;border-bottom:1px solid var(--line);position:sticky;top:0;background:#fff;z-index:1}
+.dialog-top h2{font-size:1.1rem;line-height:1.5;margin:0;color:var(--navy-deep)}
+.dialog-close{flex:none;width:32px;height:32px;border:1px solid var(--line);border-radius:50%;background:#fff;font-size:18px;line-height:1;cursor:pointer;color:var(--ink)}
+.dialog-content{padding:18px 22px 22px}
+.dialog-content h3{font-size:.95rem;margin:22px 0 8px;color:var(--navy-deep)}
+.dialog-content>p{font-size:.85rem;color:var(--ink-soft)}
+.review-row{display:flex;align-items:flex-start;gap:10px;font-size:.88rem;line-height:1.7;margin:12px 0}
+.review-row input{flex:none;width:17px;height:17px;margin-top:4px;accent-color:var(--navy)}
+.review-row small{display:block;font-size:.78rem;color:var(--ink-soft)}
+.memo{width:100%;min-height:130px;resize:vertical;padding:12px;font:inherit;font-size:.88rem;line-height:1.8;border:1px solid #C9DCEF;border-radius:10px;background:#F7FAFD}
+.url-input{width:100%;padding:9px 12px;font:inherit;font-size:.88rem;border:1px solid #C9DCEF;border-radius:10px;background:#F7FAFD}
+.url-error{color:#B3261E;font-size:.8rem;min-height:1.2em;margin-top:4px}
+.field-note{font-size:.76rem;color:var(--ink-soft);margin-top:8px}
+.dialog-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.reset{margin-left:auto;color:#9A3B23;border-color:#E7C3B6}
+
+@media print{
+  .editor-bar,dialog,.toast,.sticky-cta,.skip-link{display:none!important}
+  body.is-editing [data-edit]{outline:none}
+  body.is-editing [data-edit]::after{display:none}
+}
+
+</style>
+<style>/* 閲覧用：文章検討用の編集バーと赤入れメモは表示しない */.editor-bar,#review-dialog,.skip-link{display:none!important}.site-header{top:0}html{scroll-padding-top:60px}</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+<defs>
+  <!-- しらす（右向き） -->
+  <symbol id="f-shirasu" viewBox="0 0 64 18">
+    <path d="M9 9L2 4.2L3.8 9L2 13.8Z" fill="#FCFEFE" stroke="#8FB3BE" stroke-width="1.1" stroke-linejoin="round"/>
+    <path d="M8 9C18 3.6 40 3.4 53 6.4C57.5 7.4 60.5 8.2 62 9C60.5 9.8 57.5 10.6 53 11.6C40 14.6 18 14.4 8 9Z" fill="#FCFEFE" stroke="#8FB3BE" stroke-width="1.1"/>
+    <path d="M16 9.3H46" stroke="#B9CFD6" stroke-width="1" stroke-dasharray="1.2 2.4" stroke-linecap="round"/>
+    <circle cx="53.2" cy="8.4" r="2.7" fill="#17212F"/>
+    <circle cx="54.1" cy="7.5" r=".85" fill="#fff" stroke="none"/>
+  </symbol>
+
+  <!-- やりいか（上向き） -->
+  <symbol id="f-yariika" viewBox="0 0 60 112">
+    <path d="M30 3L56 30L30 40L4 30Z" fill="#F5C9C1" stroke="#D88A80" stroke-width="1.4" stroke-linejoin="round"/>
+    <path d="M30 4C39 14 42 32 42 52L41 72C40.5 76 36 78 30 78C24 78 19.5 76 19 72L18 52C18 32 21 14 30 4Z" fill="#F8D9D2" stroke="#D88A80" stroke-width="1.4"/>
+    <g fill="#D2766C" opacity=".75"><circle cx="26" cy="30" r="1.4"/><circle cx="34" cy="38" r="1.2"/><circle cx="28" cy="48" r="1.5"/><circle cx="35" cy="56" r="1.2"/><circle cx="25" cy="62" r="1.2"/><circle cx="32" cy="22" r="1"/><circle cx="31" cy="68" r="1.3"/></g>
+    <g fill="none" stroke="#E7A79D" stroke-width="3" stroke-linecap="round">
+      <path d="M22 86C18 94 16 100 12 104"/>
+      <path d="M26 88C24 96 23 102 21 108"/>
+      <path d="M30 88V109"/>
+      <path d="M34 88C36 96 37 102 39 108"/>
+      <path d="M38 86C42 94 44 100 48 104"/>
+    </g>
+    <ellipse cx="30" cy="82" rx="12" ry="7.5" fill="#F8D9D2" stroke="#D88A80" stroke-width="1.4"/>
+    <circle cx="24.5" cy="81" r="3.6" fill="#17212F"/><circle cx="25.5" cy="80" r="1.1" fill="#fff"/>
+    <circle cx="35.5" cy="81" r="3.6" fill="#17212F"/><circle cx="36.5" cy="80" r="1.1" fill="#fff"/>
+  </symbol>
+
+  <!-- まだい（右向き） -->
+  <symbol id="f-madai" viewBox="0 0 100 64">
+    <path d="M13 32L1 18.5L5.5 32L1 45.5Z" fill="#E2546A" stroke="#E2546A" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M30 11L33 3.5L38 9L43 2.5L48 8L53 2.5L57 8.5L63 5.5L66 11Z" fill="#E2546A"/>
+    <path d="M9 32C19 15 40 6 62 7.5C77 8.5 89 18 95 29.5C96 31.5 96 33.5 94.5 35.5C89 45 77 53 61 55C39 57.5 19 49 9 32Z" fill="#F4707F"/>
+    <clipPath id="clip-madai"><path d="M9 32C19 15 40 6 62 7.5C77 8.5 89 18 95 29.5C96 31.5 96 33.5 94.5 35.5C89 45 77 53 61 55C39 57.5 19 49 9 32Z"/></clipPath>
+    <path clip-path="url(#clip-madai)" d="M8 37C26 48 50 52 70 50C80 49 88 45 95 38V64H8Z" fill="#FBC9CC" stroke="none"/>
+    <path d="M70 15C65 24 65 37 71.5 45" fill="none" stroke="#E2546A" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M58 37C52 39 49.5 45 53 48C57.5 46.5 60 42 58 37Z" fill="#E2546A"/>
+    <g fill="#7DD3F2" stroke="none"><circle cx="34" cy="20" r="1.5"/><circle cx="44" cy="16" r="1.4"/><circle cx="52" cy="22" r="1.5"/><circle cx="38" cy="29" r="1.3"/><circle cx="27" cy="26" r="1.3"/><circle cx="58" cy="14" r="1.2"/><circle cx="47" cy="30" r="1.2"/></g>
+    <circle cx="80.5" cy="25" r="5" fill="#fff"/><circle cx="81.6" cy="25.2" r="2.9" fill="#17212F"/><circle cx="82.6" cy="24.1" r=".9" fill="#fff"/>
+    <path d="M95 33.5L90.5 34.5" stroke="#B83A50" stroke-width="1.4" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- マグロ（右向き） -->
+  <symbol id="f-maguro" viewBox="0 0 150 60">
+    <path d="M24 30L5 6C11 15 13.5 22 13.5 30C13.5 38 11 45 5 54Z" fill="#203A73"/>
+    <path d="M70 14.5L80 2L89 14Z" fill="#203A73"/>
+    <path d="M74 45L82 55L86 45Z" fill="#9FB3C7"/>
+    <path d="M18 30C36 12 92 8 130 21C138 24 144 27.5 147 30C144 32.5 138 36 130 39C92 52 36 48 18 30Z" fill="#D5E0E9"/>
+    <path d="M18 30C36 12 92 8 130 21C138 24 144 27.5 147 30C128 29 108 28.5 88 30.5C62 33 38 33 18 30Z" fill="#203A73"/>
+    <path d="M40 31.5C70 33 100 30 132 30" fill="none" stroke="#7F9DBD" stroke-width="1" opacity=".6"/>
+    <g fill="#F2C230"><path d="M30 21.5l3-4l1.5 3.6z"/><path d="M37 18.5l3-4l1.5 3.6z"/><path d="M44 16.5l3-4l1.5 3.4z"/><path d="M30 38.5l3 4l1.5-3.6z"/><path d="M37 41.5l3 4l1.5-3.6z"/><path d="M44 43.5l3 4l1.5-3.4z"/></g>
+    <path d="M104 32C96 33.5 88 37 81 42C91 41 99 38 104 35Z" fill="#203A73"/>
+    <circle cx="128" cy="25.5" r="4.6" fill="#fff"/><circle cx="129" cy="25.7" r="2.7" fill="#17212F"/><circle cx="129.9" cy="24.7" r=".85" fill="#fff"/>
+    <path d="M146 31.5L141 32.5" stroke="#5B6F88" stroke-width="1.2" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- しゃち（右向き） -->
+  <symbol id="f-shachi" viewBox="0 0 170 86">
+    <path d="M20 52C13 44 7 40 0 39.5C3.5 46 8 50.5 13 53.5C8 57 4 61.5 1 67C8 66.5 14 62 20 56Z" fill="#1E2331"/>
+    <path d="M84 36C86.5 22 91 9 98.5 0C100 13 102 25 108.5 36Z" fill="#1E2331"/>
+    <path d="M15 53C30 39 70 31 120 34.5C143 36 160 44 165 52.5C165.5 58.5 157 64.5 141 66.5C111 70.5 61 70.5 35 65C25 63 19 58.5 15 53Z" fill="#1E2331"/>
+    <ellipse cx="103" cy="38.5" rx="14" ry="3.6" fill="#7A8295"/>
+    <clipPath id="clip-shachi"><path d="M15 53C30 39 70 31 120 34.5C143 36 160 44 165 52.5C165.5 58.5 157 64.5 141 66.5C111 70.5 61 70.5 35 65C25 63 19 58.5 15 53Z"/></clipPath>
+    <path clip-path="url(#clip-shachi)" d="M48 66C80 59.5 112 57.5 140 59.5C150 59 158 56.5 167 51V86H40Z" fill="#FFFFFF" stroke="none"/>
+    <ellipse cx="135" cy="44.5" rx="9.5" ry="3.8" transform="rotate(-10 135 44.5)" fill="#FFFFFF"/>
+    <path d="M120 62C115.5 70 113.5 77 117 81.5C123.5 79.5 125.5 71 125 62Z" fill="#1E2331"/>
+    <circle cx="147" cy="47.5" r="2.4" fill="#3A4254"/><circle cx="147" cy="47.5" r="1.5" fill="#0B0E15"/><circle cx="147.6" cy="46.9" r=".6" fill="#fff"/>
+    <path d="M164.5 54.5C159 55.8 153 55.8 149 55" fill="none" stroke="#5A6276" stroke-width="1.2" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- クジラ（右向き） -->
+  <symbol id="f-kujira" viewBox="0 0 220 110">
+    <path d="M36 62C27 51 15 40 2 37C7 45.5 13.5 52 22 57.5C12 59.5 5.5 64 1.5 70.5C14 71.5 26 68.5 36 64.5Z" fill="#3A73AE"/>
+    <path d="M30 60C36 30 90 16 150 22C186 26 210 42 212 62C214 80 196 94 160 96C120 98 80 94 56 84C42 78 34 70 30 60Z" fill="#4682BF"/>
+    <clipPath id="clip-kujira"><path d="M30 60C36 30 90 16 150 22C186 26 210 42 212 62C214 80 196 94 160 96C120 98 80 94 56 84C42 78 34 70 30 60Z"/></clipPath>
+    <g clip-path="url(#clip-kujira)" stroke="none">
+      <path d="M72 84C110 94 160 94 190 84C200 80 207 74 213 66V110H60Z" fill="#B5D3EE"/>
+      <g fill="none" stroke="#8DB7DD" stroke-width="1.4" stroke-linecap="round"><path d="M104 92C140 98 172 95 200 84"/><path d="M116 87.5C146 92 174 89 204 76"/></g>
+    </g>
+    <path d="M130 80C124 92 116 100 106 103C113 93 120 85 124 78Z" fill="#3A73AE"/>
+    <circle cx="176" cy="62" r="3.4" fill="#17212F"/><circle cx="177" cy="61" r="1.1" fill="#fff"/>
+    <path d="M207 71C198 75 188 75.5 180 73.5" fill="none" stroke="#2C5E93" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="186" cy="68" r="3.6" fill="#F6A8A0" opacity=".45" stroke="none"/>
+    <g fill="#8DB7DD" opacity=".7" stroke="none"><circle cx="120" cy="36" r="2"/><circle cx="104" cy="44" r="1.6"/><circle cx="140" cy="32" r="1.4"/></g>
+  </symbol>
+
+  <!-- 小魚（群れの一匹。右向き） -->
+  <symbol id="f-iwashi" viewBox="0 0 40 14">
+    <path d="M6 7L1 3L2.5 7L1 11Z" fill="#5C86B5"/>
+    <path d="M5 7C11 2.8 26 2.4 34 5C36.5 5.8 38.5 6.5 39 7C38.5 7.5 36.5 8.3 34 9C26 11.6 11 11.2 5 7Z" fill="#E4EDF5"/>
+    <path d="M5 7C11 2.8 26 2.4 34 5C36.5 5.8 38.5 6.5 39 7C30 6.4 18 6.6 5 7Z" fill="#4E7BAE"/>
+    <g fill="#2E4A6B" stroke="none"><circle cx="14" cy="8" r=".7"/><circle cx="17.5" cy="8.1" r=".7"/><circle cx="21" cy="8.1" r=".7"/><circle cx="24.5" cy="8" r=".7"/></g>
+    <circle cx="33.6" cy="6.4" r="1.7" fill="#17212F"/><circle cx="34.1" cy="5.9" r=".5" fill="#fff" stroke="none"/>
+  </symbol>
+
+  <!-- 群れで泳ぐ小魚たち（文化枠） -->
+  <symbol id="f-school" viewBox="0 0 120 72">
+    <use href="#f-iwashi" x="64" y="4" width="36" height="13"/>
+    <use href="#f-iwashi" x="34" y="13" width="34" height="12"/>
+    <use href="#f-iwashi" x="80" y="21" width="36" height="13"/>
+    <use href="#f-iwashi" x="48" y="29" width="34" height="12"/>
+    <use href="#f-iwashi" x="10" y="31" width="32" height="11"/>
+    <use href="#f-iwashi" x="70" y="41" width="36" height="13"/>
+    <use href="#f-iwashi" x="30" y="48" width="34" height="12"/>
+    <use href="#f-iwashi" x="56" y="58" width="32" height="11"/>
+  </symbol>
+
+  <!-- サンゴ（文化枠に添えるモチーフ） -->
+  <symbol id="f-coral" viewBox="0 0 64 64">
+    <g fill="none" stroke="#FF8B7E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M32 61V36C32 26 26 22 22 13"/>
+      <path d="M32 44C38 40 42 34 42 24C42 18 45 13 48 8"/>
+      <path d="M23 26C17 24 12 18 12 10"/>
+      <path d="M42 30C48 30 54 26 56 18"/>
+      <path d="M32 51C26 49 20 45 16 38"/>
+    </g>
+    <g fill="#FFC2B8"><circle cx="22" cy="12" r="3"/><circle cx="48" cy="8" r="3"/><circle cx="12" cy="9" r="3"/><circle cx="56" cy="17" r="3"/><circle cx="16" cy="37" r="3"/></g>
+  </symbol>
+
+  <!-- 人（座って正面を向く。--skin / --hair / --shirt で色を変える） -->
+  <symbol id="p-body" viewBox="0 0 160 160">
+    <path d="M36 160C36 120 54 101 80 101C106 101 124 120 124 160Z" fill="var(--shirt,#3E7CB1)"/>
+    <path d="M70 102L80 114L90 102" fill="none" stroke="var(--collar,rgba(255,255,255,.55))" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="71" y="80" width="18" height="24" rx="6" fill="var(--skin,#F2C7A2)"/>
+    <circle cx="54" cy="64" r="5.5" fill="var(--skin,#F2C7A2)"/>
+    <circle cx="106" cy="64" r="5.5" fill="var(--skin,#F2C7A2)"/>
+    <circle cx="80" cy="60" r="26" fill="var(--skin,#F2C7A2)"/>
+  </symbol>
+  <symbol id="face-joy" viewBox="0 0 160 160">
+    <g fill="none" stroke="var(--face,#2A2F3A)" stroke-width="2.4" stroke-linecap="round"><path d="M67 65q4.5-3.6 9 0"/><path d="M84 65q4.5-3.6 9 0"/><path d="M75 75q5 4 10 0"/></g>
+    <circle cx="65" cy="71" r="3.6" fill="#F59C93" opacity=".5" stroke="none"/><circle cx="95" cy="71" r="3.6" fill="#F59C93" opacity=".5" stroke="none"/>
+  </symbol>
+  <symbol id="face-calm" viewBox="0 0 160 160">
+    <g fill="var(--face,#2A2F3A)" stroke="none"><circle cx="71.5" cy="64" r="2.7"/><circle cx="88.5" cy="64" r="2.7"/></g>
+    <path d="M75.5 75q4.5 3 9 0" fill="none" stroke="var(--face,#2A2F3A)" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="65" cy="71" r="3.6" fill="#F59C93" opacity=".45" stroke="none"/><circle cx="95" cy="71" r="3.6" fill="#F59C93" opacity=".45" stroke="none"/>
+  </symbol>
+  <symbol id="face-worry" viewBox="0 0 160 160">
+    <g fill="var(--face,#2A2F3A)" stroke="none"><circle cx="71.5" cy="65" r="2.6"/><circle cx="88.5" cy="65" r="2.6"/></g>
+    <g fill="none" stroke="var(--face,#2A2F3A)" stroke-width="2.2" stroke-linecap="round"><path d="M65 57.5L75 55"/><path d="M85 55L95 57.5"/><path d="M74 77q3-2.4 6 0t6 0"/></g>
+  </symbol>
+  <symbol id="hair-short" viewBox="0 0 160 160">
+    <path d="M53 58C51 37 65 29 81 29C98 29 110 40 107 60C104 50 97 44 89 42C80 49 66 51 53 58Z" fill="var(--hair,#2B2E38)"/>
+  </symbol>
+  <symbol id="hair-bob" viewBox="0 0 160 160">
+    <path d="M51 76C44 46 60 31 80 31C101 31 116 46 109 76L103 77C104 61 99 50 91 45C82 51 68 53 58 55C56.5 61 57 68 57 77Z" fill="var(--hair,#2B2E38)"/>
+  </symbol>
+  <symbol id="hair-bun" viewBox="0 0 160 160">
+    <circle cx="80" cy="29" r="11" fill="var(--hair,#2B2E38)"/>
+    <path d="M53 60C52 40 64 33 80 33C96 33 108 40 107 60C101 48 92 43 80 43C68 43 59 48 53 60Z" fill="var(--hair,#2B2E38)"/>
+  </symbol>
+  <symbol id="hair-curly" viewBox="0 0 160 160">
+    <g fill="var(--hair,#2B2E38)"><circle cx="60" cy="47" r="11"/><circle cx="71" cy="37" r="12"/><circle cx="89" cy="37" r="12"/><circle cx="100" cy="47" r="11"/><circle cx="80" cy="34" r="10"/><circle cx="55" cy="58" r="6.5"/><circle cx="105" cy="58" r="6.5"/></g>
+  </symbol>
+  <symbol id="acc-headphones" viewBox="0 0 160 160">
+    <path d="M52 62C52 30 108 30 108 62" fill="none" stroke="#2F3542" stroke-width="5" stroke-linecap="round"/>
+    <rect x="45" y="55" width="12" height="18" rx="5" fill="var(--accent,#FFC83D)"/>
+    <rect x="103" y="55" width="12" height="18" rx="5" fill="var(--accent,#FFC83D)"/>
+  </symbol>
+  <symbol id="acc-glasses" viewBox="0 0 160 160">
+    <g fill="none" stroke="#2F3542" stroke-width="2"><circle cx="71.5" cy="65" r="7.5"/><circle cx="88.5" cy="65" r="7.5"/><path d="M79 65h2"/></g>
+  </symbol>
+  <symbol id="prop-laptop" viewBox="0 0 160 160">
+    <circle cx="36" cy="152" r="6.5" fill="var(--skin,#F2C7A2)"/>
+    <circle cx="124" cy="152" r="6.5" fill="var(--skin,#F2C7A2)"/>
+    <rect x="38" y="110" width="84" height="46" rx="5" fill="var(--laptop,#E4EAF0)" stroke="#B7C3CF" stroke-width="1.5"/>
+    <use href="#f-shirasu" x="66" y="128" width="28" height="8"/>
+    <rect x="26" y="154" width="108" height="6" rx="3" fill="#A9B6C4"/>
+  </symbol>
+  <symbol id="prop-book" viewBox="0 0 160 160">
+    <path d="M40 118L80 126L120 118V152L80 160L40 152Z" fill="var(--book,#E2445C)"/>
+    <path d="M43 117L80 124L117 117V148L80 156L43 148Z" fill="#FFFFFF" stroke="#C9D2DC" stroke-width="1.2"/>
+    <path d="M80 124V156" stroke="#C9D2DC" stroke-width="1.4"/>
+    <g stroke="#D5DCE4" stroke-width="1.6" stroke-linecap="round"><path d="M50 127L73 131"/><path d="M50 134L73 138"/><path d="M87 131L110 127"/><path d="M87 138L110 134"/></g>
+    <circle cx="42" cy="140" r="6" fill="var(--skin,#F2C7A2)"/><circle cx="118" cy="140" r="6" fill="var(--skin,#F2C7A2)"/>
+  </symbol>
+
+  <!-- 小道具 -->
+  <symbol id="prop-paper" viewBox="0 0 24 30">
+    <rect x="1" y="1" width="22" height="28" rx="2" fill="#FFFFFF" stroke="#C9D2DC" stroke-width="1.2"/>
+    <g stroke="#D5DCE4" stroke-width="1.6" stroke-linecap="round"><path d="M5 8H19"/><path d="M5 13H19"/><path d="M5 18H15"/></g>
+  </symbol>
+  <symbol id="prop-envelope" viewBox="0 0 30 20">
+    <rect x="1" y="1" width="28" height="18" rx="2" fill="#FFFFFF" stroke="#C9D2DC" stroke-width="1.2"/>
+    <path d="M2 2L15 11L28 2" fill="none" stroke="#C9D2DC" stroke-width="1.2"/>
+  </symbol>
+  <symbol id="prop-cup" viewBox="0 0 24 24">
+    <path d="M3 7H17V15C17 19 14 22 10 22C6 22 3 19 3 15Z" fill="#FFFFFF" stroke="#C9D2DC" stroke-width="1.2"/>
+    <path d="M17 9.5C21 9.5 21 15.5 17 15.5" fill="none" stroke="#C9D2DC" stroke-width="1.6"/>
+    <path d="M8 4C7 2.5 9 1.5 8 0M12 4C11 2.5 13 1.5 12 0" fill="none" stroke="#C9D2DC" stroke-width="1.2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="mini-laptop" viewBox="0 0 80 50">
+    <rect x="10" y="2" width="60" height="40" rx="4" fill="var(--laptop,#E4EAF0)" stroke="#B7C3CF" stroke-width="1.5"/>
+    <g stroke="#9FB3C7" stroke-width="2" stroke-linecap="round"><path d="M18 12H50"/><path d="M18 19H58"/><path d="M18 26H44"/></g>
+    <rect x="2" y="42" width="76" height="6" rx="3" fill="#A9B6C4"/>
+  </symbol>
+</defs>
+</svg>
+
+<a class="skip-link" href="#main">本文へ移動</a>
+
+<!-- 文章検討用の編集バー（公開するページの一部ではない） -->
+<div class="editor-bar" id="editor-bar">
+  <div class="editor-inner">
+    <div class="draft-label"><b>おさかなコーチング LP A案「回遊」</b><span>公開前の文章検討用</span></div>
+    <div class="editor-actions">
+      <button class="tool" id="edit-toggle" type="button" aria-pressed="false">本文を編集</button>
+      <button class="tool" id="review-open" type="button">メモ・設定</button>
+      <button class="tool" id="save-markdown" type="button">原稿を保存</button>
+      <button class="tool strong" id="save-html" type="button">HTMLを保存</button>
+      <span class="save-state" id="save-state" role="status">ローカル編集可</span>
+    </div>
+  </div>
+  <div class="draft-notice" id="draft-notice" hidden>
+    <span>このページの前の版で編集した下書きが、このブラウザに残っています。</span>
+    <button class="tool" id="draft-load" type="button">下書きを読み込む</button>
+    <button class="tool" id="draft-discard" type="button">下書きを破棄</button>
+  </div>
+</div>
+
+<header class="site-header" data-section="ヘッダー">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="おさかなコーチング トップへ">
+      <svg viewBox="0 0 44 26" aria-hidden="true"><path d="M9 13L1 5.5L3.2 13L1 20.5Z" fill="#1F4E89"/><path d="M7 13C13 4 27 2 37 8C40 10 42 11.5 43 13C42 14.5 40 16 37 18C27 24 13 22 7 13Z" fill="#1F4E89"/><circle cx="35" cy="11.5" r="2.1" fill="#fff"/><path d="M17 9C20 11.7 20 14.3 17 17" stroke="#8DB7E2" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+      <span><span class="brand-name">おさかなコーチング</span><span class="brand-tag" data-edit="G01">対話・戦略・AIの個別相談（ご紹介制）</span></span>
+    </a>
+    <nav class="gnav" aria-label="ページ内の案内">
+      <a href="#pains">こんな方に</a>
+      <a href="#support">支援の内容</a>
+      <a href="#story">想い</a>
+      <a href="#price">料金</a>
+      <a href="#faq">よくある質問</a>
+    </nav>
+    <a class="btn btn--sm" href="#apply" data-apply><span class="btn-chip">ご紹介制</span>初回無料相談を申し込む</a>
+  </div>
+</header>
+
+<main id="main">
+  <span id="top"></span>
+
+  <!-- ファーストビュー -->
+  <section class="hero" aria-labelledby="hero-title" data-section="ファーストビュー">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="referral-badge"><b>ご紹介制</b><span data-edit="H07">ご紹介を受けた方のみ、お申し込みいただけます</span></p>
+        <h1 id="hero-title" data-edit="H01">お金の心配をせずに
+好きなことに没頭したい。</h1>
+        <p class="catch-2" data-edit="H02">その願い、AIで実現しよう。</p>
+        <div class="lead">
+          <p data-edit="H03">打ち込みたいことがあるのに、目の前の仕事で一日が終わってしまう。このまま続けて、目指す場所に届くだろうか。</p>
+          <p data-edit="H04">おさかなコーチングは、対話であなたの思いを整理し、中長期の戦略と、AIを活かした実行の方法を一緒に考えます。</p>
+        </div>
+        <p class="who" data-edit="H05">元国立大学教員・AI研究者。「好きなこと」に没頭するために、事業の立ち上げ・運営・売却を経験した私が、直接お話を伺います。</p>
+        <div class="cta-row">
+          <a class="btn btn--lg" href="#apply" data-apply><span class="btn-chip">ご紹介制</span>初回無料相談を申し込む</a>
+          <span class="cta-note" data-edit="H06">初回無料・オンライン1時間</span>
+        </div>
+      </div>
+    </div>
+    <figure class="hero-art slot" data-img="images/hero-a.png" data-alt="海の見える明るい部屋で、人とお魚たちが一緒に仕事に没頭している様子">
+      <svg viewBox="0 -150 720 710" preserveAspectRatio="xMidYMax slice" role="img" aria-labelledby="heroArt">
+        <title id="heroArt">海の見える明るい部屋で、人とお魚たちが一緒に仕事に没頭している様子</title>
+        <defs>
+          <linearGradient id="hw-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4F8FB"/><stop offset="1" stop-color="#E6EEF5"/></linearGradient>
+          <linearGradient id="hw-light" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".9"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+          <linearGradient id="hw-view" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6F4FC"/><stop offset=".52" stop-color="#CDE9F7"/><stop offset=".53" stop-color="#8FCDEB"/><stop offset="1" stop-color="#5FB0DC"/></linearGradient>
+        </defs>
+        <rect y="-150" width="720" height="710" fill="url(#hw-wall)"/>
+        <!-- ペンダントライト -->
+        <path d="M444 -150V-46" stroke="#9AA9BA" stroke-width="2"/>
+        <path d="M410 -18C410 -38 424 -48 444 -48C464 -48 478 -38 478 -18Z" fill="#1F4E89"/>
+        <ellipse cx="444" cy="-16" rx="20" ry="5" fill="#FFF1BF"/>
+        <!-- 窓：外は海 -->
+        <rect x="150" y="44" width="210" height="232" rx="14" fill="#FFFFFF"/>
+        <rect x="162" y="56" width="186" height="208" rx="8" fill="url(#hw-view)"/>
+        <circle cx="200" cy="98" r="15" fill="#FFF1BF"/>
+        <use href="#f-kujira" x="268" y="146" width="64" height="32" opacity=".6"/>
+        <g fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity=".9"><path d="M174 196q10-6 20 0t20 0"/><path d="M270 222q10-6 20 0t20 0"/><path d="M206 244q10-6 20 0t20 0"/></g>
+        <path d="M255 56V264M162 160H348" stroke="#FFFFFF" stroke-width="7"/>
+        <rect x="140" y="272" width="230" height="10" rx="4" fill="#FFFFFF"/>
+        <path d="M162 282H348L470 560H40Z" fill="url(#hw-light)" opacity=".55"/>
+        <!-- 右の棚 -->
+        <rect x="548" y="208" width="172" height="10" rx="3" fill="#D9B48C"/>
+        <g><rect x="566" y="156" width="16" height="52" rx="2" fill="#1F4E89"/><rect x="584" y="164" width="13" height="44" rx="2" fill="#8DB7E2"/><rect x="599" y="150" width="18" height="58" rx="2" fill="#E59A82"/><rect x="622" y="170" width="13" height="38" rx="2" transform="rotate(12 628 189)" fill="#7CC5A6"/></g>
+        <path d="M664 208L668 186H700L704 208Z" fill="#FFFFFF" stroke="#D5E2EF" stroke-width="2"/>
+        <g fill="#7CC5A6"><ellipse cx="676" cy="172" rx="7" ry="16" transform="rotate(-22 676 172)"/><ellipse cx="692" cy="170" rx="7" ry="17" transform="rotate(20 692 170)"/><ellipse cx="684" cy="164" rx="6" ry="17"/></g>
+        <!-- 左の観葉植物 -->
+        <path d="M40 470L50 410H104L114 470Z" fill="#FFFFFF" stroke="#D5E2EF" stroke-width="2"/>
+        <g fill="#7CC5A6"><ellipse cx="60" cy="370" rx="14" ry="36" transform="rotate(-26 60 370)"/><ellipse cx="94" cy="364" rx="14" ry="38" transform="rotate(22 94 364)"/><ellipse cx="78" cy="352" rx="12" ry="40"/></g>
+        <g fill="#5DB592"><ellipse cx="48" cy="394" rx="10" ry="24" transform="rotate(-48 48 394)"/><ellipse cx="108" cy="392" rx="10" ry="24" transform="rotate(46 108 392)"/></g>
+        <!-- 机 -->
+        <rect x="120" y="432" width="640" height="18" rx="6" fill="#E0BE97"/>
+        <rect x="132" y="450" width="620" height="110" fill="#D2AA80"/>
+        <path d="M132 472H752" stroke="#C59A6C" stroke-width="2"/>
+        <g><rect x="170" y="412" width="70" height="20" rx="3" fill="#1F4E89"/><rect x="176" y="394" width="60" height="18" rx="3" fill="#E9EEF4"/><rect x="172" y="378" width="66" height="16" rx="3" fill="#8DB7E2"/></g>
+        <!-- マグロ：コーヒーを運んでくる -->
+        <g stroke="#C9D8E8" stroke-width="3" stroke-linecap="round"><path d="M96 280H122"/><path d="M104 296H128"/></g>
+        <use href="#f-maguro" x="126" y="262" width="150" height="60"/>
+        <use href="#prop-cup" x="266" y="268" width="26" height="26"/>
+        <!-- しらすの群れ -->
+        <g class="school">
+          <use href="#f-shirasu" x="390" y="86" width="44" height="12"/>
+          <use href="#f-shirasu" x="430" y="72" width="44" height="12"/>
+          <use href="#f-shirasu" x="416" y="104" width="44" height="12"/>
+          <use href="#f-shirasu" x="462" y="90" width="44" height="12"/>
+          <use href="#f-shirasu" x="452" y="120" width="44" height="12"/>
+          <use href="#f-shirasu" x="494" y="106" width="44" height="12"/>
+          <use href="#f-shirasu" x="478" y="64" width="44" height="12"/>
+        </g>
+        <!-- まだい：眼鏡をかけて読書 -->
+        <g transform="translate(548 60)">
+          <use href="#f-madai" width="130" height="83"/>
+          <circle cx="104.6" cy="32.5" r="8.6" fill="rgba(255,255,255,.25)" stroke="#2F3542" stroke-width="2"/>
+          <path d="M96 30L83 25.5" stroke="#2F3542" stroke-width="2" stroke-linecap="round"/>
+          <g transform="translate(120 28) rotate(-12)">
+            <path d="M0 4L14 8L28 4V26L14 30L0 26Z" fill="#2F5BB7"/>
+            <path d="M1.5 3L14 6.5L26.5 3V24L14 27.5L1.5 24Z" fill="#fff" stroke="#C9D2DC"/>
+            <path d="M14 6.5V27.5" stroke="#C9D2DC"/>
+          </g>
+        </g>
+        <!-- 人：ヘッドホンで集中 -->
+        <g transform="translate(316 176) scale(1.6)" style="--skin:#F3CDAE;--hair:#22314B;--shirt:#1F4E89;--accent:#F2B53C;--laptop:#EEF3F8">
+          <use href="#p-body" width="160" height="160"/>
+          <use href="#face-joy" width="160" height="160"/>
+          <use href="#hair-short" width="160" height="160"/>
+          <use href="#acc-headphones" width="160" height="160"/>
+          <use href="#prop-laptop" width="160" height="160"/>
+        </g>
+        <!-- やりいか：何本もの腕で書類を仕分け -->
+        <use href="#f-yariika" x="582" y="236" width="64" height="120"/>
+        <g transform="rotate(-14 582 352)"><use href="#prop-paper" x="572" y="340" width="20" height="25"/></g>
+        <use href="#prop-paper" x="604" y="346" width="20" height="25"/>
+        <g transform="rotate(12 640 350)"><use href="#prop-paper" x="630" y="338" width="20" height="25"/></g>
+        <g transform="translate(588 414)"><rect width="44" height="6" rx="2" fill="#fff" stroke="#C9D2DC"/><rect x="2" y="-6" width="44" height="6" rx="2" fill="#fff" stroke="#C9D2DC"/><rect x="-1" y="-12" width="44" height="6" rx="2" fill="#fff" stroke="#C9D2DC"/></g>
+        <path d="M668 288l3 6 6 3-6 3-3 6-3-6-6-3 6-3z" fill="#F2B53C"/>
+        <g class="bubbles" fill="none" stroke="#9FCDEB" stroke-width="2.2">
+          <circle cx="112" cy="250" r="6"/><circle cx="120" cy="226" r="4"/><circle cx="540" cy="150" r="5"/><circle cx="552" cy="128" r="3.5"/><circle cx="664" cy="240" r="5"/><circle cx="380" cy="150" r="4"/>
+        </g>
+      </svg>
+    </figure>
+  </section>
+
+  <!-- 悩み -->
+  <section id="pains" class="sec" aria-labelledby="pains-title" data-section="悩み">
+    <svg class="deco" viewBox="0 0 150 60" style="width:120px" aria-hidden="true"><use href="#f-shirasu" x="0" y="20" width="56" height="16"/><use href="#f-shirasu" x="46" y="6" width="56" height="16"/><use href="#f-shirasu" x="62" y="34" width="56" height="16"/></svg>
+    <div class="wrap">
+      <h2 id="pains-title" class="sec-title" data-edit="P01">毎日がめまぐるしく過ぎていく。
+でも、本当にやりたいことに近づいているのだろうか。</h2>
+      <ul class="pains">
+        <li class="pain">
+          <div class="halo">
+            <svg viewBox="0 0 200 200" aria-hidden="true">
+              <path class="ink-line" d="M104 44V112H180" fill="none" stroke-width="2.6"/>
+              <g fill="#BFD8F1" class="ink-line" stroke-width="2.2"><rect x="114" y="92" width="12" height="20" rx="2"/><rect x="132" y="80" width="12" height="32" rx="2"/><rect x="150" y="70" width="12" height="42" rx="2"/></g>
+              <path d="M120 82L138 68L156 58L174 42" fill="none" stroke="#1F4E89" stroke-width="2.4" stroke-dasharray="4 6" stroke-linecap="round"/>
+              <path class="ink-line" d="M176 42V18" stroke-width="2.4"/>
+              <path class="ink-line" d="M176 19L192 24L176 30Z" fill="#F2B53C" stroke-width="1.8"/>
+              <text x="146" y="40" font-size="24" font-weight="700" fill="#1F4E89">?</text>
+              <g class="ink-person ink-line" transform="translate(4 72) scale(.82)" stroke-width="2.9">
+                <use href="#p-body" width="160" height="160"/><use href="#face-worry" width="160" height="160"/><use href="#hair-short" width="160" height="160"/>
+              </g>
+            </svg>
+          </div>
+          <h3 data-edit="P11">このまま続けて、
+理想の人生に届くのだろうか。</h3>
+          <p data-edit="P12">やりたいことがある。真剣に努力もしている。けれど、いまのやり方の延長に、思い描いていた輝く人生があるのか、自信が持てない。何を伸ばし、何を手放すべきか。散らかった心を整理して前に進むための相談にのってほしい。</p>
+        </li>
+        <li class="pain">
+          <div class="halo">
+            <svg viewBox="0 0 200 200" aria-hidden="true">
+              <path class="ink-line" d="M74 54C62 34 90 20 102 36C110 16 144 24 136 46C154 48 154 72 134 72C130 86 102 88 96 76C84 86 60 78 68 62Z" fill="#fff" stroke-width="2.4"/>
+              <path d="M86 52C98 36 114 66 100 62C86 58 118 40 122 56C126 72 92 70 106 52" fill="none" stroke="#1F4E89" stroke-width="2" stroke-linecap="round"/>
+              <g fill="#fff" class="ink-line" stroke-width="2"><circle cx="86" cy="96" r="3.5"/><circle cx="80" cy="86" r="2.5"/></g>
+              <text x="152" y="108" font-size="22" font-weight="700" fill="#1F4E89">?</text>
+              <text x="36" y="92" font-size="18" font-weight="700" fill="#1F4E89">?</text>
+              <g class="ink-person ink-line" transform="translate(30 92) scale(.88)" stroke-width="2.7">
+                <use href="#p-body" width="160" height="160"/><use href="#face-worry" width="160" height="160"/><use href="#hair-bob" width="160" height="160"/>
+              </g>
+            </svg>
+          </div>
+          <h3 data-edit="P21">頑張っているけれど、
+もしかして遠回りしているのかも。</h3>
+          <p data-edit="P22">人一倍、努力はしている。頑張っている。けれど、なかなか結果に繋がらない。成功している友人は「もっと効率を考えて戦略的にやらないと」って言うけど、どうやったらいいの？</p>
+        </li>
+        <li class="pain">
+          <div class="halo">
+            <svg viewBox="0 0 200 200" aria-hidden="true">
+              <circle class="ink-line" cx="156" cy="46" r="18" fill="#fff" stroke-width="2.4"/>
+              <path class="ink-line" d="M156 36V46L163 51" fill="none" stroke-width="2.4"/>
+              <g fill="#fff" class="ink-line" stroke-width="2"><rect x="132" y="156" width="46" height="10" rx="2"/><rect x="128" y="146" width="46" height="10" rx="2"/><rect x="134" y="136" width="46" height="10" rx="2"/><rect x="130" y="126" width="46" height="10" rx="2"/><rect x="135" y="116" width="46" height="10" rx="2"/><rect x="131" y="106" width="46" height="10" rx="2"/><rect x="134" y="96" width="46" height="10" rx="2"/></g>
+              <path class="ink-line" d="M8 166H192" stroke-width="2.6"/>
+              <g class="ink-person ink-line" transform="translate(6 67) scale(.62)" stroke-width="3.6">
+                <use href="#p-body" width="160" height="160"/><use href="#face-worry" width="160" height="160"/><use href="#hair-bun" width="160" height="160"/><use href="#prop-laptop" width="160" height="160"/>
+              </g>
+            </svg>
+          </div>
+          <h3 data-edit="P31">打ち込みたいことに
+使う時間が残らない。</h3>
+          <p data-edit="P32">音楽、演劇、研究、スポーツ。本当は練習や創作に時間をかけたいことがあるのに、日々の対応や細かな作業で一日が終わる。AIを使うと楽になるらしいけれど、どう使えば良いのかわからない。</p>
+        </li>
+      </ul>
+      <p class="pains-close" data-edit="P02">何を相談すればよいか、整理できていなくても大丈夫です。
+その混乱を一緒にほどくところから始めます。</p>
+    </div>
+  </section>
+
+  <!-- 三つの支援 -->
+  <section id="support" class="sec bg-sea" aria-labelledby="support-title" data-section="三つの支援">
+    <svg class="waveline" viewBox="0 0 1440 22" preserveAspectRatio="none" aria-hidden="true"><path d="M0 11C120 1 240 21 360 11S600 1 720 11S960 21 1080 11S1320 1 1440 11" fill="none" stroke="#BFDDF2" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>
+    <svg class="deco" viewBox="0 0 60 112" style="width:44px" aria-hidden="true"><use href="#f-yariika"/></svg>
+    <div class="wrap">
+      <h2 id="support-title" class="sec-title" data-edit="S01">あなたの「やりたい」を、道筋と、次の一歩に。</h2>
+      <p class="sec-lead" data-edit="S02">対話で目的を整理し、戦略で道筋をつくり、AIで実行を支える。この3つが整うことで、プラスのサイクルが回りだします。</p>
+      <!-- 3つの支援を、ひとつのサイクルとして見せる図 -->
+      <div class="loop-wrap">
+        <figure class="loop" aria-labelledby="loop-cap">
+          <svg class="loop-ring" viewBox="0 0 520 520" aria-hidden="true">
+            <defs><marker id="loop-arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M1.5 1.5L8 5L1.5 8.5" fill="none" stroke="#1F4E89" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+            <circle cx="260" cy="260" r="180" fill="none" stroke="#DCEBF8" stroke-width="14"/>
+            <g fill="none" stroke="#1F4E89" stroke-width="3" stroke-linecap="round" marker-end="url(#loop-arrow)">
+              <path d="M344.5 101.1A180 180 0 0 1 439.8 250.6"/>
+              <path d="M338.9 421.8A180 180 0 0 1 181.1 421.8"/>
+              <path d="M80.2 250.6A180 180 0 0 1 175.5 101.1"/>
+            </g>
+          </svg>
+          <div class="loop-node" style="--x:50%;--y:15.4%">
+            <span class="loop-halo"><span class="loop-num" aria-hidden="true">1</span><span class="halo"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 11h28a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H22l-8 6v-6h-4a4 4 0 0 1-4-4V15a4 4 0 0 1 4-4z" fill="#fff" stroke="#1F4E89" stroke-width="2.4" stroke-linejoin="round"/><text x="24" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#1F4E89">?</text></svg></span></span>
+            <strong data-edit="S41">整理する</strong>
+            <span class="loop-kind" data-edit="S42">コーチング・対話</span>
+          </div>
+          <div class="loop-node" style="--x:81.4%;--y:64.6%">
+            <span class="loop-halo"><span class="loop-num" aria-hidden="true">2</span><span class="halo"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 38c8 0 8-10 16-10s8-10 14-12" fill="none" stroke="#1F4E89" stroke-width="2.6" stroke-dasharray="1 5" stroke-linecap="round"/><circle cx="8" cy="38" r="3" fill="#fff" stroke="#1F4E89" stroke-width="2"/><path d="M38 18V6" stroke="#1F4E89" stroke-width="2.4" stroke-linecap="round"/><path d="M38 7l8 3-8 3z" fill="#F2B53C" stroke="#1F4E89" stroke-width="1.6" stroke-linejoin="round"/></svg></span></span>
+            <strong data-edit="S43">道筋をつくる</strong>
+            <span class="loop-kind" data-edit="S44">戦略・コンサルティング</span>
+          </div>
+          <div class="loop-node" style="--x:18.6%;--y:64.6%">
+            <span class="loop-halo"><span class="loop-num" aria-hidden="true">3</span><span class="halo"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="9" y="14" width="30" height="19" rx="3" fill="#fff" stroke="#1F4E89" stroke-width="2.4"/><path d="M5 37h38" stroke="#1F4E89" stroke-width="2.6" stroke-linecap="round"/><path d="M15 21h12M15 26h7" stroke="#8DB7E2" stroke-width="2.2" stroke-linecap="round"/><path d="M38 3l1.6 3.4L43 8l-3.4 1.6L38 13l-1.6-3.4L33 8l3.4-1.6z" fill="#F2B53C"/></svg></span></span>
+            <strong data-edit="S45">仕組みをつくる</strong>
+            <span class="loop-kind" data-edit="S46">AI活用・業務効率化</span>
+          </div>
+          <span class="loop-label" style="--x:79.2%;--y:31.4%"><span data-edit="S47">向かう先が決まる</span></span>
+          <span class="loop-label" style="--x:50%;--y:92.5%"><span data-edit="S48">やることが決まる</span></span>
+          <span class="loop-label" style="--x:20.8%;--y:31.4%"><span data-edit="S49">時間と手応えが生まれる</span></span>
+          <div class="loop-center" style="--x:50%;--y:51%">
+            <svg viewBox="0 0 200 48" aria-hidden="true">
+              <use href="#f-shirasu" x="0" y="26" width="38" height="11"/>
+              <path d="M45 28l5 4-5 4" fill="none" stroke="#8DB7E2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <use href="#f-madai" x="56" y="14" width="46" height="29"/>
+              <path d="M109 28l5 4-5 4" fill="none" stroke="#8DB7E2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <use href="#f-kujira" x="120" y="4" width="80" height="40"/>
+            </svg>
+            <p data-edit="S51">回り続けるほど、
+お魚は育つ</p>
+          </div>
+        </figure>
+        <div class="loop-text">
+          <h3 id="loop-cap" data-edit="S52">泳いでいるだけで魚がどんどん成長していくように</h3>
+          <p data-edit="S53">大切にしたいことを整理すると、向かう先が決まる。道筋ができると、自分がやることと、AIに任せることを分けられる。生まれた時間で動いてみると、手応えや新しい気づきが生まれて、また整理したいことが出てくる。</p>
+          <p data-edit="S54">1回のセッションで3つを回すこともあれば、いちばん詰まっている1つに絞ることもあります。どこから始めても、サイクルはつながっています。</p>
+          <p class="loop-growth-note" data-edit="S55">このサイクルを回すことが「やりたいことだけで自分の時間を埋めていく」という理想の人生につながっています。</p>
+        </div>
+      </div>
+      <p class="supports-intro" data-edit="S04">それぞれのステップで行うこと</p>
+      <ul class="supports">
+        <li class="support card">
+          <div class="halo-wrap"><span class="step-num" aria-hidden="true">1</span><div class="halo">
+            <svg viewBox="0 0 200 200" aria-hidden="true">
+              <g class="ink-person ink-line" transform="translate(-6 72) scale(.78)" stroke-width="3">
+                <use href="#p-body" width="160" height="160"/><use href="#face-calm" width="160" height="160"/><use href="#hair-short" width="160" height="160"/><use href="#acc-glasses" width="160" height="160"/>
+              </g>
+              <g transform="translate(198 96) scale(-1 1)"><use href="#f-madai" width="86" height="55"/></g>
+              <path class="ink-line" d="M84 32H128C134 32 138 36 138 42V62C138 68 134 72 128 72H104L92 84L95 72H84C78 72 74 68 74 62V42C74 36 78 32 84 32Z" fill="#fff" stroke-width="2.4"/>
+              <text x="106" y="63" text-anchor="middle" font-size="28" font-weight="700" fill="#1F4E89">?</text>
+            </svg>
+          </div></div>
+          <h3 data-edit="S11">何を大切にしたいのか、整理する</h3>
+          <span class="kind" data-edit="S12">コーチング・対話</span>
+          <p data-edit="S13">周囲の期待、これまでの経験、いま抱えている不安。それらをいったん分けて、自分は何を増やしたくて、何を減らしたいのかを考えます。アカデミアで鍛えた質問力で、話の前提や、まだ言葉になっていない思いを一緒に確かめます。無理に立派なビジョンを作るのではなく、いまの自分が納得できる方向を探します。</p>
+          <ul class="chips"><li class="chips-label">整理するものの例</li><li data-edit="S14">大切にしたいこと</li><li data-edit="S15">避けたいこと</li><li data-edit="S16">迷ったときの判断基準</li></ul>
+        </li>
+        <li class="support card">
+          <div class="halo-wrap"><span class="step-num" aria-hidden="true">2</span><div class="halo">
+            <svg viewBox="0 0 200 200" aria-hidden="true">
+              <path d="M34 160C72 160 62 120 100 118C140 116 122 82 150 72C164 67 168 58 168 48" fill="none" stroke="#1F4E89" stroke-width="3.2" stroke-dasharray="1 8" stroke-linecap="round"/>
+              <path d="M100 118C88 104 76 96 62 90" fill="none" stroke="#8DB7E2" stroke-width="3" stroke-dasharray="1 7" stroke-linecap="round"/>
+              <path d="M54 82l10 10M64 82l-10 10" stroke="#8DB7E2" stroke-width="3" stroke-linecap="round"/>
+              <g fill="#fff" class="ink-line" stroke-width="2.4"><circle cx="100" cy="118" r="7"/><circle cx="150" cy="72" r="7"/></g>
+              <path class="ink-line" d="M168 50V16" stroke-width="2.6"/>
+              <path class="ink-line" d="M168 17L190 24L168 32Z" fill="#F2B53C" stroke-width="2"/>
+              <use href="#f-shirasu" x="8" y="152" width="52" height="15"/>
+            </svg>
+          </div></div>
+          <h3 data-edit="S21">少し先を見据えて、道筋をつくる</h3>
+          <span class="kind" data-edit="S22">戦略・コンサルティング</span>
+          <p data-edit="S23">やりたいことを、願望のままにしないために。いまの仕事や事業、使える時間、収入面の条件、強みを踏まえて、実現への道筋を考えます。何に力を集中するか。何はやらないか。どの順序で試すか。中長期の方向性と、目の前の行動をつなぎます。</p>
+          <ul class="chips"><li class="chips-label">整理するものの例</li><li data-edit="S24">選択肢と優先順位</li><li data-edit="S25">やらないこと</li><li data-edit="S26">まず試す小さな行動</li></ul>
+        </li>
+        <li class="support card">
+          <div class="halo-wrap"><span class="step-num" aria-hidden="true">3</span><div class="halo">
+            <svg viewBox="0 0 200 200" aria-hidden="true">
+              <use href="#f-yariika" x="24" y="30" width="54" height="101"/>
+              <g transform="rotate(-14 30 132)"><use href="#prop-paper" x="20" y="120" width="18" height="23"/></g>
+              <use href="#prop-paper" x="42" y="126" width="18" height="23"/>
+              <g transform="rotate(12 72 130)"><use href="#prop-paper" x="63" y="118" width="18" height="23"/></g>
+              <path d="M86 50l3 6 6 3-6 3-3 6-3-6-6-3 6-3z" fill="#F2B53C"/>
+              <path d="M18 84l2 4 4 2-4 2-2 4-2-4-4-2 4-2z" fill="#F2B53C"/>
+              <g class="ink-person ink-line" transform="translate(84 78) scale(.76)" stroke-width="3">
+                <use href="#p-body" width="160" height="160"/><use href="#face-joy" width="160" height="160"/><use href="#hair-curly" width="160" height="160"/><use href="#prop-book" width="160" height="160"/>
+              </g>
+            </svg>
+          </div></div>
+          <h3 data-edit="S31">動ける時間と仕組みをつくる</h3>
+          <span class="kind" data-edit="S32">AI活用・業務効率化</span>
+          <p data-edit="S33">方針が決まっても、実行する余裕がなければ前に進めません。日々の業務を整理して、自分が取り組みたい仕事と、AIに任せられる作業を分けます。調べもの、文章や資料の下書き、定型的な対応など、あなたの仕事に即したAIの使い方を提案します。</p>
+          <ul class="chips"><li class="chips-label">整理するものの例</li><li data-edit="S34">AIに任せる業務</li><li data-edit="S35">新しいチャレンジ</li><li data-edit="S36">人が確認すべき点</li></ul>
+        </li>
+      </ul>
+      <p class="supports-note" data-edit="S03">ツールを増やすことではなく、やりたいことを進められる状態を目指します。
+システム開発や作業の代行は、別途ご相談ください。</p>
+    </div>
+  </section>
+
+  <!-- 問いの立て方 -->
+  <section class="sec" aria-labelledby="approach-title" data-section="問いの立て方">
+    <svg class="waveline" viewBox="0 0 1440 22" preserveAspectRatio="none" aria-hidden="true"><path d="M0 11C120 1 240 21 360 11S600 1 720 11S960 21 1080 11S1320 1 1440 11" fill="none" stroke="#BFDDF2" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>
+    <svg class="deco" viewBox="0 0 100 64" style="width:84px" aria-hidden="true"><use href="#f-madai"/></svg>
+    <div class="wrap">
+      <h2 id="approach-title" class="sec-title" data-edit="Q01">「どうすれば速くできるか」の前に、「何のためにするのか」を、一緒に考えます。</h2>
+      <div class="dialog-wrap">
+        <div class="dialog card">
+          <p class="dialog-note" data-edit="Q02">相談のイメージ：支援の進め方を説明するための想定例です。実際の相談事例ではありません。</p>
+          <div class="turn">
+            <div class="avatar halo"><svg viewBox="-8 -12 116 88" aria-hidden="true"><use href="#f-madai" width="100" height="64"/></svg></div>
+            <p class="bubble"><span class="who-label">相談者</span><span data-edit="Q11">AIを使って、提案書をもっと速く作りたいんです。</span></p>
+          </div>
+          <div class="turn turn--me">
+            <div class="avatar halo"><svg viewBox="30 22 100 100" aria-hidden="true" style="--skin:#F3CDAE;--hair:#22314B;--shirt:#1F4E89"><use href="#p-body" width="160" height="160"/><use href="#face-calm" width="160" height="160"/><use href="#hair-short" width="160" height="160"/><use href="#acc-glasses" width="160" height="160"/></svg></div>
+            <p class="bubble"><span class="who-label">私</span><span data-edit="Q12">提案書にかかる時間が減ったら、その時間を何に使いたいですか？</span></p>
+          </div>
+          <div class="turn">
+            <div class="avatar halo"><svg viewBox="-8 -12 116 88" aria-hidden="true"><use href="#f-madai" width="100" height="64"/></svg></div>
+            <p class="bubble"><span class="who-label">相談者</span><span data-edit="Q13">本当は、もっと企画を考える仕事に集中したいです。</span></p>
+          </div>
+          <div class="turn turn--me">
+            <div class="avatar halo"><svg viewBox="30 22 100 100" aria-hidden="true" style="--skin:#F3CDAE;--hair:#22314B;--shirt:#1F4E89"><use href="#p-body" width="160" height="160"/><use href="#face-calm" width="160" height="160"/><use href="#hair-short" width="160" height="160"/><use href="#acc-glasses" width="160" height="160"/></svg></div>
+            <p class="bubble"><span class="who-label">私</span><span data-edit="Q14">では、提案書の効率化と一緒に、企画の仕事を増やすために何を変えるかも考えましょう。</span></p>
+          </div>
+          <div class="turn">
+            <div class="avatar halo"><svg viewBox="-8 -12 116 88" aria-hidden="true"><use href="#f-madai" width="100" height="64"/></svg></div>
+            <p class="bubble"><span class="who-label">相談者</span><span data-edit="Q15">はい！お願いします</span></p>
+          </div>
+        </div>
+        <div class="approach-text">
+          <p data-edit="Q03">ご相談いただいた作業を効率化するだけでなく、その先にある「本当に実現したいこと」も確かめます。</p>
+          <p data-edit="Q04">研究で培った考え方を、あなたの仕事や事業に活かします。話を聞くだけで終わらず、必要な場面では具体的な選択肢も提案します。</p>
+          <ol class="method" aria-label="研究で培った考え方の進め方">
+            <li data-edit="Q21">前提を問い直す</li><li class="arr" aria-hidden="true">→</li>
+            <li data-edit="Q22">問題を分ける</li><li class="arr" aria-hidden="true">→</li>
+            <li data-edit="Q23">仮説を立てる</li><li class="arr" aria-hidden="true">→</li>
+            <li data-edit="Q24">小さく試して、確かめる</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- クライアントの声（いまは仮の文章。実際のお声に差し替える） -->
+  <section id="voices" class="sec bg-mist" aria-labelledby="voices-title" data-section="クライアントの声">
+    <svg class="waveline" viewBox="0 0 1440 22" preserveAspectRatio="none" aria-hidden="true"><path d="M0 11C120 1 240 21 360 11S600 1 720 11S960 21 1080 11S1320 1 1440 11" fill="none" stroke="#BFDDF2" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>
+    <div class="wrap">
+      <h2 id="voices-title" class="sec-title" data-edit="V01">ご相談いただいた方の声</h2>
+      <p class="voices-note" data-edit="V02">掲載イメージ（仮の文章）です。実際のお声に差し替えます。</p>
+      <ul class="voices">
+        <li class="voice card">
+          <div class="voice-head"><span class="voice-avatar halo"><svg viewBox="2 -12 60 42" aria-hidden="true"><use href="#f-shirasu" width="64" height="18"/></svg></span><span class="voice-who"><b data-edit="V11">Aさん</b><span data-edit="V12">会社員・作曲（しらすさん）</span></span></div>
+          <p class="voice-quote" data-edit="V13">やりたいことを、やっと言葉にできました。</p>
+          <p class="voice-body" data-edit="V14">仕事の合間に曲を作っていましたが、何から手をつければいいのか分からないままでした。対話の中で、自分が大切にしたいことと、手放してよいことがはっきりしました。資料づくりをAIに任せる方法も教わり、平日の夜に作曲の時間を取れるようになりました。</p>
+        </li>
+        <li class="voice card">
+          <div class="voice-head"><span class="voice-avatar halo"><svg viewBox="-8 -12 116 88" aria-hidden="true"><use href="#f-madai" width="100" height="64"/></svg></span><span class="voice-who"><b data-edit="V21">Bさん</b><span data-edit="V22">個人事業主・デザイナー（まだいさん）</span></span></div>
+          <p class="voice-quote" data-edit="V23">遠回りしていた理由が見えました。</p>
+          <p class="voice-body" data-edit="V24">頑張っているのに結果につながらない、と感じていました。「その仕事は、何のために受けていますか」という問いで、引き受ける仕事の基準を見直し、やらないことを決められました。次の一か月で小さく試す計画まで一緒に考えてもらえたので、すぐに動き出せました。</p>
+        </li>
+        <li class="voice card">
+          <div class="voice-head"><span class="voice-avatar halo"><svg viewBox="0 -6 120 84" aria-hidden="true"><use href="#f-school" width="120" height="72"/></svg></span><span class="voice-who"><b data-edit="V31">Cさん</b><span data-edit="V32">大学院生・子育て中（文化・子育て枠）</span></span></div>
+          <p class="voice-quote" data-edit="V33">研究に向かう時間が戻ってきました。</p>
+          <p class="voice-body" data-edit="V34">研究と子育てで、いつも時間が足りませんでした。毎日の作業を一緒に洗い出し、文献の整理やメールの下書きなど、AIに任せられることを具体的に決めました。限られた時間でも研究を進められる手応えがあり、続けていく自信がつきました。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 物語 -->
+  <section id="story" class="sec bg-sea" aria-labelledby="story-title" data-section="物語">
+    <svg class="waveline" viewBox="0 0 1440 22" preserveAspectRatio="none" aria-hidden="true"><path d="M0 11C120 1 240 21 360 11S600 1 720 11S960 21 1080 11S1320 1 1440 11" fill="none" stroke="#BFDDF2" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>
+    <svg class="deco" viewBox="0 0 150 60" style="width:120px" aria-hidden="true"><use href="#f-maguro"/></svg>
+    <div class="wrap story-grid">
+      <figure class="story-art slot" data-img="images/story.png" data-alt="本に囲まれて、好きな研究に没頭している人">
+        <svg viewBox="0 0 360 300" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="storyArt">
+          <title id="storyArt">本に囲まれて、好きな研究に没頭している人</title>
+          <rect width="360" height="300" fill="#EAF2FA"/>
+          <rect x="226" y="30" width="104" height="120" rx="10" fill="#FFFFFF"/>
+          <rect x="234" y="38" width="88" height="104" rx="6" fill="#CFE9F7"/><path d="M234 96H322V136C322 139 319 142 316 142H240C237 142 234 139 234 136Z" fill="#8FCDEB"/><use href="#f-kujira" x="250" y="82" width="40" height="20" opacity=".6"/>
+          <path d="M278 38V142M234 90H322" stroke="#FFFFFF" stroke-width="5"/>
+          <rect x="22" y="232" width="316" height="12" rx="6" fill="#D9B48C"/>
+          <rect x="30" y="244" width="300" height="56" fill="#D2AA80"/>
+          <g><rect x="44" y="210" width="72" height="22" rx="3" fill="#1F4E89"/><rect x="50" y="190" width="62" height="20" rx="3" fill="#8DB7E2"/><rect x="46" y="172" width="66" height="18" rx="3" fill="#F2B53C"/><rect x="52" y="156" width="58" height="16" rx="3" fill="#7CC5A6"/></g>
+          <use href="#f-shirasu" x="56" y="140" width="52" height="15"/>
+          <g transform="translate(110 76)" style="--skin:#F3CDAE;--hair:#2A2F3A;--shirt:#FFFFFF;--collar:#C9D8E8;--book:#1F4E89">
+            <use href="#p-body" width="160" height="160"/><use href="#face-joy" width="160" height="160"/><use href="#hair-short" width="160" height="160"/><use href="#acc-glasses" width="160" height="160"/><use href="#prop-book" width="160" height="160"/>
+          </g>
+          <path d="M290 232L294 204H322L326 232Z" fill="#fff"/>
+          <g fill="#7CC5A6"><ellipse cx="300" cy="190" rx="7" ry="16" transform="rotate(-22 300 190)"/><ellipse cx="316" cy="188" rx="7" ry="17" transform="rotate(20 316 188)"/><ellipse cx="308" cy="182" rx="6" ry="16"/></g>
+        </svg>
+      </figure>
+      <div class="story-text">
+        <h2 id="story-title" class="sec-title" data-edit="M01">私も、ただ、
+好きな研究に没頭したかった。</h2>
+        <p data-edit="M02">私が欲しかったのは、好きな研究に、自分の時間を使える人生でした。</p>
+        <p data-edit="M03">けれど、そのためには、仕事や収入のあり方も考えなければなりませんでした。大学で研究と教育に携わりながら、事業を立ち上げ、運営し、売却する。長い試行錯誤を経て、いまは大好きな研究に没頭しています。</p>
+        <p data-edit="M04">だから、「やりたいことはあるのに、そこへ向かう時間がない」という悩みは、私にとって他人事ではありません。</p>
+        <p data-edit="M05">もちろん、私と同じ道を歩く必要はありません。好きなことを仕事にする人もいれば、仕事の仕組みを整えて、仕事以外の大切なことに時間を使う人もいる。その人自身が望む形を見つけて、それを実現していく。</p>
+        <p data-edit="M06">面倒な仕事なら、喜んでAIに任せたい。そうして生まれた時間を、本当に好きなことに使ってほしい。誰もが、自分の情熱や偏愛に駆動されて、大好きなことに没頭できる世界をつくりたい。
+その思いで、おさかなコーチングをやっています。</p>
+        <div class="profile card">
+          <div class="halo profile-photo"><img src="data:image/jpeg;base64,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" alt="須藤 明人（あきひと先生）の写真" width="320" height="320"></div>
+          <dl>
+            <dt data-edit="M07">須藤 明人（あきひと先生）</dt>
+            <dd data-edit="M08">元国立大学教員・AI/物理/哲学研究者
+事業の立ち上げ・運営・売却を経験</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- おすすめします（いまは仮の文章。実際の推薦文に差し替える） -->
+  <section id="recommend" class="sec" aria-labelledby="recommend-title" data-section="おすすめします">
+    <svg class="waveline" viewBox="0 0 1440 22" preserveAspectRatio="none" aria-hidden="true"><path d="M0 11C120 1 240 21 360 11S600 1 720 11S960 21 1080 11S1320 1 1440 11" fill="none" stroke="#BFDDF2" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>
+    <div class="wrap">
+      <h2 id="recommend-title" class="sec-title" data-edit="W01">おすすめします</h2>
+      <p class="sec-lead" data-edit="W02">あきひと先生をよく知る方から、推薦の言葉をいただきました。</p>
+      <p class="voices-note" data-edit="W03">掲載イメージ（仮の文章）です。実際の推薦文に差し替えます。</p>
+      <ul class="recommends">
+        <li class="recommend card">
+          <p class="recommend-quote" data-edit="W13">相手の話から、本当の問いを見つけ出す人です。</p>
+          <p class="recommend-body" data-edit="W14">研究の場で長く一緒に仕事をしてきました。彼のいちばんの強みは、相手がまだ言葉にできていない関心をすくい上げ、取り組むべき問いの形に整えてくれることです。迷っているときほど、話してみる価値がある人だと思います。</p>
+          <div class="recommend-by"><span class="recommend-avatar halo"><svg viewBox="30 22 100 100" aria-hidden="true"><g class="ink-person ink-line" stroke-width="3"><use href="#p-body" width="160" height="160"/><use href="#face-calm" width="160" height="160"/><use href="#hair-bob" width="160" height="160"/></g></svg></span><span class="recommend-who"><b data-edit="W11">Dさん</b><span data-edit="W12">大学教授・情報科学</span></span></div>
+        </li>
+        <li class="recommend card">
+          <p class="recommend-quote" data-edit="W23">理想を、実行できる手順にまで落とし込んでくれます。</p>
+          <p class="recommend-body" data-edit="W24">事業の立ち上げから売却まで、近くで見てきました。大きな理想を語るだけでなく、数字と手順に落とし込み、最初の一歩が踏み出せるところまで付き合ってくれます。AIの使い方も、現場の仕事に合わせて具体的に考えてくれる人です。</p>
+          <div class="recommend-by"><span class="recommend-avatar halo"><svg viewBox="30 22 100 100" aria-hidden="true"><g class="ink-person ink-line" stroke-width="3"><use href="#p-body" width="160" height="160"/><use href="#face-joy" width="160" height="160"/><use href="#hair-short" width="160" height="160"/></g></svg></span><span class="recommend-who"><b data-edit="W21">Eさん</b><span data-edit="W22">会社経営者</span></span></div>
+        </li>
+        <li class="recommend card">
+          <p class="recommend-quote" data-edit="W33">好きなことに打ち込む人を、心から応援する人です。</p>
+          <p class="recommend-body" data-edit="W34">長年の友人です。創作に没頭したい気持ちと、生活を成り立たせなければならない現実。その両方を分かったうえで、どうすれば好きなことに時間を使えるかを一緒に考えてくれます。何かに打ち込んでいる人にこそ、話してみてほしいです。</p>
+          <div class="recommend-by"><span class="recommend-avatar halo"><svg viewBox="30 22 100 100" aria-hidden="true"><g class="ink-person ink-line" stroke-width="3"><use href="#p-body" width="160" height="160"/><use href="#face-calm" width="160" height="160"/><use href="#hair-curly" width="160" height="160"/></g></svg></span><span class="recommend-who"><b data-edit="W31">Fさん</b><span data-edit="W32">作曲家</span></span></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 理念：回遊 -->
+  <section class="sec philo" aria-labelledby="philo-title" data-section="理念と回遊">
+    <svg class="waveline" viewBox="0 0 1440 22" preserveAspectRatio="none" aria-hidden="true"><path d="M0 11C120 1 240 21 360 11S600 1 720 11S960 21 1080 11S1320 1 1440 11" fill="none" stroke="#BFDDF2" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>
+    <svg class="bubbles-bg" viewBox="0 0 1000 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g fill="none" stroke="#B6D9F0" stroke-width="2"><circle cx="70" cy="160" r="7"/><circle cx="86" cy="130" r="4"/><circle cx="930" cy="220" r="6"/><circle cx="944" cy="192" r="3.5"/><circle cx="900" cy="640" r="5"/><circle cx="110" cy="620" r="4"/></g></svg>
+    <div class="wrap">
+      <h2 id="philo-title" class="sec-title" data-edit="R01">あなたの偏愛が育つことは、あなた一人の幸せでは終わらない。</h2>
+      <div class="philo-body">
+        <p data-edit="R02">AIに任せられる仕事は、AIに任せる。そして人は、自分が本当に打ち込みたいことを、誰かの役に立つ仕事へ育てていく。私は、それが、本人の幸せと社会の豊かさを両立する鍵になると考えています。</p>
+        <p data-edit="R03">偏愛と結びつかない仕事は、これからますますAIのほうが得意になっていきます。その変化を止めていまの仕事を守るよりも、人が打ち込みたい仕事へ移っていけるほうが、本人にとっても、社会にとっても豊かなはずです。</p>
+      </div>
+      <p class="philo-key" data-edit="R04">今の仕事にとどまるしかない状態から、
+自分が打ち込みたい仕事を選べる状態へ。</p>
+      <div class="philo-body">
+        <p data-edit="R05">だから、いま大きな金額を払える人だけを支援したいわけではありません。これから始める人にも、自分の可能性を育てる機会を届けたい。</p>
+      </div>
+      <div class="cycle">
+        <div class="cycle-art">
+          <svg viewBox="0 0 480 480" role="img" aria-labelledby="cycleArt">
+            <defs><path id="heart" d="M0 7C-5 3-9 0-9-4A4.5 4.5 0 0 1 0-6A4.5 4.5 0 0 1 9-4C9 0 5 3 0 7Z"/></defs>
+            <title id="cycleArt">しらすさんが、やりいかさん、まだいさん、マグロさん、しゃちさん、クジラさんへと育ち、大きく育ったお魚が回遊して、次のしらすさんを応援する循環</title>
+            <path d="M240 70A170 170 0 1 1 92.8 155" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="2 9" stroke-linecap="round" opacity=".6"/>
+            <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M-6 -7L4 0L-6 7" transform="translate(325 92.8) rotate(30)"/>
+              <path d="M-6 -7L4 0L-6 7" transform="translate(410 240) rotate(90)"/>
+              <path d="M-6 -7L4 0L-6 7" transform="translate(325 387.2) rotate(150)"/>
+              <path d="M-6 -7L4 0L-6 7" transform="translate(155 387.2) rotate(210)"/>
+              <path d="M-6 -7L4 0L-6 7" transform="translate(70 240) rotate(270)"/>
+            </g>
+            <!-- 大きく育ったクジラさんの潮吹きが、ハートになって次のしらすさんへ届く（応援する側に回る） -->
+            <g fill="none" stroke="#8ACBEA" stroke-width="3.5" stroke-linecap="round"><path d="M122 128C121 120 116 113 109 110"/><path d="M122 128C122 120 122 114 122 107"/><path d="M122 128C124 120 129 114 136 112"/></g>
+            <g fill="#E8817A"><use href="#heart" transform="translate(137.7 104.2) scale(0.8)"/><use href="#heart" transform="translate(160.2 89.9) scale(0.95)"/><use href="#heart" transform="translate(184.7 79.3) scale(1.1)"/></g>
+            <use href="#f-shirasu" x="200" y="58" width="80" height="22"/>
+            <use href="#f-yariika" x="368" y="118" width="38" height="71"/>
+            <use href="#f-madai" x="341" y="296" width="92" height="59"/>
+            <g transform="translate(305 386) scale(-1 1)"><use href="#f-maguro" width="130" height="52"/></g>
+            <g transform="translate(160 290) scale(-1 1)"><use href="#f-shachi" width="134" height="68"/></g>
+            <use href="#f-kujira" x="14" y="114" width="158" height="79"/>
+            <text x="240" y="38" text-anchor="middle" font-size="20" fill="currentColor" font-weight="700">はじめは、しらすさん</text>
+            <text x="146" y="62" text-anchor="end" font-size="19" fill="currentColor" font-weight="700">回遊して、</text>
+            <text x="146" y="88" text-anchor="end" font-size="19" fill="#C9574D" font-weight="700">次を応援</text>
+            <text x="240" y="212" text-anchor="middle" font-size="18" fill="currentColor" opacity=".75" letter-spacing="2">おさかなコーチング</text>
+            <text x="240" y="250" text-anchor="middle" font-size="30" fill="currentColor" style="font-family:var(--hand);font-weight:600">お魚たちを</text>
+            <text x="240" y="290" text-anchor="middle" font-size="30" fill="currentColor" style="font-family:var(--hand);font-weight:600">幸せに育てる</text>
+          </svg>
+        </div>
+        <ol class="stages">
+          <li><strong data-edit="R11">はじめは、しらすさんでいい</strong><span data-edit="R12">小さな偏愛や挑戦を持って、相談に来てください。</span></li>
+          <li><strong data-edit="R21">偏愛を、仕事や活動へ育てる</strong><span data-edit="R22">それが誰のどんな役に立つのかまで、一緒に考えます。</span></li>
+          <li><strong data-edit="R31">それぞれの海で活躍する</strong><span data-edit="R32">自分の好きな海へ泳いでいって、生き生きと活躍してください。</span></li>
+          <li><strong data-edit="R41">余裕ができたら、回遊して戻ってくる</strong><span data-edit="R42">何年か後、マグロさんやクジラさんとしての相談や応援が、また次の小さな挑戦を支えます。</span></li>
+        </ol>
+      </div>
+      <p class="philo-pride" data-edit="R06">おさかなコーチングは、お魚たちを幸せに育てる取り組みです。育てたしらすさんが大きくなって、いろいろな海で活躍していること。それが、私にとって何よりうれしいことです。</p>
+      <p class="free-note"><strong data-edit="R07">戻ってくるかどうかは、完全に自由です。</strong><span data-edit="R08">将来の返済や成功報酬、寄付の義務はありません。戻ってこなくても、どこかの海で活躍していてくれたら、それがいちばんうれしい。</span></p>
+    </div>
+  </section>
+
+  <!-- 相談の内容と流れ -->
+  <section class="sec" aria-labelledby="offer-title" data-section="相談の内容と流れ">
+    <svg class="waveline" viewBox="0 0 1440 22" preserveAspectRatio="none" aria-hidden="true"><path d="M0 11C120 1 240 21 360 11S600 1 720 11S960 21 1080 11S1320 1 1440 11" fill="none" stroke="#BFDDF2" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>
+    <svg class="deco" viewBox="0 0 170 86" style="width:118px" aria-hidden="true"><use href="#f-shachi"/></svg>
+    <div class="wrap">
+      <h2 id="offer-title" class="sec-title" data-edit="O01">まずは、いま抱えている課題を持ってきてください。</h2>
+      <div class="offer">
+        <div class="offer-card card">
+          <span class="tag">初回</span>
+          <h3 data-edit="O11">無料・1時間・オンライン</h3>
+          <p data-edit="O12">コーチングでいまの状況を一緒に理解し、戦略を検討し、AI活用を提案します。その回でいちばん扱うべき課題を決めて、次の一歩を考えます。</p>
+          <dl><dt>時間</dt><dd data-edit="O13">1時間</dd><dt>方法</dt><dd data-edit="O14">オンライン</dd><dt>料金</dt><dd data-edit="O15">無料</dd></dl>
+        </div>
+        <div class="offer-card card">
+          <span class="tag">2回目以降</span>
+          <h3 data-edit="O21">1時間ごと・オンライン</h3>
+          <p data-edit="O22">戦略の具体化、実行してみたあとの振り返り、AI活用の見直しなど、必要なことを続けて扱います。料金は下の料金表をご覧ください。</p>
+          <dl class="dl-stack"><dt>頻度</dt><dd data-edit="O25">週1回、隔週、毎月など、クライアントの要望や状況、予約の空き状況をもとに決めます。</dd><dt>対面・時間外支援</dt><dd data-edit="O23">対面をご希望の場合や、相談時間外の対応が必要な場合は、ご相談ください。対面は移動時間も面談時間として計算し、交通費は別途いただきます。時間外の対応は、別途お見積もりします。</dd></dl>
+        </div>
+      </div>
+      <p class="offer-out" data-edit="O02">個別相談で扱うのは、対話・戦略づくり・AI活用の提案です。システム開発や作業の代行は、別途ご相談ください。</p>
+      <ol class="flow" aria-label="申し込みから相談までの流れ">
+        <li><h3 data-edit="O31">フォームから申し込む</h3><p data-edit="O32">相談したいこと、AI活用の提案の希望、料金区分などを伺います。</p></li>
+        <li><h3 data-edit="O33">日程を決める</h3><p data-edit="O34">日程を調整してご連絡します。</p></li>
+        <li><h3 data-edit="O35">初回無料相談</h3><p data-edit="O36">オンラインで1時間。いまの状況を整理するところから始めます。</p></li>
+        <li><h3 data-edit="O37">続けるかを決める</h3><p data-edit="O38">続けたい場合は、2回目以降のご相談へ。決めるのは相談のあとで大丈夫です。</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 料金 -->
+  <section id="price" class="sec bg-sea" aria-labelledby="price-title" data-section="料金">
+    <svg class="waveline" viewBox="0 0 1440 22" preserveAspectRatio="none" aria-hidden="true"><path d="M0 11C120 1 240 21 360 11S600 1 720 11S960 21 1080 11S1320 1 1440 11" fill="none" stroke="#BFDDF2" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>
+    <div class="wrap">
+      <h2 id="price-title" class="sec-title" data-edit="F01">好きなことに向かう一歩を、応援したい。</h2>
+      <div class="price-why">
+        <p data-edit="F02">私が増やしたいのは、自分の大切なことに時間を使える人です。そのための相談の機会を、経済的な事情だけで狭めたくないと考えています。</p>
+        <p data-edit="F03">初回のご相談は無料です。2回目以降は、個人の方から企業まで、それぞれの状況に応じた料金をご用意しています。個人の方は、しらすさん〜マグロさんの中から、ご自身で自由にお選びください。文化的な活動に打ち込む方や子育て中の方には、文化・子育て枠もご用意しています。</p>
+      </div>
+      <p class="price-pledge" data-edit="F04">料金の違いは、ご相談に向き合う真剣さの違いではありません。</p>
+
+      <div class="tiers-caption"><h3>2回目以降の料金</h3><span>1時間・税込</span></div>
+      <div class="shelf">
+        <svg class="shelf-deco" viewBox="0 0 1000 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".85"><circle cx="40" cy="60" r="6"/><circle cx="54" cy="36" r="4"/><circle cx="512" cy="30" r="4"/><circle cx="960" cy="70" r="6"/><circle cx="972" cy="44" r="3.5"/></g><path d="M0 120C80 110 160 130 240 120S400 110 480 120S640 130 720 120S880 110 1000 120" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".6"/></svg>
+        <ul class="tiers">
+          <li class="tier-label tier-label--culture" data-edit="F08">学生・研究・文化芸術・子育てなど</li>
+          <li class="tier tier--culture"><div class="fig slot" data-img="images/fish-mure.png" data-alt="群れで泳ぐ小魚たち（文化・子育て枠）" style="--fw:112px"><svg viewBox="0 0 120 72" aria-hidden="true"><use href="#f-school"/></svg></div><div class="pedestal"><span class="plate"><span class="name" data-edit="F64">文化・子育て枠</span><span class="price"><span data-edit="F65">1,000</span><small>円</small></span><span class="who who--ticket" data-edit="F66">チケットを使えば2回目以降も無料です</span></span></div></li>
+          <li class="tier-label tier-label--personal" data-edit="F05">個人の方は、この中から自由に</li>
+          <li class="tier"><div class="fig slot" data-img="images/fish-shirasu.png" data-alt="しらすさん" style="--fw:70px"><svg viewBox="0 0 64 18" aria-hidden="true"><use href="#f-shirasu"/></svg></div><div class="pedestal"><span class="plate"><span class="name" data-edit="F11">しらすさん</span><span class="price"><span data-edit="F12">2,000</span><small>円</small></span><span class="who" data-edit="F13">個人の方</span></span></div></li>
+          <li class="tier"><div class="fig slot" data-img="images/fish-yariika.png" data-alt="やりいかさん" style="--fw:50px"><svg viewBox="0 0 60 112" aria-hidden="true"><use href="#f-yariika"/></svg></div><div class="pedestal"><span class="plate"><span class="name" data-edit="F21">やりいかさん</span><span class="price"><span data-edit="F22">5,000</span><small>円</small></span><span class="who" data-edit="F23">個人の方</span></span></div></li>
+          <li class="tier"><div class="fig slot" data-img="images/fish-madai.png" data-alt="まだいさん" style="--fw:96px"><svg viewBox="0 0 100 64" aria-hidden="true"><use href="#f-madai"/></svg></div><div class="pedestal"><span class="plate"><span class="name" data-edit="F31">まだいさん</span><span class="price"><span data-edit="F32">8,000</span><small>円</small></span><span class="who" data-edit="F33">個人の方</span></span></div></li>
+          <li class="tier"><div class="fig slot" data-img="images/fish-maguro.png" data-alt="マグロさん" style="--fw:128px"><svg viewBox="0 0 150 60" aria-hidden="true"><use href="#f-maguro"/></svg></div><div class="pedestal"><span class="plate"><span class="name" data-edit="F41">マグロさん</span><span class="price"><span data-edit="F42">10,000</span><small>円</small></span><span class="who" data-edit="F43">個人の方</span></span></div></li>
+          <li class="tier-label tier-label--biz" data-edit="F06">法人向け（企業の業務相談）</li>
+          <li class="tier tier--shachi"><div class="fig slot" data-img="images/fish-shachi.png" data-alt="しゃちさん" style="--fw:142px"><svg viewBox="0 0 170 86" aria-hidden="true"><use href="#f-shachi"/></svg></div><div class="pedestal"><span class="plate"><span class="name" data-edit="F51">しゃちさん</span><span class="price"><span data-edit="F52">30,000</span><small>円</small></span><span class="who" data-edit="F53">従業員5〜49名の企業</span></span></div></li>
+          <li class="tier tier--kujira"><div class="fig slot" data-img="images/fish-kujira.png" data-alt="クジラさん" style="--fw:160px"><svg viewBox="0 0 220 110" aria-hidden="true"><use href="#f-kujira"/></svg></div><div class="pedestal"><span class="plate"><span class="name" data-edit="F61">クジラさん</span><span class="price"><span data-edit="F62">50,000</span><small>円</small></span><span class="who" data-edit="F63">従業員50名以上の企業</span></span></div></li>
+        </ul>
+      </div>
+      <ul class="price-notes">
+        <li><strong data-edit="F74">しらすさん〜マグロさんは自己申告です。</strong><span data-edit="F75">いまのご自身に合うと思う区分を自由にお選びください。どの区分を選んでも、ご相談の内容や向き合い方は変わりません。</span></li>
+        <li><strong data-edit="F76">企業にお勤めの方の個人的なご相談</strong><span data-edit="F77">や、従業員4名以下の事業者の方の業務相談も、しらすさん〜マグロさんからお選びいただけます。</span><span class="note-line" data-edit="F78">しゃちさん・クジラさんは、企業の業務としてのご相談に適用します。</span></li>
+        <li data-edit="F73">金額はすべて税込です。対面の場合は移動時間も面談時間として計算し、交通費を別途いただきます。</li>
+      </ul>
+
+      <div class="extra">
+        <div class="extra-card card culture-card">
+          <div class="culture-text">
+            <h3><svg viewBox="0 0 64 64" style="width:40px" aria-hidden="true"><use href="#f-coral"/></svg><span data-edit="F81">文化・子育て枠</span></h3>
+            <p class="price-inline" data-edit="F82">2回目以降も 1回（1時間）1,000円・税込</p>
+            <p class="ticket-note"><a href="#pay-forward"><span data-edit="F85">チケットを使えば2回目以降も無料です</span></a></p>
+            <p data-edit="F83">学生、研究者、文化・芸術関係など、すぐにはお金にならなくても社会を豊かにする仕事に取り組んでいる方、これから目指している方のための枠です。子育て中の方もご利用いただけます。どの仕事にも価値があります。そのうえで私は、こうした挑戦を特に応援したいと考えています。</p>
+            <p data-edit="F84">ここに挙げた例に当てはまらなくても、事情と取り組みの内容によってお申し込みいただけます。経済活動の外側で社会を豊かにしてくださっている方は、どなたでも申し込めます。申し込みフォームで「文化・子育て枠」を選び、理由をお書きください。理由を拝見して運営が判断するため、ご希望に添えない場合もあります。</p>
+          </div>
+          <div class="culture-art" aria-hidden="true">
+            <svg viewBox="0 0 200 160">
+              <g fill="none" stroke="#B6D9F0" stroke-width="2"><circle cx="168" cy="22" r="5"/><circle cx="180" cy="8" r="3"/><circle cx="24" cy="40" r="4"/></g>
+              <use href="#f-school" x="36" y="16" width="160" height="96"/>
+              <use href="#f-coral" x="6" y="88" width="72" height="72"/>
+              <use href="#f-coral" x="150" y="112" width="46" height="46"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- ペイフォワード・チケット：寄付を、文化・子育て枠の無料相談チケットとして見えるようにする -->
+        <div class="payforward card" id="pay-forward">
+          <div class="pf-main">
+            <span class="pf-tag" data-edit="T01">ペイフォワード</span>
+            <h3 data-edit="T02">文化的な活動や子育てを頑張る人へ、相談1回分を先に贈る。</h3>
+            <p data-edit="T03">受け取った恩を、次の誰かに先に渡していく。文化的な活動や子育てを頑張っている人を応援したい方が相談料を先に支払うと、文化・子育て枠の無料相談チケットになります。</p>
+            <ol class="pf-flow">
+              <li><span class="pf-icon"><svg viewBox="0 0 220 110" aria-hidden="true"><use href="#f-kujira"/></svg></span><span data-edit="T11">応援したい人が、相談料を先に支払う</span></li>
+              <li><span class="pf-icon"><svg viewBox="0 0 48 32" aria-hidden="true"><path d="M4 4h40v8a4 4 0 0 0 0 8v8H4v-8a4 4 0 0 0 0-8z" fill="#FFF6DB" stroke="#E0A93A" stroke-width="2" stroke-linejoin="round"/><path d="M16 6v20" stroke="#E0A93A" stroke-width="1.6" stroke-dasharray="2 3"/><use href="#f-iwashi" x="19" y="11" width="22" height="8"/></svg></span><span data-edit="T12">無料相談チケットになって、ここに並ぶ</span></li>
+              <li><span class="pf-icon"><svg viewBox="0 0 120 72" aria-hidden="true"><use href="#f-school"/></svg></span><span data-edit="T13">文化・子育て枠の人が、チケットを使って2回目以降も無料で相談できる</span></li>
+            </ol>
+            <p class="pf-story" data-edit="T04">大きく育ったお魚さんが、次の小魚たちの挑戦を応援する。おさかなコーチングの回遊のかたちのひとつです。</p>
+          </div>
+          <div class="pf-board">
+            <p class="pf-count"><span data-edit="T21">いま使えるチケット</span><span class="pf-num"><b id="ticket-count">5</b>枚</span></p>
+            <ul class="tickets" id="ticket-list" aria-label="いま使えるペイフォワード・チケット"><li class="ticket"><span class="ticket-stub"><svg viewBox="0 0 120 72" aria-hidden="true"><use href="#f-school"/></svg></span><span class="ticket-body"><b>文化・子育て枠</b><span>無料相談</span><small>1回分・No.<span class="ticket-no">1</span></small></span></li><li class="ticket"><span class="ticket-stub"><svg viewBox="0 0 120 72" aria-hidden="true"><use href="#f-school"/></svg></span><span class="ticket-body"><b>文化・子育て枠</b><span>無料相談</span><small>1回分・No.<span class="ticket-no">2</span></small></span></li><li class="ticket"><span class="ticket-stub"><svg viewBox="0 0 120 72" aria-hidden="true"><use href="#f-school"/></svg></span><span class="ticket-body"><b>文化・子育て枠</b><span>無料相談</span><small>1回分・No.<span class="ticket-no">3</span></small></span></li><li class="ticket"><span class="ticket-stub"><svg viewBox="0 0 120 72" aria-hidden="true"><use href="#f-school"/></svg></span><span class="ticket-body"><b>文化・子育て枠</b><span>無料相談</span><small>1回分・No.<span class="ticket-no">4</span></small></span></li><li class="ticket"><span class="ticket-stub"><svg viewBox="0 0 120 72" aria-hidden="true"><use href="#f-school"/></svg></span><span class="ticket-body"><b>文化・子育て枠</b><span>無料相談</span><small>1回分・No.<span class="ticket-no">5</span></small></span></li></ul>
+            <p class="pf-empty" id="ticket-empty" hidden data-edit="T23">いまは使えるチケットがありません。次の応援をお待ちしています。</p>
+            <p class="pf-note" data-edit="T22">枚数は目安です。運営がときどき更新します。</p>
+            <div class="pf-actions">
+              <p data-edit="T31">チケットで応援したい方には、方法を個別にご案内します。</p>
+              <p data-edit="T32">チケットを使いたい方は、申し込みフォームで「文化・子育て枠」を選び、理由をお書きください。</p>
+            </div>
+          </div>
+          <template id="ticket-tpl"><li class="ticket"><span class="ticket-stub"><svg viewBox="0 0 120 72" aria-hidden="true"><use href="#f-school"/></svg></span><span class="ticket-body"><b>文化・子育て枠</b><span>無料相談</span><small>1回分・No.<span class="ticket-no"></span></small></span></li></template>
+        </div>
+      </div>
+      <p class="sustain" data-edit="F07">私自身も、大好きな研究を続けながら、この支援を長く続けたいと思っています。無理のない範囲で、一人ひとりの挑戦に向き合っていきます。</p>
+    </div>
+  </section>
+
+  <!-- よくある質問 -->
+  <section id="faq" class="sec" aria-labelledby="faq-title" data-section="よくある質問">
+    <svg class="waveline" viewBox="0 0 1440 22" preserveAspectRatio="none" aria-hidden="true"><path d="M0 11C120 1 240 21 360 11S600 1 720 11S960 21 1080 11S1320 1 1440 11" fill="none" stroke="#BFDDF2" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>
+    <div class="wrap">
+      <h2 id="faq-title" class="sec-title">よくある質問</h2>
+      <div class="faq">
+        <details><summary><span data-edit="K11">やりたいことが、まだわかりません。相談できますか？</span></summary><div class="a"><p data-edit="K12">その状態からご相談いただけます。いまの仕事や暮らしで、何に充実感があり、何に違和感があるのか。一緒に整理するところから始めます。</p></div></details>
+        <details><summary><span data-edit="K21">好きなことを仕事にしないといけませんか？</span></summary><div class="a"><p data-edit="K22">いいえ。好きなことを仕事にすることだけが目的ではありません。いまの仕事を効率化したり、働き方や事業の仕組みを見直したりして、研究・創作・趣味などに使う時間を増やすことも、同じように大切なご相談です。</p></div></details>
+        <details><summary><span data-edit="K31">AIに詳しくなくても相談できますか？</span></summary><div class="a"><p data-edit="K32">はい。ツールの知識ではなく、「何を実現したいか」「どこで困っているか」からお話を伺います。AIを使うことを前提にせず、必要な場面で、仕事に合った使い方を考えます。</p></div></details>
+        <details><summary><span data-edit="K41">コーチングとコンサルティング、どちらを申し込めばよいですか？</span></summary><div class="a"><p data-edit="K42">あらかじめ選ぶ必要はありません。考えを整理する対話が必要なのか、具体的な選択肢の提案が必要なのか、ご相談内容に合わせて進めます。申し込みフォームでは、AI活用の提案を希望するかどうかだけ選んでいただきます（「当日決めたい」も選べます）。</p></div></details>
+        <details><summary><span data-edit="K51">料金区分は、どう選べばよいですか？</span></summary><div class="a"><p data-edit="K52">個人の方は、しらすさん〜マグロさんから、いまのご自身に合うと思う区分を自由にお選びください（自己申告です）。企業の業務としてのご相談は、従業員数に応じてしゃちさん・クジラさんになります。</p></div></details>
+        <details><summary><span data-edit="K61">将来、恩返しや寄付をしないといけませんか？</span></summary><div class="a"><p data-edit="K62">いいえ。将来の返済や成功報酬、寄付の義務は一切ありません。大きくなって戻ってきてくださったらうれしいですが、戻ってこなくても、どこかで活躍していてくだされば、それが何よりです。</p></div></details>
+        <details><summary><span data-edit="K71">対面で相談できますか？</span></summary><div class="a"><p data-edit="K72">初回はオンラインです。2回目以降で対面をご希望の場合はご相談ください。移動時間も面談時間として計算し、交通費は別途いただきます。</p></div></details>
+        <details><summary><span data-edit="K81">システム開発や作業の代行もお願いできますか？</span></summary><div class="a"><p data-edit="K82">個別相談で扱うのは、対話・戦略づくり・AI活用の提案です。システム開発や作業の代行は、別途ご相談ください。</p></div></details>
+        <details><summary><span data-edit="K91">なぜ紹介制なのですか？</span></summary><div class="a"><p data-edit="K92">一人ひとりのご相談に向き合うため、当面はご紹介を受けた方のみ、お申し込みを受け付けています。このページは、紹介者の方からURLを受け取った方にお届けしています。</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 最後の申し込み -->
+  <section id="apply" class="sec final" aria-labelledby="final-title" data-section="最後の申し込み">
+    <svg class="waveline" viewBox="0 0 1440 22" preserveAspectRatio="none" aria-hidden="true"><path d="M0 11C120 1 240 21 360 11S600 1 720 11S960 21 1080 11S1320 1 1440 11" fill="none" stroke="#BFDDF2" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>
+    <div class="wrap">
+      <div class="final-art">
+        <svg viewBox="0 0 600 210" role="img" aria-labelledby="finalArt">
+          <title id="finalArt">海面で潮を吹くクジラさんと、そのまわりを泳ぐしらすさんたち</title>
+          <g class="spout" fill="none" stroke="#8ACBEA" stroke-width="6" stroke-linecap="round">
+            <path d="M300 84C298 60 284 44 266 38"/>
+            <path d="M300 84C300 58 300 42 300 26"/>
+            <path d="M300 84C302 60 316 44 334 38"/>
+          </g>
+          <g fill="#8ACBEA"><circle cx="258" cy="44" r="4"/><circle cx="342" cy="44" r="4"/><circle cx="300" cy="18" r="4"/></g>
+          <use href="#f-kujira" x="150" y="60" width="220" height="110"/>
+          <path d="M20 150C70 140 120 160 170 150S270 140 320 150S420 160 470 150S560 142 580 150" fill="none" stroke="#B6DAF0" stroke-width="4" stroke-linecap="round"/>
+          <use href="#f-shirasu" x="404" y="96" width="48" height="14"/>
+          <use href="#f-shirasu" x="440" y="116" width="48" height="14"/>
+          <use href="#f-shirasu" x="396" y="128" width="48" height="14"/>
+          <use href="#f-shirasu" x="470" y="90" width="48" height="14"/>
+          <g transform="translate(150 176) scale(-1 1)"><use href="#f-shirasu" width="48" height="14"/></g>
+          <g transform="translate(118 190) scale(-1 1)"><use href="#f-shirasu" width="48" height="14"/></g>
+        </svg>
+      </div>
+      <h2 id="final-title" class="sec-title" data-edit="Z01">次の一歩を、
+好きなことのために。</h2>
+      <div class="body">
+        <p data-edit="Z02">まだ、やりたいことが言葉になっていなくても。やりたいことはあるのに、動けなくなっていても。</p>
+        <p data-edit="Z03">いまの状況を整理するところから、一緒に始めましょう。あなたが何に時間を使いたいのか。そこへ向かうには、何を変えられるのか。対話と戦略とAIで、その道筋を考えます。</p>
+      </div>
+      <a class="btn btn--lg" href="#apply" data-apply><span class="btn-chip">ご紹介制</span>初回無料相談を申し込む</a>
+      <p class="cta-note" style="margin-top:12px" data-edit="Z04">初回無料・オンライン1時間</p>
+      <p class="referral" data-edit="Z05">一人ひとりのご相談に向き合うため、当面はご紹介を受けた方のみ、お申し込みを受け付けています。</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" data-section="フッター">
+  <div class="wrap">
+    <span>© おさかなコーチング</span>
+    <span data-edit="Z06">このページは、ご紹介を受けた方にお届けしている限定ページです。</span>
+  </div>
+</footer>
+
+<div class="sticky-cta" inert><a class="btn" href="#apply" data-apply><span class="btn-chip">ご紹介制</span>初回無料相談を申し込む</a></div>
+
+<!-- 赤入れメモ・公開前の確認（文章検討用。公開するページの一部ではない） -->
+<dialog id="review-dialog" aria-labelledby="review-title">
+  <div class="dialog-top"><h2 id="review-title">赤入れメモ・公開前の確認</h2><button class="dialog-close" id="review-close" type="button" aria-label="閉じる">×</button></div>
+  <div class="dialog-content">
+    <p>文章を検討するためのページです。「本文を編集」で、見出しや本文を直接書き換えられます。編集はこのブラウザ内に自動で保存され、外部へは送信されません。確実に残すには「HTMLを保存」か「原稿を保存」で書き出してください。</p>
+    <h3>公開前に確認する項目</h3>
+    <label class="review-row"><input type="checkbox" data-check="opening"><span><b>冒頭と悩み</b><small>H・P：最初に語りかける読者（事業を始めている人）と、研究・創作の時間を確保したい人の両方に届くか。</small></span></label>
+    <label class="review-row"><input type="checkbox" data-check="support"><span><b>支援の内容と問いの立て方</b><small>S・Q：扱う範囲（対話・戦略づくり・AI活用の提案）と、開発や代行は別途であることが伝わるか。</small></span></label>
+    <label class="review-row"><input type="checkbox" data-check="story"><span><b>物語と理念</b><small>M・R：本人の言葉として語れるか。回遊や恩返しが完全に任意だと伝わるか。</small></span></label>
+    <label class="review-row"><input type="checkbox" data-check="price"><span><b>相談の内容と料金</b><small>O・F：初回無料・1時間・オンライン、料金表、文化・子育て枠、ペイフォワード・チケットの案内が、確定した内容と一致しているか。</small></span></label>
+    <label class="review-row"><input type="checkbox" data-check="pending"><span><b>未確定の事項</b><small>ペイフォワード・チケットの贈り方・受け取り先・使い方、氏名の表記・写真・実績、従業員4名以下の事業者の区分、日程を連絡する方法、クライアントの声とおすすめします（いまは仮の文章）。</small></span></label>
+    <label class="review-row"><input type="checkbox" data-check="images"><span><b>画像</b><small>差し替え画像（images/）を入れるか、イラストのままにするか。</small></span></label>
+    <label class="review-row"><input type="checkbox" data-check="publish"><span><b>公開前の最終確認</b><small>申込先の接続、編集バーと赤入れメモの除去、検索エンジンに載せない設定。このHTMLの保存は公開操作ではありません。</small></span></label>
+    <h3><label for="review-memo">赤入れメモ</label></h3>
+    <textarea class="memo" id="review-memo" placeholder="例：P12をもっと自分の言葉にしたい。F77の4名以下の扱いを確認。"></textarea>
+    <h3><label for="application-url">申し込みフォームのURL</label></h3>
+    <input class="url-input" id="application-url" type="url" inputmode="url" placeholder="https://…" autocomplete="off" aria-describedby="url-error" value="">
+    <div class="url-error" id="url-error" role="alert"></div>
+    <label class="review-row"><input type="checkbox" id="enable-application"><span>申し込みボタンをこのURLにつなぐ<small>フォームが完成してからチェックしてください。チェックするまでは、ボタンを押すと「準備中」と表示されます。</small></span></label>
+    <button class="tool" id="apply-url" type="button">申し込み先を反映</button>
+    <p class="field-note">反映しても、インターネットへの公開はされません。URLとチェックの状態は、保存するHTMLに含まれます。</p>
+    <h3><label for="ticket-count-input">ペイフォワード・チケットの枚数</label></h3>
+    <input class="url-input ticket-input" id="ticket-count-input" type="number" min="0" max="30" step="1" inputmode="numeric" value="5">
+    <p class="field-note">いま使えるチケットの枚数です（0〜30枚）。変えると、ページのチケットの表示がすぐに変わります。</p>
+    <div class="dialog-actions">
+      <button class="tool strong" id="save-html-dialog" type="button">HTMLを保存</button>
+      <button class="tool" id="save-markdown-dialog" type="button">原稿を保存</button>
+      <button class="tool reset" id="reset-copy" type="button">最初の原稿に戻す</button>
+    </div>
+    <p class="field-note">保存したHTMLには、このメモや確認の状態も含まれます。公開するときは、公開用の版として整えてください。</p>
+  </div>
+</dialog>
+
+<div class="toast" role="status" aria-live="polite"></div>
+
+<script type="application/json" id="editor-state">{"schemaVersion": 1, "instanceId": "build-a8e394b4f9dff03e", "memo": "", "checks": {"opening": false, "support": false, "story": false, "price": false, "pending": false, "images": false, "publish": false}, "applicationUrl": "https://sudodo.github.io/osakana-coaching/apply.html", "applicationEnabled": true, "ticketCount": 5, "copy": {"G01": "対話・戦略・AIの個別相談（ご紹介制）", "H07": "ご紹介を受けた方のみ、お申し込みいただけます", "H01": "お金の心配をせずに\n好きなことに没頭したい。", "H02": "その願い、AIで実現しよう。", "H03": "打ち込みたいことがあるのに、目の前の仕事で一日が終わってしまう。このまま続けて、目指す場所に届くだろうか。", "H04": "おさかなコーチングは、対話であなたの思いを整理し、中長期の戦略と、AIを活かした実行の方法を一緒に考えます。", "H05": "元国立大学教員・AI研究者。「好きなこと」に没頭するために、事業の立ち上げ・運営・売却を経験した私が、直接お話を伺います。", "H06": "初回無料・オンライン1時間", "P01": "毎日がめまぐるしく過ぎていく。\nでも、本当にやりたいことに近づいているのだろうか。", "P11": "このまま続けて、\n理想の人生に届くのだろうか。", "P12": "やりたいことがある。真剣に努力もしている。けれど、いまのやり方の延長に、思い描いていた輝く人生があるのか、自信が持てない。何を伸ばし、何を手放すべきか。散らかった心を整理して前に進むための相談にのってほしい。", "P21": "頑張っているけれど、\nもしかして遠回りしているのかも。", "P22": "人一倍、努力はしている。頑張っている。けれど、なかなか結果に繋がらない。成功している友人は「もっと効率を考えて戦略的にやらないと」って言うけど、どうやったらいいの？", "P31": "打ち込みたいことに\n使う時間が残らない。", "P32": "音楽、演劇、研究、スポーツ。本当は練習や創作に時間をかけたいことがあるのに、日々の対応や細かな作業で一日が終わる。AIを使うと楽になるらしいけれど、どう使えば良いのかわからない。", "P02": "何を相談すればよいか、整理できていなくても大丈夫です。\nその混乱を一緒にほどくところから始めます。", "S01": "あなたの「やりたい」を、道筋と、次の一歩に。", "S02": "対話で目的を整理し、戦略で道筋をつくり、AIで実行を支える。この3つが整うことで、プラスのサイクルが回りだします。", "S41": "整理する", "S42": "コーチング・対話", "S43": "道筋をつくる", "S44": "戦略・コンサルティング", "S45": "仕組みをつくる", "S46": "AI活用・業務効率化", "S47": "向かう先が決まる", "S48": "やることが決まる", "S49": "時間と手応えが生まれる", "S51": "回り続けるほど、\nお魚は育つ", "S52": "泳いでいるだけで魚がどんどん成長していくように", "S53": "大切にしたいことを整理すると、向かう先が決まる。道筋ができると、自分がやることと、AIに任せることを分けられる。生まれた時間で動いてみると、手応えや新しい気づきが生まれて、また整理したいことが出てくる。", "S54": "1回のセッションで3つを回すこともあれば、いちばん詰まっている1つに絞ることもあります。どこから始めても、サイクルはつながっています。", "S55": "このサイクルを回すことが「やりたいことだけで自分の時間を埋めていく」という理想の人生につながっています。", "S04": "それぞれのステップで行うこと", "S11": "何を大切にしたいのか、整理する", "S12": "コーチング・対話", "S13": "周囲の期待、これまでの経験、いま抱えている不安。それらをいったん分けて、自分は何を増やしたくて、何を減らしたいのかを考えます。アカデミアで鍛えた質問力で、話の前提や、まだ言葉になっていない思いを一緒に確かめます。無理に立派なビジョンを作るのではなく、いまの自分が納得できる方向を探します。", "S14": "大切にしたいこと", "S15": "避けたいこと", "S16": "迷ったときの判断基準", "S21": "少し先を見据えて、道筋をつくる", "S22": "戦略・コンサルティング", "S23": "やりたいことを、願望のままにしないために。いまの仕事や事業、使える時間、収入面の条件、強みを踏まえて、実現への道筋を考えます。何に力を集中するか。何はやらないか。どの順序で試すか。中長期の方向性と、目の前の行動をつなぎます。", "S24": "選択肢と優先順位", "S25": "やらないこと", "S26": "まず試す小さな行動", "S31": "動ける時間と仕組みをつくる", "S32": "AI活用・業務効率化", "S33": "方針が決まっても、実行する余裕がなければ前に進めません。日々の業務を整理して、自分が取り組みたい仕事と、AIに任せられる作業を分けます。調べもの、文章や資料の下書き、定型的な対応など、あなたの仕事に即したAIの使い方を提案します。", "S34": "AIに任せる業務", "S35": "新しいチャレンジ", "S36": "人が確認すべき点", "S03": "ツールを増やすことではなく、やりたいことを進められる状態を目指します。\nシステム開発や作業の代行は、別途ご相談ください。", "Q01": "「どうすれば速くできるか」の前に、「何のためにするのか」を、一緒に考えます。", "Q02": "相談のイメージ：支援の進め方を説明するための想定例です。実際の相談事例ではありません。", "Q11": "AIを使って、提案書をもっと速く作りたいんです。", "Q12": "提案書にかかる時間が減ったら、その時間を何に使いたいですか？", "Q13": "本当は、もっと企画を考える仕事に集中したいです。", "Q14": "では、提案書の効率化と一緒に、企画の仕事を増やすために何を変えるかも考えましょう。", "Q15": "はい！お願いします", "Q03": "ご相談いただいた作業を効率化するだけでなく、その先にある「本当に実現したいこと」も確かめます。", "Q04": "研究で培った考え方を、あなたの仕事や事業に活かします。話を聞くだけで終わらず、必要な場面では具体的な選択肢も提案します。", "Q21": "前提を問い直す", "Q22": "問題を分ける", "Q23": "仮説を立てる", "Q24": "小さく試して、確かめる", "V01": "ご相談いただいた方の声", "V02": "掲載イメージ（仮の文章）です。実際のお声に差し替えます。", "V11": "Aさん", "V12": "会社員・作曲（しらすさん）", "V13": "やりたいことを、やっと言葉にできました。", "V14": "仕事の合間に曲を作っていましたが、何から手をつければいいのか分からないままでした。対話の中で、自分が大切にしたいことと、手放してよいことがはっきりしました。資料づくりをAIに任せる方法も教わり、平日の夜に作曲の時間を取れるようになりました。", "V21": "Bさん", "V22": "個人事業主・デザイナー（まだいさん）", "V23": "遠回りしていた理由が見えました。", "V24": "頑張っているのに結果につながらない、と感じていました。「その仕事は、何のために受けていますか」という問いで、引き受ける仕事の基準を見直し、やらないことを決められました。次の一か月で小さく試す計画まで一緒に考えてもらえたので、すぐに動き出せました。", "V31": "Cさん", "V32": "大学院生・子育て中（文化・子育て枠）", "V33": "研究に向かう時間が戻ってきました。", "V34": "研究と子育てで、いつも時間が足りませんでした。毎日の作業を一緒に洗い出し、文献の整理やメールの下書きなど、AIに任せられることを具体的に決めました。限られた時間でも研究を進められる手応えがあり、続けていく自信がつきました。", "M01": "私も、ただ、\n好きな研究に没頭したかった。", "M02": "私が欲しかったのは、好きな研究に、自分の時間を使える人生でした。", "M03": "けれど、そのためには、仕事や収入のあり方も考えなければなりませんでした。大学で研究と教育に携わりながら、事業を立ち上げ、運営し、売却する。長い試行錯誤を経て、いまは大好きな研究に没頭しています。", "M04": "だから、「やりたいことはあるのに、そこへ向かう時間がない」という悩みは、私にとって他人事ではありません。", "M05": "もちろん、私と同じ道を歩く必要はありません。好きなことを仕事にする人もいれば、仕事の仕組みを整えて、仕事以外の大切なことに時間を使う人もいる。その人自身が望む形を見つけて、それを実現していく。", "M06": "面倒な仕事なら、喜んでAIに任せたい。そうして生まれた時間を、本当に好きなことに使ってほしい。誰もが、自分の情熱や偏愛に駆動されて、大好きなことに没頭できる世界をつくりたい。\nその思いで、おさかなコーチングをやっています。", "M07": "須藤 明人（あきひと先生）", "M08": "元国立大学教員・AI/物理/哲学研究者\n事業の立ち上げ・運営・売却を経験", "W01": "おすすめします", "W02": "あきひと先生をよく知る方から、推薦の言葉をいただきました。", "W03": "掲載イメージ（仮の文章）です。実際の推薦文に差し替えます。", "W13": "相手の話から、本当の問いを見つけ出す人です。", "W14": "研究の場で長く一緒に仕事をしてきました。彼のいちばんの強みは、相手がまだ言葉にできていない関心をすくい上げ、取り組むべき問いの形に整えてくれることです。迷っているときほど、話してみる価値がある人だと思います。", "W11": "Dさん", "W12": "大学教授・情報科学", "W23": "理想を、実行できる手順にまで落とし込んでくれます。", "W24": "事業の立ち上げから売却まで、近くで見てきました。大きな理想を語るだけでなく、数字と手順に落とし込み、最初の一歩が踏み出せるところまで付き合ってくれます。AIの使い方も、現場の仕事に合わせて具体的に考えてくれる人です。", "W21": "Eさん", "W22": "会社経営者", "W33": "好きなことに打ち込む人を、心から応援する人です。", "W34": "長年の友人です。創作に没頭したい気持ちと、生活を成り立たせなければならない現実。その両方を分かったうえで、どうすれば好きなことに時間を使えるかを一緒に考えてくれます。何かに打ち込んでいる人にこそ、話してみてほしいです。", "W31": "Fさん", "W32": "作曲家", "R01": "あなたの偏愛が育つことは、あなた一人の幸せでは終わらない。", "R02": "AIに任せられる仕事は、AIに任せる。そして人は、自分が本当に打ち込みたいことを、誰かの役に立つ仕事へ育てていく。私は、それが、本人の幸せと社会の豊かさを両立する鍵になると考えています。", "R03": "偏愛と結びつかない仕事は、これからますますAIのほうが得意になっていきます。その変化を止めていまの仕事を守るよりも、人が打ち込みたい仕事へ移っていけるほうが、本人にとっても、社会にとっても豊かなはずです。", "R04": "今の仕事にとどまるしかない状態から、\n自分が打ち込みたい仕事を選べる状態へ。", "R05": "だから、いま大きな金額を払える人だけを支援したいわけではありません。これから始める人にも、自分の可能性を育てる機会を届けたい。", "R11": "はじめは、しらすさんでいい", "R12": "小さな偏愛や挑戦を持って、相談に来てください。", "R21": "偏愛を、仕事や活動へ育てる", "R22": "それが誰のどんな役に立つのかまで、一緒に考えます。", "R31": "それぞれの海で活躍する", "R32": "自分の好きな海へ泳いでいって、生き生きと活躍してください。", "R41": "余裕ができたら、回遊して戻ってくる", "R42": "何年か後、マグロさんやクジラさんとしての相談や応援が、また次の小さな挑戦を支えます。", "R06": "おさかなコーチングは、お魚たちを幸せに育てる取り組みです。育てたしらすさんが大きくなって、いろいろな海で活躍していること。それが、私にとって何よりうれしいことです。", "R07": "戻ってくるかどうかは、完全に自由です。", "R08": "将来の返済や成功報酬、寄付の義務はありません。戻ってこなくても、どこかの海で活躍していてくれたら、それがいちばんうれしい。", "O01": "まずは、いま抱えている課題を持ってきてください。", "O11": "無料・1時間・オンライン", "O12": "コーチングでいまの状況を一緒に理解し、戦略を検討し、AI活用を提案します。その回でいちばん扱うべき課題を決めて、次の一歩を考えます。", "O13": "1時間", "O14": "オンライン", "O15": "無料", "O21": "1時間ごと・オンライン", "O22": "戦略の具体化、実行してみたあとの振り返り、AI活用の見直しなど、必要なことを続けて扱います。料金は下の料金表をご覧ください。", "O25": "週1回、隔週、毎月など、クライアントの要望や状況、予約の空き状況をもとに決めます。", "O23": "対面をご希望の場合や、相談時間外の対応が必要な場合は、ご相談ください。対面は移動時間も面談時間として計算し、交通費は別途いただきます。時間外の対応は、別途お見積もりします。", "O02": "個別相談で扱うのは、対話・戦略づくり・AI活用の提案です。システム開発や作業の代行は、別途ご相談ください。", "O31": "フォームから申し込む", "O32": "相談したいこと、AI活用の提案の希望、料金区分などを伺います。", "O33": "日程を決める", "O34": "日程を調整してご連絡します。", "O35": "初回無料相談", "O36": "オンラインで1時間。いまの状況を整理するところから始めます。", "O37": "続けるかを決める", "O38": "続けたい場合は、2回目以降のご相談へ。決めるのは相談のあとで大丈夫です。", "F01": "好きなことに向かう一歩を、応援したい。", "F02": "私が増やしたいのは、自分の大切なことに時間を使える人です。そのための相談の機会を、経済的な事情だけで狭めたくないと考えています。", "F03": "初回のご相談は無料です。2回目以降は、個人の方から企業まで、それぞれの状況に応じた料金をご用意しています。個人の方は、しらすさん〜マグロさんの中から、ご自身で自由にお選びください。文化的な活動に打ち込む方や子育て中の方には、文化・子育て枠もご用意しています。", "F04": "料金の違いは、ご相談に向き合う真剣さの違いではありません。", "F08": "学生・研究・文化芸術・子育てなど", "F64": "文化・子育て枠", "F65": "1,000", "F66": "チケットを使えば2回目以降も無料です", "F05": "個人の方は、この中から自由に", "F11": "しらすさん", "F12": "2,000", "F13": "個人の方", "F21": "やりいかさん", "F22": "5,000", "F23": "個人の方", "F31": "まだいさん", "F32": "8,000", "F33": "個人の方", "F41": "マグロさん", "F42": "10,000", "F43": "個人の方", "F06": "法人向け（企業の業務相談）", "F51": "しゃちさん", "F52": "30,000", "F53": "従業員5〜49名の企業", "F61": "クジラさん", "F62": "50,000", "F63": "従業員50名以上の企業", "F74": "しらすさん〜マグロさんは自己申告です。", "F75": "いまのご自身に合うと思う区分を自由にお選びください。どの区分を選んでも、ご相談の内容や向き合い方は変わりません。", "F76": "企業にお勤めの方の個人的なご相談", "F77": "や、従業員4名以下の事業者の方の業務相談も、しらすさん〜マグロさんからお選びいただけます。", "F78": "しゃちさん・クジラさんは、企業の業務としてのご相談に適用します。", "F73": "金額はすべて税込です。対面の場合は移動時間も面談時間として計算し、交通費を別途いただきます。", "F81": "文化・子育て枠", "F82": "2回目以降も 1回（1時間）1,000円・税込", "F85": "チケットを使えば2回目以降も無料です", "F83": "学生、研究者、文化・芸術関係など、すぐにはお金にならなくても社会を豊かにする仕事に取り組んでいる方、これから目指している方のための枠です。子育て中の方もご利用いただけます。どの仕事にも価値があります。そのうえで私は、こうした挑戦を特に応援したいと考えています。", "F84": "ここに挙げた例に当てはまらなくても、事情と取り組みの内容によってお申し込みいただけます。経済活動の外側で社会を豊かにしてくださっている方は、どなたでも申し込めます。申し込みフォームで「文化・子育て枠」を選び、理由をお書きください。理由を拝見して運営が判断するため、ご希望に添えない場合もあります。", "T01": "ペイフォワード", "T02": "文化的な活動や子育てを頑張る人へ、相談1回分を先に贈る。", "T03": "受け取った恩を、次の誰かに先に渡していく。文化的な活動や子育てを頑張っている人を応援したい方が相談料を先に支払うと、文化・子育て枠の無料相談チケットになります。", "T11": "応援したい人が、相談料を先に支払う", "T12": "無料相談チケットになって、ここに並ぶ", "T13": "文化・子育て枠の人が、チケットを使って2回目以降も無料で相談できる", "T04": "大きく育ったお魚さんが、次の小魚たちの挑戦を応援する。おさかなコーチングの回遊のかたちのひとつです。", "T21": "いま使えるチケット", "T23": "いまは使えるチケットがありません。次の応援をお待ちしています。", "T22": "枚数は目安です。運営がときどき更新します。", "T31": "チケットで応援したい方には、方法を個別にご案内します。", "T32": "チケットを使いたい方は、申し込みフォームで「文化・子育て枠」を選び、理由をお書きください。", "F07": "私自身も、大好きな研究を続けながら、この支援を長く続けたいと思っています。無理のない範囲で、一人ひとりの挑戦に向き合っていきます。", "K11": "やりたいことが、まだわかりません。相談できますか？", "K12": "その状態からご相談いただけます。いまの仕事や暮らしで、何に充実感があり、何に違和感があるのか。一緒に整理するところから始めます。", "K21": "好きなことを仕事にしないといけませんか？", "K22": "いいえ。好きなことを仕事にすることだけが目的ではありません。いまの仕事を効率化したり、働き方や事業の仕組みを見直したりして、研究・創作・趣味などに使う時間を増やすことも、同じように大切なご相談です。", "K31": "AIに詳しくなくても相談できますか？", "K32": "はい。ツールの知識ではなく、「何を実現したいか」「どこで困っているか」からお話を伺います。AIを使うことを前提にせず、必要な場面で、仕事に合った使い方を考えます。", "K41": "コーチングとコンサルティング、どちらを申し込めばよいですか？", "K42": "あらかじめ選ぶ必要はありません。考えを整理する対話が必要なのか、具体的な選択肢の提案が必要なのか、ご相談内容に合わせて進めます。申し込みフォームでは、AI活用の提案を希望するかどうかだけ選んでいただきます（「当日決めたい」も選べます）。", "K51": "料金区分は、どう選べばよいですか？", "K52": "個人の方は、しらすさん〜マグロさんから、いまのご自身に合うと思う区分を自由にお選びください（自己申告です）。企業の業務としてのご相談は、従業員数に応じてしゃちさん・クジラさんになります。", "K61": "将来、恩返しや寄付をしないといけませんか？", "K62": "いいえ。将来の返済や成功報酬、寄付の義務は一切ありません。大きくなって戻ってきてくださったらうれしいですが、戻ってこなくても、どこかで活躍していてくだされば、それが何よりです。", "K71": "対面で相談できますか？", "K72": "初回はオンラインです。2回目以降で対面をご希望の場合はご相談ください。移動時間も面談時間として計算し、交通費は別途いただきます。", "K81": "システム開発や作業の代行もお願いできますか？", "K82": "個別相談で扱うのは、対話・戦略づくり・AI活用の提案です。システム開発や作業の代行は、別途ご相談ください。", "K91": "なぜ紹介制なのですか？", "K92": "一人ひとりのご相談に向き合うため、当面はご紹介を受けた方のみ、お申し込みを受け付けています。このページは、紹介者の方からURLを受け取った方にお届けしています。", "Z01": "次の一歩を、\n好きなことのために。", "Z02": "まだ、やりたいことが言葉になっていなくても。やりたいことはあるのに、動けなくなっていても。", "Z03": "いまの状況を整理するところから、一緒に始めましょう。あなたが何に時間を使いたいのか。そこへ向かうには、何を変えられるのか。対話と戦略とAIで、その道筋を考えます。", "Z04": "初回無料・オンライン1時間", "Z05": "一人ひとりのご相談に向き合うため、当面はご紹介を受けた方のみ、お申し込みを受け付けています。", "Z06": "このページは、ご紹介を受けた方にお届けしている限定ページです。"}}</script>
+<script type="application/json" id="original-copy">{"G01": "対話・戦略・AIの個別相談（ご紹介制）", "H07": "ご紹介を受けた方のみ、お申し込みいただけます", "H01": "お金の心配をせずに\n好きなことに没頭したい。", "H02": "その願い、AIで実現しよう。", "H03": "打ち込みたいことがあるのに、目の前の仕事で一日が終わってしまう。このまま続けて、目指す場所に届くだろうか。", "H04": "おさかなコーチングは、対話であなたの思いを整理し、中長期の戦略と、AIを活かした実行の方法を一緒に考えます。", "H05": "元国立大学教員・AI研究者。「好きなこと」に没頭するために、事業の立ち上げ・運営・売却を経験した私が、直接お話を伺います。", "H06": "初回無料・オンライン1時間", "P01": "毎日がめまぐるしく過ぎていく。\nでも、本当にやりたいことに近づいているのだろうか。", "P11": "このまま続けて、\n理想の人生に届くのだろうか。", "P12": "やりたいことがある。真剣に努力もしている。けれど、いまのやり方の延長に、思い描いていた輝く人生があるのか、自信が持てない。何を伸ばし、何を手放すべきか。散らかった心を整理して前に進むための相談にのってほしい。", "P21": "頑張っているけれど、\nもしかして遠回りしているのかも。", "P22": "人一倍、努力はしている。頑張っている。けれど、なかなか結果に繋がらない。成功している友人は「もっと効率を考えて戦略的にやらないと」って言うけど、どうやったらいいの？", "P31": "打ち込みたいことに\n使う時間が残らない。", "P32": "音楽、演劇、研究、スポーツ。本当は練習や創作に時間をかけたいことがあるのに、日々の対応や細かな作業で一日が終わる。AIを使うと楽になるらしいけれど、どう使えば良いのかわからない。", "P02": "何を相談すればよいか、整理できていなくても大丈夫です。\nその混乱を一緒にほどくところから始めます。", "S01": "あなたの「やりたい」を、道筋と、次の一歩に。", "S02": "対話で目的を整理し、戦略で道筋をつくり、AIで実行を支える。この3つが整うことで、プラスのサイクルが回りだします。", "S41": "整理する", "S42": "コーチング・対話", "S43": "道筋をつくる", "S44": "戦略・コンサルティング", "S45": "仕組みをつくる", "S46": "AI活用・業務効率化", "S47": "向かう先が決まる", "S48": "やることが決まる", "S49": "時間と手応えが生まれる", "S51": "回り続けるほど、\nお魚は育つ", "S52": "泳いでいるだけで魚がどんどん成長していくように", "S53": "大切にしたいことを整理すると、向かう先が決まる。道筋ができると、自分がやることと、AIに任せることを分けられる。生まれた時間で動いてみると、手応えや新しい気づきが生まれて、また整理したいことが出てくる。", "S54": "1回のセッションで3つを回すこともあれば、いちばん詰まっている1つに絞ることもあります。どこから始めても、サイクルはつながっています。", "S55": "このサイクルを回すことが「やりたいことだけで自分の時間を埋めていく」という理想の人生につながっています。", "S04": "それぞれのステップで行うこと", "S11": "何を大切にしたいのか、整理する", "S12": "コーチング・対話", "S13": "周囲の期待、これまでの経験、いま抱えている不安。それらをいったん分けて、自分は何を増やしたくて、何を減らしたいのかを考えます。アカデミアで鍛えた質問力で、話の前提や、まだ言葉になっていない思いを一緒に確かめます。無理に立派なビジョンを作るのではなく、いまの自分が納得できる方向を探します。", "S14": "大切にしたいこと", "S15": "避けたいこと", "S16": "迷ったときの判断基準", "S21": "少し先を見据えて、道筋をつくる", "S22": "戦略・コンサルティング", "S23": "やりたいことを、願望のままにしないために。いまの仕事や事業、使える時間、収入面の条件、強みを踏まえて、実現への道筋を考えます。何に力を集中するか。何はやらないか。どの順序で試すか。中長期の方向性と、目の前の行動をつなぎます。", "S24": "選択肢と優先順位", "S25": "やらないこと", "S26": "まず試す小さな行動", "S31": "動ける時間と仕組みをつくる", "S32": "AI活用・業務効率化", "S33": "方針が決まっても、実行する余裕がなければ前に進めません。日々の業務を整理して、自分が取り組みたい仕事と、AIに任せられる作業を分けます。調べもの、文章や資料の下書き、定型的な対応など、あなたの仕事に即したAIの使い方を提案します。", "S34": "AIに任せる業務", "S35": "新しいチャレンジ", "S36": "人が確認すべき点", "S03": "ツールを増やすことではなく、やりたいことを進められる状態を目指します。\nシステム開発や作業の代行は、別途ご相談ください。", "Q01": "「どうすれば速くできるか」の前に、「何のためにするのか」を、一緒に考えます。", "Q02": "相談のイメージ：支援の進め方を説明するための想定例です。実際の相談事例ではありません。", "Q11": "AIを使って、提案書をもっと速く作りたいんです。", "Q12": "提案書にかかる時間が減ったら、その時間を何に使いたいですか？", "Q13": "本当は、もっと企画を考える仕事に集中したいです。", "Q14": "では、提案書の効率化と一緒に、企画の仕事を増やすために何を変えるかも考えましょう。", "Q15": "はい！お願いします", "Q03": "ご相談いただいた作業を効率化するだけでなく、その先にある「本当に実現したいこと」も確かめます。", "Q04": "研究で培った考え方を、あなたの仕事や事業に活かします。話を聞くだけで終わらず、必要な場面では具体的な選択肢も提案します。", "Q21": "前提を問い直す", "Q22": "問題を分ける", "Q23": "仮説を立てる", "Q24": "小さく試して、確かめる", "V01": "ご相談いただいた方の声", "V02": "掲載イメージ（仮の文章）です。実際のお声に差し替えます。", "V11": "Aさん", "V12": "会社員・作曲（しらすさん）", "V13": "やりたいことを、やっと言葉にできました。", "V14": "仕事の合間に曲を作っていましたが、何から手をつければいいのか分からないままでした。対話の中で、自分が大切にしたいことと、手放してよいことがはっきりしました。資料づくりをAIに任せる方法も教わり、平日の夜に作曲の時間を取れるようになりました。", "V21": "Bさん", "V22": "個人事業主・デザイナー（まだいさん）", "V23": "遠回りしていた理由が見えました。", "V24": "頑張っているのに結果につながらない、と感じていました。「その仕事は、何のために受けていますか」という問いで、引き受ける仕事の基準を見直し、やらないことを決められました。次の一か月で小さく試す計画まで一緒に考えてもらえたので、すぐに動き出せました。", "V31": "Cさん", "V32": "大学院生・子育て中（文化・子育て枠）", "V33": "研究に向かう時間が戻ってきました。", "V34": "研究と子育てで、いつも時間が足りませんでした。毎日の作業を一緒に洗い出し、文献の整理やメールの下書きなど、AIに任せられることを具体的に決めました。限られた時間でも研究を進められる手応えがあり、続けていく自信がつきました。", "M01": "私も、ただ、\n好きな研究に没頭したかった。", "M02": "私が欲しかったのは、好きな研究に、自分の時間を使える人生でした。", "M03": "けれど、そのためには、仕事や収入のあり方も考えなければなりませんでした。大学で研究と教育に携わりながら、事業を立ち上げ、運営し、売却する。長い試行錯誤を経て、いまは大好きな研究に没頭しています。", "M04": "だから、「やりたいことはあるのに、そこへ向かう時間がない」という悩みは、私にとって他人事ではありません。", "M05": "もちろん、私と同じ道を歩く必要はありません。好きなことを仕事にする人もいれば、仕事の仕組みを整えて、仕事以外の大切なことに時間を使う人もいる。その人自身が望む形を見つけて、それを実現していく。", "M06": "面倒な仕事なら、喜んでAIに任せたい。そうして生まれた時間を、本当に好きなことに使ってほしい。誰もが、自分の情熱や偏愛に駆動されて、大好きなことに没頭できる世界をつくりたい。\nその思いで、おさかなコーチングをやっています。", "M07": "須藤 明人（あきひと先生）", "M08": "元国立大学教員・AI/物理/哲学研究者\n事業の立ち上げ・運営・売却を経験", "W01": "おすすめします", "W02": "あきひと先生をよく知る方から、推薦の言葉をいただきました。", "W03": "掲載イメージ（仮の文章）です。実際の推薦文に差し替えます。", "W13": "相手の話から、本当の問いを見つけ出す人です。", "W14": "研究の場で長く一緒に仕事をしてきました。彼のいちばんの強みは、相手がまだ言葉にできていない関心をすくい上げ、取り組むべき問いの形に整えてくれることです。迷っているときほど、話してみる価値がある人だと思います。", "W11": "Dさん", "W12": "大学教授・情報科学", "W23": "理想を、実行できる手順にまで落とし込んでくれます。", "W24": "事業の立ち上げから売却まで、近くで見てきました。大きな理想を語るだけでなく、数字と手順に落とし込み、最初の一歩が踏み出せるところまで付き合ってくれます。AIの使い方も、現場の仕事に合わせて具体的に考えてくれる人です。", "W21": "Eさん", "W22": "会社経営者", "W33": "好きなことに打ち込む人を、心から応援する人です。", "W34": "長年の友人です。創作に没頭したい気持ちと、生活を成り立たせなければならない現実。その両方を分かったうえで、どうすれば好きなことに時間を使えるかを一緒に考えてくれます。何かに打ち込んでいる人にこそ、話してみてほしいです。", "W31": "Fさん", "W32": "作曲家", "R01": "あなたの偏愛が育つことは、あなた一人の幸せでは終わらない。", "R02": "AIに任せられる仕事は、AIに任せる。そして人は、自分が本当に打ち込みたいことを、誰かの役に立つ仕事へ育てていく。私は、それが、本人の幸せと社会の豊かさを両立する鍵になると考えています。", "R03": "偏愛と結びつかない仕事は、これからますますAIのほうが得意になっていきます。その変化を止めていまの仕事を守るよりも、人が打ち込みたい仕事へ移っていけるほうが、本人にとっても、社会にとっても豊かなはずです。", "R04": "今の仕事にとどまるしかない状態から、\n自分が打ち込みたい仕事を選べる状態へ。", "R05": "だから、いま大きな金額を払える人だけを支援したいわけではありません。これから始める人にも、自分の可能性を育てる機会を届けたい。", "R11": "はじめは、しらすさんでいい", "R12": "小さな偏愛や挑戦を持って、相談に来てください。", "R21": "偏愛を、仕事や活動へ育てる", "R22": "それが誰のどんな役に立つのかまで、一緒に考えます。", "R31": "それぞれの海で活躍する", "R32": "自分の好きな海へ泳いでいって、生き生きと活躍してください。", "R41": "余裕ができたら、回遊して戻ってくる", "R42": "何年か後、マグロさんやクジラさんとしての相談や応援が、また次の小さな挑戦を支えます。", "R06": "おさかなコーチングは、お魚たちを幸せに育てる取り組みです。育てたしらすさんが大きくなって、いろいろな海で活躍していること。それが、私にとって何よりうれしいことです。", "R07": "戻ってくるかどうかは、完全に自由です。", "R08": "将来の返済や成功報酬、寄付の義務はありません。戻ってこなくても、どこかの海で活躍していてくれたら、それがいちばんうれしい。", "O01": "まずは、いま抱えている課題を持ってきてください。", "O11": "無料・1時間・オンライン", "O12": "コーチングでいまの状況を一緒に理解し、戦略を検討し、AI活用を提案します。その回でいちばん扱うべき課題を決めて、次の一歩を考えます。", "O13": "1時間", "O14": "オンライン", "O15": "無料", "O21": "1時間ごと・オンライン", "O22": "戦略の具体化、実行してみたあとの振り返り、AI活用の見直しなど、必要なことを続けて扱います。料金は下の料金表をご覧ください。", "O25": "週1回、隔週、毎月など、クライアントの要望や状況、予約の空き状況をもとに決めます。", "O23": "対面をご希望の場合や、相談時間外の対応が必要な場合は、ご相談ください。対面は移動時間も面談時間として計算し、交通費は別途いただきます。時間外の対応は、別途お見積もりします。", "O02": "個別相談で扱うのは、対話・戦略づくり・AI活用の提案です。システム開発や作業の代行は、別途ご相談ください。", "O31": "フォームから申し込む", "O32": "相談したいこと、AI活用の提案の希望、料金区分などを伺います。", "O33": "日程を決める", "O34": "日程を調整してご連絡します。", "O35": "初回無料相談", "O36": "オンラインで1時間。いまの状況を整理するところから始めます。", "O37": "続けるかを決める", "O38": "続けたい場合は、2回目以降のご相談へ。決めるのは相談のあとで大丈夫です。", "F01": "好きなことに向かう一歩を、応援したい。", "F02": "私が増やしたいのは、自分の大切なことに時間を使える人です。そのための相談の機会を、経済的な事情だけで狭めたくないと考えています。", "F03": "初回のご相談は無料です。2回目以降は、個人の方から企業まで、それぞれの状況に応じた料金をご用意しています。個人の方は、しらすさん〜マグロさんの中から、ご自身で自由にお選びください。文化的な活動に打ち込む方や子育て中の方には、文化・子育て枠もご用意しています。", "F04": "料金の違いは、ご相談に向き合う真剣さの違いではありません。", "F08": "学生・研究・文化芸術・子育てなど", "F64": "文化・子育て枠", "F65": "1,000", "F66": "チケットを使えば2回目以降も無料です", "F05": "個人の方は、この中から自由に", "F11": "しらすさん", "F12": "2,000", "F13": "個人の方", "F21": "やりいかさん", "F22": "5,000", "F23": "個人の方", "F31": "まだいさん", "F32": "8,000", "F33": "個人の方", "F41": "マグロさん", "F42": "10,000", "F43": "個人の方", "F06": "法人向け（企業の業務相談）", "F51": "しゃちさん", "F52": "30,000", "F53": "従業員5〜49名の企業", "F61": "クジラさん", "F62": "50,000", "F63": "従業員50名以上の企業", "F74": "しらすさん〜マグロさんは自己申告です。", "F75": "いまのご自身に合うと思う区分を自由にお選びください。どの区分を選んでも、ご相談の内容や向き合い方は変わりません。", "F76": "企業にお勤めの方の個人的なご相談", "F77": "や、従業員4名以下の事業者の方の業務相談も、しらすさん〜マグロさんからお選びいただけます。", "F78": "しゃちさん・クジラさんは、企業の業務としてのご相談に適用します。", "F73": "金額はすべて税込です。対面の場合は移動時間も面談時間として計算し、交通費を別途いただきます。", "F81": "文化・子育て枠", "F82": "2回目以降も 1回（1時間）1,000円・税込", "F85": "チケットを使えば2回目以降も無料です", "F83": "学生、研究者、文化・芸術関係など、すぐにはお金にならなくても社会を豊かにする仕事に取り組んでいる方、これから目指している方のための枠です。子育て中の方もご利用いただけます。どの仕事にも価値があります。そのうえで私は、こうした挑戦を特に応援したいと考えています。", "F84": "ここに挙げた例に当てはまらなくても、事情と取り組みの内容によってお申し込みいただけます。経済活動の外側で社会を豊かにしてくださっている方は、どなたでも申し込めます。申し込みフォームで「文化・子育て枠」を選び、理由をお書きください。理由を拝見して運営が判断するため、ご希望に添えない場合もあります。", "T01": "ペイフォワード", "T02": "文化的な活動や子育てを頑張る人へ、相談1回分を先に贈る。", "T03": "受け取った恩を、次の誰かに先に渡していく。文化的な活動や子育てを頑張っている人を応援したい方が相談料を先に支払うと、文化・子育て枠の無料相談チケットになります。", "T11": "応援したい人が、相談料を先に支払う", "T12": "無料相談チケットになって、ここに並ぶ", "T13": "文化・子育て枠の人が、チケットを使って2回目以降も無料で相談できる", "T04": "大きく育ったお魚さんが、次の小魚たちの挑戦を応援する。おさかなコーチングの回遊のかたちのひとつです。", "T21": "いま使えるチケット", "T23": "いまは使えるチケットがありません。次の応援をお待ちしています。", "T22": "枚数は目安です。運営がときどき更新します。", "T31": "チケットで応援したい方には、方法を個別にご案内します。", "T32": "チケットを使いたい方は、申し込みフォームで「文化・子育て枠」を選び、理由をお書きください。", "F07": "私自身も、大好きな研究を続けながら、この支援を長く続けたいと思っています。無理のない範囲で、一人ひとりの挑戦に向き合っていきます。", "K11": "やりたいことが、まだわかりません。相談できますか？", "K12": "その状態からご相談いただけます。いまの仕事や暮らしで、何に充実感があり、何に違和感があるのか。一緒に整理するところから始めます。", "K21": "好きなことを仕事にしないといけませんか？", "K22": "いいえ。好きなことを仕事にすることだけが目的ではありません。いまの仕事を効率化したり、働き方や事業の仕組みを見直したりして、研究・創作・趣味などに使う時間を増やすことも、同じように大切なご相談です。", "K31": "AIに詳しくなくても相談できますか？", "K32": "はい。ツールの知識ではなく、「何を実現したいか」「どこで困っているか」からお話を伺います。AIを使うことを前提にせず、必要な場面で、仕事に合った使い方を考えます。", "K41": "コーチングとコンサルティング、どちらを申し込めばよいですか？", "K42": "あらかじめ選ぶ必要はありません。考えを整理する対話が必要なのか、具体的な選択肢の提案が必要なのか、ご相談内容に合わせて進めます。申し込みフォームでは、AI活用の提案を希望するかどうかだけ選んでいただきます（「当日決めたい」も選べます）。", "K51": "料金区分は、どう選べばよいですか？", "K52": "個人の方は、しらすさん〜マグロさんから、いまのご自身に合うと思う区分を自由にお選びください（自己申告です）。企業の業務としてのご相談は、従業員数に応じてしゃちさん・クジラさんになります。", "K61": "将来、恩返しや寄付をしないといけませんか？", "K62": "いいえ。将来の返済や成功報酬、寄付の義務は一切ありません。大きくなって戻ってきてくださったらうれしいですが、戻ってこなくても、どこかで活躍していてくだされば、それが何よりです。", "K71": "対面で相談できますか？", "K72": "初回はオンラインです。2回目以降で対面をご希望の場合はご相談ください。移動時間も面談時間として計算し、交通費は別途いただきます。", "K81": "システム開発や作業の代行もお願いできますか？", "K82": "個別相談で扱うのは、対話・戦略づくり・AI活用の提案です。システム開発や作業の代行は、別途ご相談ください。", "K91": "なぜ紹介制なのですか？", "K92": "一人ひとりのご相談に向き合うため、当面はご紹介を受けた方のみ、お申し込みを受け付けています。このページは、紹介者の方からURLを受け取った方にお届けしています。", "Z01": "次の一歩を、\n好きなことのために。", "Z02": "まだ、やりたいことが言葉になっていなくても。やりたいことはあるのに、動けなくなっていても。", "Z03": "いまの状況を整理するところから、一緒に始めましょう。あなたが何に時間を使いたいのか。そこへ向かうには、何を変えられるのか。対話と戦略とAIで、その道筋を考えます。", "Z04": "初回無料・オンライン1時間", "Z05": "一人ひとりのご相談に向き合うため、当面はご紹介を受けた方のみ、お申し込みを受け付けています。", "Z06": "このページは、ご紹介を受けた方にお届けしている限定ページです。"}</script>
+<script>
+(() => {
+  "use strict";
+  const $ = (id) => document.getElementById(id);
+  const clone = (value) => JSON.parse(JSON.stringify(value));
+
+  // ページに埋め込んだ原稿と設定。ビルド時（LP/build.py）または「HTMLを保存」時に書き込まれる。
+  const embedded = JSON.parse($("editor-state").textContent);
+  const initialCopy = JSON.parse($("original-copy").textContent);
+  const storageKey = "funai-lp-A:" + location.pathname;
+  const editables = [...document.querySelectorAll("[data-edit]")];
+  const dialog = $("review-dialog");
+  const memo = $("review-memo");
+  const urlInput = $("application-url");
+  const readyInput = $("enable-application");
+  const status = $("save-state");
+  const ticketList = $("ticket-list");
+  const ticketTpl = $("ticket-tpl");
+  const ticketInput = $("ticket-count-input");
+  let state = clone(embedded);
+  let editing = false;
+  let pendingDraft = null;
+  let toastTimer;
+
+  function toast(text) {
+    const el = document.querySelector(".toast");
+    el.textContent = text;
+    el.classList.add("is-on");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => el.classList.remove("is-on"), 3600);
+  }
+  function safeURL(value) {
+    const text = String(value || "").trim();
+    if (!text) return "";
+    try {
+      const u = new URL(text);
+      if (u.protocol !== "https:" || u.username || u.password) return null;
+      return u.href;
+    } catch {
+      return null;
+    }
+  }
+  function collectText(el) {
+    return (el.innerText || el.textContent || "").replace(/\r\n/g, "\n");
+  }
+  // 下書きには、書き換えた箇所だけを残す。読み込むときは、このページにあるIDだけを取り込む。
+  function copyEdits() {
+    const edits = {};
+    Object.keys(state.copy).forEach((id) => {
+      if (state.copy[id] !== embedded.copy[id]) edits[id] = state.copy[id];
+    });
+    return edits;
+  }
+  function mergeDraft(base, draft, sameVersion) {
+    const copy = { ...base.copy };
+    const edits = draft.copyEdits || {};
+    Object.keys(edits).forEach((id) => {
+      if (id in copy && typeof edits[id] === "string") copy[id] = edits[id];
+    });
+    if (sameVersion) {
+      return {
+        ...base,
+        copy,
+        memo: typeof draft.memo === "string" ? draft.memo : base.memo,
+        checks: { ...base.checks, ...(draft.checks || {}) },
+        applicationUrl: draft.applicationUrl ?? base.applicationUrl,
+        applicationEnabled: Boolean(draft.applicationEnabled),
+        ticketCount: draft.ticketCount ?? base.ticketCount,
+      };
+    }
+    // 前の版の下書き：本文の書き換えだけを取り込み、メモは今の版のメモに書き足す
+    let memoText = base.memo || "";
+    if (typeof draft.memo === "string" && draft.memo && draft.memo !== memoText) {
+      memoText = memoText ? memoText + "\n\n――前の版の下書きのメモ――\n" + draft.memo : draft.memo;
+    }
+    return { ...base, copy, memo: memoText };
+  }
+  function persist() {
+    state.memo = memo.value;
+    state.checks = Object.fromEntries([...document.querySelectorAll("[data-check]")].map((el) => [el.dataset.check, el.checked]));
+    state.updatedAt = new Date().toISOString();
+    try {
+      localStorage.setItem(storageKey, JSON.stringify({
+        baseId: embedded.instanceId,
+        updatedAt: state.updatedAt,
+        copyEdits: copyEdits(),
+        memo: state.memo,
+        checks: state.checks,
+        applicationUrl: state.applicationUrl,
+        applicationEnabled: state.applicationEnabled,
+        ticketCount: state.ticketCount,
+      }));
+      status.textContent = "このブラウザに保存済み";
+    } catch {
+      status.textContent = "HTMLを保存して残してください";
+    }
+  }
+
+  // 申し込みボタン：申し込み先が有効なら、そのURLを開く。未設定なら「準備中」と知らせる。
+  function updateApply() {
+    const url = safeURL(state.applicationUrl);
+    const on = Boolean(state.applicationEnabled && url);
+    document.querySelectorAll("[data-apply]").forEach((a) => {
+      if (on) {
+        a.href = url;
+        a.dataset.ready = "1";
+      } else {
+        a.setAttribute("href", "#apply");
+        delete a.dataset.ready;
+      }
+    });
+  }
+  document.addEventListener("click", (event) => {
+    const a = event.target.closest("[data-apply]");
+    if (!a || a.dataset.ready) return;
+    event.preventDefault();
+    toast("申し込みフォームは準備中です（このページではまだつながっていません）");
+  });
+
+  // ペイフォワード・チケット：設定の枚数だけ並べる
+  function clampTickets(value) {
+    const n = Math.round(Number(value));
+    return Number.isFinite(n) ? Math.min(30, Math.max(0, n)) : 5;
+  }
+  function renderTickets() {
+    const n = clampTickets(state.ticketCount ?? 5);
+    state.ticketCount = n;
+    ticketList.textContent = "";
+    for (let i = 1; i <= n; i++) {
+      const ticket = ticketTpl.content.firstElementChild.cloneNode(true);
+      ticket.querySelector(".ticket-no").textContent = String(i);
+      ticketList.append(ticket);
+    }
+    $("ticket-count").textContent = String(n);
+    ticketList.hidden = n === 0;
+    $("ticket-empty").hidden = n > 0;
+  }
+
+  function applyState() {
+    editables.forEach((el) => {
+      const value = state.copy[el.dataset.edit];
+      if (typeof value === "string") el.textContent = value;
+    });
+    memo.value = typeof state.memo === "string" ? state.memo : "";
+    urlInput.value = safeURL(state.applicationUrl) || "";
+    readyInput.checked = Boolean(state.applicationEnabled);
+    document.querySelectorAll("[data-check]").forEach((el) => {
+      el.checked = Boolean((state.checks || {})[el.dataset.check]);
+    });
+    ticketInput.value = String(clampTickets(state.ticketCount ?? 5));
+    renderTickets();
+    updateApply();
+  }
+
+  // このブラウザに残っている編集を復元する。元のページが更新されていたら、読み込むかどうかを選んでもらう。
+  try {
+    const saved = JSON.parse(localStorage.getItem(storageKey) || "null");
+    if (saved && saved.copyEdits && typeof saved.copyEdits === "object") {
+      if (saved.baseId === embedded.instanceId) {
+        state = mergeDraft(state, saved, true);
+        status.textContent = "このブラウザの編集を復元";
+      } else {
+        pendingDraft = saved;
+      }
+    }
+  } catch {
+    /* ローカルファイルでは保存領域が使えないことがある。HTMLの書き出しは使える。 */
+  }
+  applyState();
+  if (pendingDraft) $("draft-notice").hidden = false;
+  $("draft-load").addEventListener("click", () => {
+    state = mergeDraft(state, pendingDraft, false);
+    pendingDraft = null;
+    applyState();
+    persist();
+    $("draft-notice").hidden = true;
+    toast("前の版で編集した下書きを読み込みました。");
+  });
+  $("draft-discard").addEventListener("click", () => {
+    pendingDraft = null;
+    try { localStorage.removeItem(storageKey); } catch { /* 何もしない */ }
+    $("draft-notice").hidden = true;
+    toast("前の版の下書きを破棄しました。");
+  });
+
+  // 編集バーの高さだけ、ヘッダーの固定位置をずらす
+  const bar = $("editor-bar");
+  const setBarHeight = () => document.documentElement.style.setProperty("--edbar-h", bar.offsetHeight + "px");
+  setBarHeight();
+  if ("ResizeObserver" in window) new ResizeObserver(setBarHeight).observe(bar);
+
+  // 本文の編集
+  const faqDetails = [...document.querySelectorAll(".faq details")];
+  let openedForEditing = [];
+  function setEditing(on) {
+    editing = on;
+    document.body.classList.toggle("is-editing", on);
+    $("edit-toggle").setAttribute("aria-pressed", String(on));
+    $("edit-toggle").textContent = on ? "編集を終える" : "本文を編集";
+    editables.forEach((el) => {
+      if (on) {
+        el.setAttribute("contenteditable", "plaintext-only");
+        if (el.contentEditable !== "plaintext-only") el.setAttribute("contenteditable", "true");
+        el.setAttribute("spellcheck", "false");
+        el.setAttribute("aria-label", "原稿 " + el.dataset.edit);
+      } else {
+        ["contenteditable", "spellcheck", "aria-label"].forEach((a) => el.removeAttribute(a));
+        el.textContent = state.copy[el.dataset.edit] ?? "";
+      }
+    });
+    // よくある質問の答えも書き換えられるよう、編集中はすべて開く
+    if (on) {
+      openedForEditing = faqDetails.filter((d) => !d.open);
+      openedForEditing.forEach((d) => { d.open = true; });
+    } else {
+      openedForEditing.forEach((d) => { d.open = false; });
+      openedForEditing = [];
+    }
+  }
+  $("edit-toggle").addEventListener("click", () => {
+    if (editing) persist();
+    setEditing(!editing);
+    if (editing) toast("見出しと本文を直接書き換えられます。右上の記号は赤入れ用のIDです。");
+  });
+  document.querySelectorAll(".faq summary").forEach((summary) => {
+    summary.addEventListener("click", (event) => {
+      if (editing) event.preventDefault();
+    });
+  });
+  editables.forEach((el) => {
+    el.addEventListener("input", () => {
+      state.copy[el.dataset.edit] = collectText(el);
+      persist();
+    });
+    el.addEventListener("paste", (event) => {
+      if (!editing) return;
+      event.preventDefault();
+      const text = event.clipboardData?.getData("text/plain") || "";
+      const selection = window.getSelection();
+      if (!selection?.rangeCount) return;
+      const range = selection.getRangeAt(0);
+      if (!el.contains(range.commonAncestorContainer)) return;
+      range.deleteContents();
+      const node = document.createTextNode(text);
+      range.insertNode(node);
+      range.setStartAfter(node);
+      range.collapse(true);
+      selection.removeAllRanges();
+      selection.addRange(range);
+      state.copy[el.dataset.edit] = collectText(el);
+      persist();
+    });
+    el.addEventListener("drop", (event) => {
+      if (editing) event.preventDefault();
+    });
+  });
+
+  // 赤入れメモ・公開前の確認
+  memo.addEventListener("input", persist);
+  ticketInput.addEventListener("input", () => {
+    if (ticketInput.value === "") return;
+    state.ticketCount = clampTickets(ticketInput.value);
+    renderTickets();
+    persist();
+  });
+  // 編集中は、リンクの中の文字をクリックしても移動しない
+  document.addEventListener("click", (event) => {
+    if (editing && event.target.closest("[data-edit]") && event.target.closest("a")) event.preventDefault();
+  }, true);
+  document.querySelectorAll("[data-check]").forEach((el) => el.addEventListener("change", persist));
+  $("review-open").addEventListener("click", () => dialog.showModal());
+  $("review-close").addEventListener("click", () => dialog.close());
+  dialog.addEventListener("click", (event) => {
+    if (event.target !== dialog) return;
+    const r = dialog.getBoundingClientRect();
+    if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close();
+  });
+  $("apply-url").addEventListener("click", () => {
+    const url = safeURL(urlInput.value);
+    if (url === null || (readyInput.checked && !url)) {
+      $("url-error").textContent = "https:// で始まる申し込みフォームのURLを入力してください。";
+      urlInput.setAttribute("aria-invalid", "true");
+      urlInput.focus();
+      return;
+    }
+    $("url-error").textContent = "";
+    urlInput.removeAttribute("aria-invalid");
+    state.applicationUrl = url;
+    state.applicationEnabled = Boolean(readyInput.checked && url);
+    updateApply();
+    persist();
+    toast(state.applicationEnabled ? "申し込みボタンを、このURLにつなぎました（公開はしていません）。" : "申し込みボタンは「準備中」のままです。");
+  });
+
+  // 書き出し
+  function download(name, text, mime) {
+    const blob = new Blob([text], { type: mime });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = name;
+    document.body.append(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 30000);
+  }
+  function exportHTML() {
+    persist();
+    const doc = document.documentElement.cloneNode(true);
+    doc.style.removeProperty("--edbar-h");
+    if (!doc.getAttribute("style")) doc.removeAttribute("style");
+    doc.querySelector("body").classList.remove("is-editing");
+    if (!doc.querySelector("body").getAttribute("class")) doc.querySelector("body").removeAttribute("class");
+    doc.querySelectorAll("[data-edit]").forEach((el) => {
+      el.textContent = state.copy[el.dataset.edit] ?? "";
+      ["contenteditable", "spellcheck", "aria-label"].forEach((a) => el.removeAttribute(a));
+    });
+    // 表示中に付け足したものを外し、開いたときに同じ状態から始まるようにする
+    doc.querySelectorAll(".slot-img").forEach((el) => el.remove());
+    doc.querySelectorAll(".slot.has-img").forEach((el) => el.classList.remove("has-img"));
+    doc.querySelectorAll("details").forEach((el) => el.removeAttribute("open"));
+    doc.querySelectorAll("dialog").forEach((el) => el.removeAttribute("open"));
+    doc.querySelectorAll("[data-apply]").forEach((a) => {
+      a.setAttribute("href", "#apply");
+      a.removeAttribute("data-ready");
+    });
+    const sticky = doc.querySelector(".sticky-cta");
+    sticky.classList.remove("is-on");
+    sticky.setAttribute("inert", "");
+    const toastEl = doc.querySelector(".toast");
+    toastEl.classList.remove("is-on");
+    toastEl.textContent = "";
+    doc.querySelector("#draft-notice").setAttribute("hidden", "");
+    doc.querySelector("#edit-toggle").textContent = "本文を編集";
+    doc.querySelector("#edit-toggle").setAttribute("aria-pressed", "false");
+    doc.querySelector("#save-state").textContent = "ローカル編集可";
+    doc.querySelector("#review-memo").textContent = state.memo || "";
+    doc.querySelector("#application-url").setAttribute("value", safeURL(state.applicationUrl) || "");
+    doc.querySelector("#application-url").removeAttribute("aria-invalid");
+    doc.querySelector("#url-error").textContent = "";
+    doc.querySelectorAll("[data-check]").forEach((el) => {
+      if ((state.checks || {})[el.dataset.check]) el.setAttribute("checked", "");
+      else el.removeAttribute("checked");
+    });
+    doc.querySelector("#ticket-count-input").setAttribute("value", String(clampTickets(state.ticketCount ?? 5)));
+    if (state.applicationEnabled) doc.querySelector("#enable-application").setAttribute("checked", "");
+    else doc.querySelector("#enable-application").removeAttribute("checked");
+    const instanceId = globalThis.crypto?.randomUUID?.() || "export-" + Date.now() + "-" + Math.random().toString(16).slice(2);
+    doc.querySelector("#editor-state").textContent = JSON.stringify({ ...state, instanceId }).replace(/</g, "\\u003c");
+    download("funai-lp-A-edited.html", "<!doctype html>\n" + doc.outerHTML, "text/html;charset=utf-8");
+    toast("編集とメモを含むHTMLを保存しました。公開や送信はしていません。");
+  }
+  function exportMarkdown() {
+    persist();
+    const lines = ["# おさかなコーチング 個別相談LP A案「回遊」 原稿", "", "書き出し：" + new Date().toLocaleString("ja-JP"), ""];
+    document.querySelectorAll("[data-section]").forEach((section) => {
+      lines.push("---", "", "## " + section.dataset.section, "");
+      section.querySelectorAll("[data-edit]").forEach((el) => {
+        const id = el.dataset.edit;
+        const text = state.copy[id] ?? "";
+        const tag = el.tagName.toLowerCase();
+        let prefix = "";
+        if (tag === "h1" || tag === "h2") prefix = "### ";
+        else if (tag === "h3" || el.closest("summary")) prefix = "#### ";
+        const body = prefix ? text.replace(/\n/g, " ") : text.replace(/\n/g, "  \n");
+        lines.push("<!-- " + id + " -->", prefix + body, "");
+      });
+    });
+    lines.push("---", "", "## 公開前の確認", "");
+    document.querySelectorAll("[data-check]").forEach((el) => {
+      const row = el.closest("label");
+      lines.push("- [" + (el.checked ? "x" : " ") + "] " + row.querySelector("b").textContent + "：" + row.querySelector("small").textContent);
+    });
+    lines.push("", "## ペイフォワード・チケット", "", "いま使えるチケット：" + clampTickets(state.ticketCount ?? 5) + "枚", "");
+    lines.push("## 赤入れメモ", "", state.memo || "（なし）", "");
+    lines.push("## 申し込み先", "", (safeURL(state.applicationUrl) || "（未設定）") + (state.applicationEnabled ? "（ボタンにつないでいる）" : "（ボタンにはつないでいない）"), "");
+    download("funai-lp-A-copy.md", lines.join("\n"), "text/markdown;charset=utf-8");
+    toast("原稿と赤入れメモをMarkdownで保存しました。");
+  }
+  $("save-html").addEventListener("click", exportHTML);
+  $("save-html-dialog").addEventListener("click", exportHTML);
+  $("save-markdown").addEventListener("click", exportMarkdown);
+  $("save-markdown-dialog").addEventListener("click", exportMarkdown);
+  $("reset-copy").addEventListener("click", () => {
+    if (!confirm("本文を、このページを作った時点の原稿に戻します。メモ・確認・申し込み先の設定は残します。よろしいですか？")) return;
+    state.copy = { ...initialCopy };
+    setEditing(false);
+    applyState();
+    persist();
+    toast("本文を最初の原稿に戻しました。");
+  });
+
+  // 画像の差し替え枠：images/ に所定の名前の画像を置くと、SVGの代わりにその画像を表示する
+  document.querySelectorAll(".slot[data-img]").forEach((slot) => {
+    const img = new Image();
+    img.className = "slot-img";
+    img.alt = slot.getAttribute("data-alt") || "";
+    img.onload = () => {
+      slot.appendChild(img);
+      slot.classList.add("has-img");
+    };
+    img.src = slot.getAttribute("data-img");
+  });
+
+  // スマホでは、ファーストビューと最後の申し込み欄が見えていないあいだだけ下部に申し込みボタンを出す
+  const sticky = document.querySelector(".sticky-cta");
+  const hero = document.querySelector(".hero");
+  const finalSec = $("apply");
+  if (sticky && hero && "IntersectionObserver" in window) {
+    let heroVisible = true;
+    let finalVisible = false;
+    const update = () => {
+      const on = !heroVisible && !finalVisible;
+      sticky.classList.toggle("is-on", on);
+      sticky.inert = !on;
+    };
+    new IntersectionObserver((entries) => { heroVisible = entries[0].isIntersecting; update(); }).observe(hero);
+    if (finalSec) new IntersectionObserver((entries) => { finalVisible = entries[0].isIntersecting; update(); }).observe(finalSec);
+  }
+})();
+
+</script>
+</body>
+</html>
